@@ -67,15 +67,7 @@ function G($filename){
     return [];
 }
 
-/**
- * @param $arr
- * 取代print_r()的条数函数
- */
-function D($arr = []){
-    echo '<pre>';
-    print_r($arr);
-    echo '</pre>';
-}
+
 //
 ///**
 // * @return array|mixed

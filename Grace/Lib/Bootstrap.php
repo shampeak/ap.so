@@ -35,8 +35,7 @@ class Bootstrap
 
 //        if (defined('SIMPLE_LIB_PATH') == false)
 //            throw new BootstrapException('SIMPLE_LIB_PATH is not defined');
-        if(version_compare(PHP_VERSION,'5.4.0','<'))
-            die('PHP版本太低， PHP > 5.4.0 !');
+
     }
 
 

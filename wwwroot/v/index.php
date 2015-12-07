@@ -6,10 +6,7 @@ include("../vendor/autoload.php");
 //---------------------------------------------------
 include '../Grace/Application.php';
 
-define('APPROOT','../App/');
-
-routerMiddleware('application')->
-
+define('APPROOT','../../App/');
 
 Application::run();
 
@@ -24,26 +21,3 @@ Application::run();
 <li>最后根据项目的需要，把Response对象转换为你所需要的格式，返回给客户端。</li>
  *
  */
-
-
-
-
-
-/*
-
-
-$ap = new  Grace\Middleware\Ap();
-
-$request = $md->BeforeHandle($request,function($e){
-      return $e;
-});
-
-$request = $md->handle($request,function($e) use($request){
-      return $e;
-});
-
-$request = $md->AfterHandle($request,function($e){
-      return $e;
-});
-
-*/

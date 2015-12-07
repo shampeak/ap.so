@@ -2,15 +2,15 @@
 
 
 /**
- * ¿ØÖÆÆ÷Àà
+ * æŽ§åˆ¶å™¨ç±»
  */
 class Controller {
       /**
-       * ÊÓÍ¼ÊµÀý
+       * è§†å›¾å®žä¾‹
        * @var View
        */
       private $_view;
-      //ÅäÖÃ
+      //é…ç½®
       public $router;
       public $env;
       public $app;
@@ -24,10 +24,10 @@ class Controller {
       public $accessRules = [];
 
       /**
-       * ¹¹Ôìº¯Êý£¬³õÊ¼»¯ÊÓÍ¼ÊµÀý£¬µ÷ÓÃhook
+       * æž„é€ å‡½æ•°ï¼Œåˆå§‹åŒ–è§†å›¾å®žä¾‹ï¼Œè°ƒç”¨hook
        */
       public function __construct(){
-            $this->Geter = \G\Geter::getInstance();
+            //$this->Geter = \G\Geter::getInstance();
 
             $this->router     = C('Router');
             $this->env        = C('env');
@@ -41,14 +41,14 @@ class Controller {
             $this->env['mem']   = memory_get_usage();
 
 //
-//        // ÒÀÀµ×¢Èë
+//        // ä¾èµ–æ³¨å…¥
             $this->singleton('S', function ($c) {
                   return \Seter\Seter::getInstance();
             });
 
 //
 //        /**
-//         * ÎÞÒÀÀµ»òÕßÖ»µÖÀµµ×²ãµÄ routeÊôÓÚ×îµ×²ã£¬¿ÉÒÔÔÚconfÖÐ½øÐÐ±äÁ¿µÄÅäÖÃ
+//         * æ— ä¾èµ–æˆ–è€…åªæŠµèµ–åº•å±‚çš„ routeå±žäºŽæœ€åº•å±‚ï¼Œå¯ä»¥åœ¨confä¸­è¿›è¡Œå˜é‡çš„é…ç½®
 //         * /
 
             $this->singleton('db', function ($c) {
@@ -74,12 +74,12 @@ class Controller {
             $this->_view = new View();
       }
 
-      public function G($str = ''){       //OK,»ñÈ¡µ½¹Ì»¯Êý¾ÝµÄÂ·ÓÉ×Ö¶Î
+      public function G($str = ''){       //OK,èŽ·å–åˆ°å›ºåŒ–æ•°æ®çš„è·¯ç”±å­—æ®µ
             return $this->Geter->get($str);
       }
 
       /**
-       * Ç°ÖÃhook
+       * å‰ç½®hook
        */
       public function _init(){
             header("Content-Type:text/html; charset=utf-8");
@@ -102,11 +102,11 @@ class Controller {
 
       protected function behaviors()
       {
-//  '*'     //ËùÓÐ
-//  '@'     //µÇÂ½ÓÃ»§
-//  'A'     //¹ÜÀíÔ±
-//  'G'     //ÓÎ¿Í
-//  '?'     //²éÑ¯Êý¾Ý¿â
+//  '*'     //æ‰€æœ‰
+//  '@'     //ç™»é™†ç”¨æˆ·
+//  'A'     //ç®¡ç†å‘˜
+//  'G'     //æ¸¸å®¢
+//  '?'     //æŸ¥è¯¢æ•°æ®åº“
             return [
                 'access' => [
                     'only' => ['login_test', 'logout_test', 'signup_test'],
@@ -127,11 +127,11 @@ class Controller {
       }
 
       /**
-       * äÖÈ¾Ä£°å²¢Êä³ö
-       * @param null|string $tpl Ä£°åÎÄ¼þÂ·¾¶
-       * ²ÎÊýÎªÏà¶ÔÓÚApp/View/ÎÄ¼þµÄÏà¶ÔÂ·¾¶£¬²»°üº¬ºó×ºÃû£¬ÀýÈçindex/index
-       * Èç¹û²ÎÊýÎª¿Õ£¬ÔòÄ¬ÈÏÊ¹ÓÃ$controller/$action.php
-       * Èç¹û²ÎÊý²»°üº¬"/"£¬ÔòÄ¬ÈÏÊ¹ÓÃ$controller/$tpl
+       * æ¸²æŸ“æ¨¡æ¿å¹¶è¾“å‡º
+       * @param null|string $tpl æ¨¡æ¿æ–‡ä»¶è·¯å¾„
+       * å‚æ•°ä¸ºç›¸å¯¹äºŽApp/View/æ–‡ä»¶çš„ç›¸å¯¹è·¯å¾„ï¼Œä¸åŒ…å«åŽç¼€åï¼Œä¾‹å¦‚index/index
+       * å¦‚æžœå‚æ•°ä¸ºç©ºï¼Œåˆ™é»˜è®¤ä½¿ç”¨$controller/$action.php
+       * å¦‚æžœå‚æ•°ä¸åŒ…å«"/"ï¼Œåˆ™é»˜è®¤ä½¿ç”¨$controller/$tpl
        * @return void
        */
       protected function display($tpl='',$data = []){
@@ -149,9 +149,9 @@ class Controller {
       }
 
       /**
-       * ÎªÊÓÍ¼ÒýÇæÉèÖÃÒ»¸öÄ£°å±äÁ¿
-       * @param string $name ÒªÔÚÄ£°åÖÐÊ¹ÓÃµÄ±äÁ¿Ãû
-       * @param mixed $value Ä£°åÖÐ¸Ã±äÁ¿Ãû¶ÔÓ¦µÄÖµ
+       * ä¸ºè§†å›¾å¼•æ“Žè®¾ç½®ä¸€ä¸ªæ¨¡æ¿å˜é‡
+       * @param string $name è¦åœ¨æ¨¡æ¿ä¸­ä½¿ç”¨çš„å˜é‡å
+       * @param mixed $value æ¨¡æ¿ä¸­è¯¥å˜é‡åå¯¹åº”çš„å€¼
        * @return void
        */
     protected function assign($name,$value){
@@ -159,8 +159,8 @@ class Controller {
     }
 
       /**
-       * ½«Êý¾ÝÓÃjson¸ñÊ½Êä³öÖÁä¯ÀÀÆ÷£¬²¢Í£Ö¹Ö´ÐÐ´úÂë
-       * @param array $data ÒªÊä³öµÄÊý¾Ý
+       * å°†æ•°æ®ç”¨jsonæ ¼å¼è¾“å‡ºè‡³æµè§ˆå™¨ï¼Œå¹¶åœæ­¢æ‰§è¡Œä»£ç 
+       * @param array $data è¦è¾“å‡ºçš„æ•°æ®
        */
       protected function ajaxReturn($data){
             echo json_encode($data);
@@ -168,8 +168,8 @@ class Controller {
       }
 
       /**
-       * ÖØ¶¨ÏòÖÁÖ¸¶¨url
-       * @param string $url ÒªÌø×ªµÄurl
+       * é‡å®šå‘è‡³æŒ‡å®šurl
+       * @param string $url è¦è·³è½¬çš„url
        * @param void
        */
       protected function redirect($url){
@@ -196,7 +196,7 @@ class Controller {
 
 
 
-//¿ªÊ¼ÒÀÀµ×¢Èë
+//å¼€å§‹ä¾èµ–æ³¨å…¥
       /**
        * Ensure a value or object will remain globally unique
        * @param  string  $key   The value or object name
@@ -247,7 +247,7 @@ class Controller {
       {
             return array_key_exists($this->normalizeKey($key), $this->data);
       }
-//½áÊøÒÀÀµ×¢Èë
+//ç»“æŸä¾èµ–æ³¨å…¥
 
 
 

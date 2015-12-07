@@ -1,12 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| 基础函数
-|--------------------------------------------------------------------------
-| 小写  sap sc
-|
-*/
 
 //这里注意不要跟别的系统函数名冲突
 
@@ -18,6 +11,28 @@
 
 
 
+if (! function_exists('middleware')) {
+      function routerMiddleware($make = null)
+      {
+            return Sham\Vo\Vo::getInstance()->routerMiddleware($make);
+      }
+}
+
+
+    /*
+    |------------------------------------------------------
+    | @param $arr
+    | 取代print_r()的条数函数
+    |
+    */
+if (! function_exists('D')) {
+      function D($arr = [])
+      {
+            echo '<pre>';
+            print_r($arr);
+            echo '</pre>';
+      }
+}
 if (! function_exists('bus')) {
       function bus($key = null, $value = array())
       {

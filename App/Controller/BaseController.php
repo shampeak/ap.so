@@ -19,7 +19,7 @@ class BaseController extends Controller{
     }
 
     public function G($str = ''){       //OK,获取到固化数据的路由字段
-        return $this->Geter->get($str);
+        //return $this->Geter->get($str);
     }
 
     /**

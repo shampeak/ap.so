@@ -1,26 +1,26 @@
 <?php
 
 /**
-* ÊÓÍ¼Àà
+* è§†å›¾ç±»
 */
 class View {
       /**
-      * ÊÓÍ¼ÎÄ¼şÄ¿Â¼
+      * è§†å›¾æ–‡ä»¶ç›®å½•
       * @var string
       */
       private $_tplDir;
       /**
-      * ÊÓÍ¼ÎÄ¼şÂ·¾¶
+      * è§†å›¾æ–‡ä»¶è·¯å¾„
       * @var string
       */
       private $_viewPath;
       /**
-      * ÊÓÍ¼±äÁ¿ÁĞ±í
+      * è§†å›¾å˜é‡åˆ—è¡¨
       * @var array
       */
       private $_data = array();
       /**
-      * ¸øtplIncludeÓÃµÄ±äÁ¿ÁĞ±í
+      * ç»™tplIncludeç”¨çš„å˜é‡åˆ—è¡¨
       * @var array
       */
       private static $tmpData;
@@ -34,15 +34,15 @@ class View {
             if($mo)$this->_tplDir .= 'Modules/'.C('app')['modulelist'][$mo].'/';
             $this->_tplDir .= 'view/';
 
-            $this->assign('GET',\Seter\Seter::getInstance()->request->get);
-            $this->assign('POST',\Seter\Seter::getInstance()->request->post);
-            $this->assign('COOKIE',\Seter\Seter::getInstance()->request->cookie);
+           // $this->assign('GET',\Seter\Seter::getInstance()->request->get);
+            //$this->assign('POST',\Seter\Seter::getInstance()->request->post);
+            //$this->assign('COOKIE',\Seter\Seter::getInstance()->request->cookie);
       }
 
       /**
-      * ÎªÊÓÍ¼ÒıÇæÉèÖÃÒ»¸öÄ£°å±äÁ¿
-      * @param string $key ÒªÔÚÄ£°åÖĞÊ¹ÓÃµÄ±äÁ¿Ãû
-      * @param mixed $value Ä£°åÖĞ¸Ã±äÁ¿Ãû¶ÔÓ¦µÄÖµ
+      * ä¸ºè§†å›¾å¼•æ“è®¾ç½®ä¸€ä¸ªæ¨¡æ¿å˜é‡
+      * @param string $key è¦åœ¨æ¨¡æ¿ä¸­ä½¿ç”¨çš„å˜é‡å
+      * @param mixed $value æ¨¡æ¿ä¸­è¯¥å˜é‡åå¯¹åº”çš„å€¼
       * @return void
       */
       public function assign($key, $value) {
@@ -55,7 +55,7 @@ class View {
             foreach($data as $key=>$value){
                   $this->_data[$key] = $value;
             }
-            ob_start(); //¿ªÆô»º³åÇø
+            ob_start(); //å¼€å¯ç¼“å†²åŒº
                   $router = C('Router');
                   $tplFile = $tplFile?:$router['tpl'];
                   $this->_viewPath = $this->_tplDir .$router['method_controller'].'/'. $tplFile . '.php';
@@ -69,8 +69,8 @@ class View {
       }
 
       /**
-      * äÖÈ¾Ä£°å²¢Êä³ö
-      * @param null|string $tplFile Ä£°åÎÄ¼şÂ·¾¶£¬Ïà¶ÔÓÚApp/View/ÎÄ¼şµÄÏà¶ÔÂ·¾¶£¬²»°üº¬ºó×ºÃû£¬ÀıÈçindex/index
+      * æ¸²æŸ“æ¨¡æ¿å¹¶è¾“å‡º
+      * @param null|string $tplFile æ¨¡æ¿æ–‡ä»¶è·¯å¾„ï¼Œç›¸å¯¹äºApp/View/æ–‡ä»¶çš„ç›¸å¯¹è·¯å¾„ï¼Œä¸åŒ…å«åç¼€åï¼Œä¾‹å¦‚index/index
       * @return void
       */
       public function display($tplFile,$data) {
@@ -87,9 +87,9 @@ class View {
       }
 
 //      /**
-//      * ÓÃÓÚÔÚÄ£°åÎÄ¼şÖĞ°üº¬ÆäËûÄ£°å
-//      * @param string $path Ïà¶ÔÓÚViewÄ¿Â¼µÄÂ·¾¶
-//      * @param array $data ´«µİ¸ø×ÓÄ£°åµÄ±äÁ¿ÁĞ±í£¬keyÎª±äÁ¿Ãû£¬valueÎª±äÁ¿Öµ
+//      * ç”¨äºåœ¨æ¨¡æ¿æ–‡ä»¶ä¸­åŒ…å«å…¶ä»–æ¨¡æ¿
+//      * @param string $path ç›¸å¯¹äºViewç›®å½•çš„è·¯å¾„
+//      * @param array $data ä¼ é€’ç»™å­æ¨¡æ¿çš„å˜é‡åˆ—è¡¨ï¼Œkeyä¸ºå˜é‡åï¼Œvalueä¸ºå˜é‡å€¼
 //      * @return void
 //      */
       public static function tplInclude($path, $data=array()){

@@ -92,8 +92,40 @@ class Application {
             exit;
       }
 
-    public static function run($entrance){
-          spl_autoload_register(array('Application', 'autoload'));              //psr-0
+    public static function run(){
+
+        !defined('APPROOT') && define('APPROOT','../App/');;
+        spl_autoload_register(array('Application', 'autoload'));              //psr-0
+        spl_autoload_register(array('Application', 'autoload_controller'));              //psr-0
+        /*
+        |------------------------------------------------------
+        | 建立AP执行流
+        |------------------------------------------------------
+        | 转交控制权注意条件齐备之后转交
+        | 中间件定义在RouterMiddleware中
+        | 可以在这里进行覆盖定义
+        |
+        */
+        Application(APPROOT)->md([
+
+        ])->doController();       //转交控制权
+
+
+
+
+          //
+          Appliction()->md()->docontroller();           //转交控制权
+
+
+
+          //读取初始配置
+          $file = rtrim(APPROOT,'/').'/Config/Config.php';
+          $sc = include($file);
+          $sc['APPROOT'] = APPROOT;
+          sc($sc);
+
+
+
           /**
            * 获取配置信息
            * 同步配置包括 / 入口配置 / 模块配置 / app配置  / 默认配置 相互覆盖
@@ -115,7 +147,7 @@ class Application {
 //          }
 
 
-          Bootstrap::init();              //初始化执行
+         // Bootstrap::init();              //初始化执行
           /**
            * 对系统信息运算完毕,准备转交控制权
            * 转交控制权
@@ -124,159 +156,11 @@ class Application {
 //               [GRACE_PATH] => ../Grace/
 
             //加载Seter
-          spl_autoload_register(array('Application', 'autoload_controller'));              //psr-0
-          includeIfExist(C('app')['APP_PATH'].'/Seter/I.php');
           self::DoController();
 
 
-
-
-
-
-
-
-
 exit;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            exit;
-
-
-
-
-
-          /**
-           *
-          D(C());
-//
-//          D($request->headers);
-//          D($request->env);
-//          D($request->cookies);
-//
-//          exit;
-//          D(C('env'));
-////          D($request->getMethod());       //提交的方法
-////          D($request->isGet());           //提交的方法
-////          D($request->isPost());          //提交的方法
-////          D($request->isPut());           //提交的方法
-////          D($request->isPatch());       //提交的方法
-////          D($request->isDelete());       //提交的方法
-////          D($request->isOptions());       //提交的方法
-//
-//          D($request->getHost());
-//          D($request->getHostWithPort());
-//          D($request->getPort());
-//          echo '------';
-//          /**
-//           * 下面三个path模式下不准确
-//           * /
-//          D($request->getScriptName());
-//          D($request->getRootUri());
-//          D($request->getPath());
-//          D($request->getPathInfo());     //同下
-//          D($request->getResourceUri()); //同上
-//
-//          D($request->getIp());
-//
-//          D($request->getRootUri());
-           */
-
-          /**
-           * 调试
-          //验证系列配置数据
-          D(ConfigManager::get('modulelist'));
-          D(ConfigManager::get('app_defaultConfig'));
-          D(ConfigManager::get('ent'));
-          D(ConfigManager::get('env'));
-          D(ConfigManager::get('app'));
-          D(C());
-          */
-
-          /**
-           * 对request的验证
-           */
-
-
-
-            /**
-             * 生成对象
-             * router
-             * config
-             * request
-             * bootstrap::ini();
-            ->>>>>>>>>>>>
-            在 go 中
-            //=================================
-            request     ok
-            router      ok
-            config      ok
-            bootrun     ok
-            //=================================
-            go中 ini ok
-
-            控制权交给go
-            Application::go     -> 生成response对象 ->view/json
-            */
-
-
-
-      /**
-          //config
-          //ConfigManager::Load($conf);
-          //D(ConfigManager::get('mysql'));
-          //D(ConfigManager::get('Rbacdb'));
-          //D(ConfigManager::get('User'));
-          //D(ConfigManager::get('modules'));
-//        D(ConfigManager::get('Router'));
-//        Router::getInstance()->load();
-          //$router = Router::getInstance()->getrouter();           //获得router
-          //OK
-
-
-
-          //这里准备好
-//          $router
-//          $config
-//          $_REQUEST
-      */
-
-        //首先运行自动加载文件
-
-exit;
 
     }
 

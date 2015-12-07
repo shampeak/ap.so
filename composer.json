@@ -12,20 +12,17 @@
     "minimum-stability": "dev",
     "require": {
         "php" : ">=5.5.9",
-        "ext-mbstring" : "*",
-        "shampeak/wise":"dev-master"
+        "ext-mbstring" : "*"
     },
     "require-dev": {
     },
     "autoload":{
         "psr-4":{
             "App\\": "App",
-            "Grace\\": "Grace"
+            "Grace\\": "Grace",
+            "Sham\\": "Sham"
         }
     }
 }
-
-//sham\wise 下的改动很大 防止update 改名
-
 
 
