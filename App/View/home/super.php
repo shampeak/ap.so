@@ -1,0 +1,7 @@
+==========
+moban suerp
+
+<?=$title
+ ?>
+<?=$qwre
+ ?>

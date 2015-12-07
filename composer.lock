@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "0686b6a180c96de7629b38e8ebd7d97b",
+    "content-hash": "ca639fb38b7a79429b8520bd619e2637",
+    "packages": [
+        {
+            "name": "shampeak/wise",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shampeak/wise.git",
+                "reference": "5a6b46aa3002f4efe473f02672c2455dc5ba4afb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shampeak/wise/zipball/5a6b46aa3002f4efe473f02672c2455dc5ba4afb",
+                "reference": "5a6b46aa3002f4efe473f02672c2455dc5ba4afb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sham\\": "src",
+                    "App\\": "App"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "shampeak",
+                    "email": "shampeak@sina.com.cn"
+                }
+            ],
+            "description": "dev",
+            "time": "2015-12-02 06:08:47"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "shampeak/wise": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.5.9",
+        "ext-mbstring": "*"
+    },
+    "platform-dev": []
+}

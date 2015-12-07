@@ -1,0 +1,58 @@
+[ 2015-07-31 14:02:59 ][FATAL]方法doLayout-horizontal-menu.html不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doLayout-horizontal-menu.html不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-31 14:04:17 ][FATAL]方法doLayout-horizontal-plus-sidebar.html不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doLayout-horizontal-plus-sidebar.html不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)

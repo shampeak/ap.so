@@ -1,0 +1,261 @@
+[ 2015-07-17 17:01:34 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:41 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:42 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:43 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:43 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:43 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:43 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:07:44 ][FATAL]方法doSingout不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSingout不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-17 17:08:16 ][FATAL]方法doAdsf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doAdsf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)

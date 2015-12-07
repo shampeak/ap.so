@@ -1,0 +1,145 @@
+[ 2015-07-16 10:06:34 ][FATAL]方法do<不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 96,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法do<不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-16 10:06:38 ][FATAL]方法do<不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 96,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法do<不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-16 10:06:51 ][FATAL]方法do<不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 96,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法do<不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-16 17:29:49 ][FATAL]方法doMain不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doMain不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-16 17:29:50 ][FATAL]方法doMain不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doMain不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPava\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)

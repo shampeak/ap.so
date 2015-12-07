@@ -1,0 +1,2929 @@
+[ 2015-08-04 09:58:40 ][FATAL]方法doLayout-horizontal-plus-sidebar.html不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 123,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doLayout-horizontal-plus-sidebar.html不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:02:40 ][FATAL]方法doLayout-horizontal-menu.html不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 123,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doLayout-horizontal-menu.html不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:24 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:25 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:26 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:26 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:27 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:27 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:27 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:29 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:30 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:31 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:32 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:33 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 10:11:34 ][FATAL]控制器asdfasdf不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 104,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '控制器asdfasdf不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:43:57 ][FATAL]方法doIndex不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doIndex不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:43:58 ][FATAL]方法doIndex不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doIndex不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:43:58 ][FATAL]方法doIndex不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doIndex不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:43:58 ][FATAL]方法doIndex不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doIndex不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:43:58 ][FATAL]方法doIndex不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doIndex不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:48:26 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:49:32 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:49:33 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:49:33 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:49:33 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:50:05 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:14 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:15 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:15 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:15 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:16 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:51:59 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:52:02 ][FATAL]方法doSearch不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:52:45 ][FATAL]方法doSearch不存在2 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在2',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:52:46 ][FATAL]方法doSearch不存在2 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在2',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:52:46 ][FATAL]方法doSearch不存在2 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在2',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-08-04 14:52:46 ][FATAL]方法doSearch不存在2 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 129,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doSearch不存在2',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)

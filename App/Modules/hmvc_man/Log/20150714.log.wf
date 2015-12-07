@@ -1,0 +1,87 @@
+[ 2015-07-14 16:42:44 ][FATAL]方法doObjs不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doObjs不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Web\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-14 16:42:45 ][FATAL]方法doObjs不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doObjs不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Web\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-14 16:42:52 ][FATAL]方法doDemo不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doDemo不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHP\\Web\\index.php',
+    'line' => 10,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)

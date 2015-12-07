@@ -1,0 +1,87 @@
+[ 2015-07-23 10:57:06 ][FATAL]方法doDis不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doDis不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-23 10:57:08 ][FATAL]方法doDis不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doDis不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
+[ 2015-07-23 10:57:37 ][FATAL]方法doDis不存在 debug_backtrace:array (
+  0 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\Grace\\GracePHP.class.php',
+    'line' => 97,
+    'function' => 'halt',
+    'args' => 
+    array (
+      0 => '方法doDis不存在',
+    ),
+  ),
+  1 => 
+  array (
+    'file' => 'E:\\www\\GracePHPmain\\webroot\\index.php',
+    'line' => 9,
+    'function' => 'run',
+    'class' => 'GracePHP',
+    'object' => 
+    GracePHP::__set_state(array(
+       'm' => NULL,
+       'c' => NULL,
+       'a' => NULL,
+    )),
+    'type' => '->',
+    'args' => 
+    array (
+    ),
+  ),
+)
