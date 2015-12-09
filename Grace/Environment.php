@@ -1,13 +1,8 @@
 <?php
 
-/**
- * Class Environment
- * 执行一次,存储到 C 中
- * 然后就不会再次调用
- */
+namespace Grace;
 
-
-class Environment implements ArrayAccess, IteratorAggregate
+class Environment implements \ArrayAccess, \IteratorAggregate
 {
     /**
      * @var array
@@ -23,7 +18,7 @@ class Environment implements ArrayAccess, IteratorAggregate
         if ($name) {
            return $this->properties[$name];
         }else{
-            //返回数据
+            //杩斿洖鏁版嵁
             return $this->properties;
         }
     }
@@ -117,7 +112,7 @@ class Environment implements ArrayAccess, IteratorAggregate
 
     /**
      * @return string
-     * 获取地址栏uri信息
+     * 鑾峰彇鍦板潃鏍弖ri淇℃伅
      */
     public static function pathinfo_query( )
     {
@@ -125,7 +120,7 @@ class Environment implements ArrayAccess, IteratorAggregate
         if (empty($pathinfo)) {
             die('request parse error:' . $_SERVER['REQUEST_URI']);
         }
-        //pathinfo模式下有?,那么$pathinfo['query']也是非空的，这个时候查询字符串是PATH_INFO和query
+        //pathinfo妯″紡涓嬫湁?,閭ｄ箞$pathinfo['query']涔熸槸闈炵┖鐨勶紝杩欎釜鏃跺�欐煡璇㈠瓧绗︿覆鏄疨ATH_INFO鍜宷uery
         $query_str = empty($pathinfo['query']) ? '' : $pathinfo['query'];
         $path_info = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : (isset($_SERVER['REDIRECT_URL']) ? $_SERVER['REDIRECT_URL'] : '');
 //    $path_info = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : (isset($_SERVER['REDIRECT_PATH_INFO']) ? $_SERVER['REDIRECT_PATH_INFO'] : '');
@@ -133,7 +128,7 @@ class Environment implements ArrayAccess, IteratorAggregate
         if ($pathinfo_query) {
             $pathinfo_query = trim($pathinfo_query, '/&');
         }
-        //urldecode 解码所有的参数名，解决get表单会编码参数名称的问题
+        //urldecode 瑙ｇ爜鎵�鏈夌殑鍙傛暟鍚嶏紝瑙ｅ喅get琛ㄥ崟浼氱紪鐮佸弬鏁板悕绉扮殑闂
         $pq = $_pq = array();
         $_pq = explode('&', $pathinfo_query);
         foreach ($_pq as $value) {

@@ -21,6 +21,9 @@
             "App\\": "App",
             "Grace\\": "Grace",
             "Sham\\": "Sham"
+        },
+        "psr-0": {
+            "\\": "Grace//Lib"
         }
     }
 }

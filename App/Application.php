@@ -1,13 +1,116 @@
 <?php
 
-//只提供系列快捷函数
-include 'Common.php';
-define('GRACEROOT',__DIR__.'/');
+namespace App;
+
+use Grace\Set\Set;
+
+    /*
+    |------------------------------------------------
+    | 总控类
+    |------------------------------------------------
+    |
+    */
+
+class Application extends Set
+{
+      /*
+      |------------------------------------------------
+      | 信息流入口
+      |------------------------------------------------
+      | 对信息流底层进行各种中间件操作,执行最后结果交给控制器
+      |
+      |
+      |------------------------------------------------
+      |
+      |
+      |
+      |
+      |
+      */
+
+      public static function run()
+      {
+            /*
+            |------------------------------------------------
+            | 错误抑制
+            |------------------------------------------------
+            */
+            if(sc('Env')['debug']){
+                  //错误报告
+                  ini_set('error_reporting', sc('Env')['error_reporting']);
+            }else{
+                  //不报告任何错误
+                  error_reporting(0);
+            }
+
+            //没定义的话给个默认值
+            !defined('APPROOT') && define('APPROOT', '../App/');;
+//            spl_autoload_register(array('\Grace\Application', 'autoload'));              //psr-0
+//            spl_autoload_register(array('Application', 'autoload_controller'));              //psr-0
+
+            /*
+            |------------------------------------------------
+            | 初始化 App/Config/Config.php
+            |------------------------------------------------
+            */
+            //print_r(sc());     //原始信息
+
+            /*
+            |------------------------------------------------
+            | 载入系统初始化信息 Vo.config.php初始化 App/Config/Config.php
+            |------------------------------------------------
+            */
+            sc('_Vo',config('Vo.config'));
+
+
+            /*
+            |------------------------------------------------
+            | 系统 对这两部分信息进行mix操作
+            |------------------------------------------------
+            */
+            sapp('ap')->Middleware([
+                  //初始化的信息流处理
+                'SysMiddlewareEnvini'           => \Grace\Middleware\SysMiddlewareEnvini::class,
+               // 'SysMiddlewareConfigini'        => \Grace\Middleware\SysMiddlewareConfigini::class,
+               // 'SysMiddlewareBusini'           => \Grace\Middleware\SysMiddlewareBusini::class,
+               // 'SysMiddlewareControllerset'    => \Grace\Middleware\SysMiddlewareControllerset::class,
+            ]);
+
+            /*
+             * 对中间件的调试
+             * debug 模式下查看中间数据
+             * */
+            D(sapp('ap')->view('SysMiddlewareEnvini'));           //对中间件的调试
+
+
+
+
+
+            //需要对执行的Middleware进行边界检查,是否已经注册
+
+
+
+
+
+
+            print_r(sc());     //原始信息
+exit;
+
+//
+//            //建立底层信息流
+//            sapp('ap')->routerMiddleware([
+//                'ApplicationIni'=>Grace\Middleware\ApplicationIni::class,        //初始化操作
+//                'UriMiddleware'=>Grace\Middleware\UriMiddleware::class,        //初始化操作
+//            ]);
+
+      }
+}
 
 /**
  * 总控类
  */
-class Application {
+class Application2 extends Set
+{
       private static $_instance;
       private function __clone(){}
 
@@ -93,20 +196,36 @@ class Application {
       }
 
     public static function run(){
-
+        //没定义的话给个默认值
         !defined('APPROOT') && define('APPROOT','../App/');;
-        spl_autoload_register(array('Application', 'autoload'));              //psr-0
+        spl_autoload_register(array('\Grace\Application', 'autoload'));              //psr-0
         spl_autoload_register(array('Application', 'autoload_controller'));              //psr-0
+
         /*
         |------------------------------------------------------
         | 建立AP执行流
         |------------------------------------------------------
-        | 转交控制权注意条件齐备之后转交
         | 中间件定义在RouterMiddleware中
-        | 可以在这里进行覆盖定义
         |
         */
-        Application(APPROOT)->md([
+         //获取AP对象
+
+          sapp('ap')->routerMiddleware([
+              'ApplicationIni'=>Grace\Middleware\ApplicationIni::class,        //初始化操作
+              'UriMiddleware'=>Grace\Middleware\UriMiddleware::class,        //初始化操作
+          ]);
+
+
+
+//var_dump($md);
+//print_r(sc());
+
+
+          //释放控制权 给controller
+          //self::DoController();
+exit;
+
+        Application(APPROOT)->routerMiddleware([
 
         ])->doController();       //转交控制权
 
@@ -170,7 +289,7 @@ exit;
       * @param string $class 类名
       */
       public static function autoload($class){
-            includeIfExist(GRACEROOT.'Lib/'.$class.'.php');
+            \includeIfExist(APPROOT.'Grace/Lib/'.$class.'.php');
       }
 
       /**

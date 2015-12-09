@@ -3,9 +3,9 @@
 
 class Router
 {
-    public $rs = [];        //Â·ÓÉÔ´Êı¾İ µÚÒ»²½³õÊ¼
+    public $rs = [];        //è·¯ç”±æºæ•°æ® ç¬¬ä¸€æ­¥åˆå§‹
 
-    //´«ÈëµÄ³õÊ¼ĞÅÏ¢
+    //ä¼ å…¥çš„åˆå§‹ä¿¡æ¯
     public $app_defaultConfig = [];
     public $ent = [];
     public $env = [];
@@ -13,12 +13,12 @@ class Router
     public $app = [];
     public $modulelist = [];
     //==========================================
-    public $router = [];        //Â·ÓÉĞÅÏ¢
+    public $router = [];        //è·¯ç”±ä¿¡æ¯
 
 
     public static  $_instance;
 
-    //À©Õ¹·½·¨ /c/a/ex
+    //æ‰©å±•æ–¹æ³• /c/a/ex
     public function ActionExt()
     {
         $lib = C('app')['ActionExt'];
@@ -38,7 +38,7 @@ class Router
 //        ];
 //    }
 
-    //Â·ÓÉ½á¹ûÄ£°å
+    //è·¯ç”±ç»“æœæ¨¡æ¿
     public function RouterDefault(){
         return [
             'method_modules'        => '',
@@ -65,7 +65,7 @@ class Router
         $router['param'] = $router_['param'];
         $router['params'] = $router_['params'];
 
-        //action ¼ÆËã
+        //action è®¡ç®—
         $action = $router['ActionPrefix'].ucfirst($router['method_action']);
         $router['Action'] = $action;
 
@@ -93,14 +93,14 @@ class Router
 //------------------------
     public function router_do()
     {
-        $config = ConfigManager::getInstance();       //Î´Íê³ÉµÄ
+        $config = ConfigManager::getInstance();       //æœªå®Œæˆçš„
 
         $pathinfo_query = $config->env['pathinfo_query'];
         $modulelist     = is_array($config->modulelist)?$config->modulelist:[];
         $pathinfo_query = strtolower($pathinfo_query);
 
         $pq = explode('&',$pathinfo_query);
-        //µÚÒ»¸ö²»´æÔÚµÈºÅ
+        //ç¬¬ä¸€ä¸ªä¸å­˜åœ¨ç­‰å·
         $str = current($pq);
 
 
@@ -122,7 +122,7 @@ class Router
                 array_shift($pq_);
             }else{
                 //==============================================
-                //¼ÆËãparams
+                //è®¡ç®—params
                 //D($pq_);
                 $_params = [];
                 $count = ceil(count($pq_) / 2);
@@ -130,7 +130,7 @@ class Router
                     $ii = $i * 2;
                     isset($pq_[$ii + 1]) && $_params[$pq_[$ii]] = $pq_[$ii + 1] ;
                 }
-                $v['params'] = $_params;            //Õâ¸öÊÇpathºóÃæµÄ²ÎÊı
+                $v['params'] = $_params;            //è¿™ä¸ªæ˜¯pathåé¢çš„å‚æ•°
                 //==============================================
             }
             array_shift($pq);
@@ -148,7 +148,7 @@ class Router
         //D($v);
         //--------------------------------------------
 
-        //½á¹ûĞŞÕı
+        //ç»“æœä¿®æ­£
 
         if($v['params']['m']){
             if(in_array($v['params']['m'],$modulelist)){
@@ -174,20 +174,20 @@ class Router
     }
 
 
-    /**     ¶ÀÁ¢ÔËĞĞ ²»ÒÀÀµÓÚ±¾ÀàµÄÆäËû·½·¨ ÔËĞĞ´¦Ä£¿éÃû,²¢ÇÒ´«µİ³öÈ¥
+    /**     ç‹¬ç«‹è¿è¡Œ ä¸ä¾èµ–äºæœ¬ç±»çš„å…¶ä»–æ–¹æ³• è¿è¡Œå¤„æ¨¡å—å,å¹¶ä¸”ä¼ é€’å‡ºå»
      * @return array
-     * Õâ¸öÔÚconfÖĞµÚÒ»¸ö±»µ÷ÓÃÊ±Èë¿Ú³ÌĞò
-    //¸ù¾İpathinfo_query »ñÈ¡Ä£¿éĞÅÏ¢
+     * è¿™ä¸ªåœ¨confä¸­ç¬¬ä¸€ä¸ªè¢«è°ƒç”¨æ—¶å…¥å£ç¨‹åº
+    //æ ¹æ®pathinfo_query è·å–æ¨¡å—ä¿¡æ¯
      */
     public  function getModule()
     {
-        //¼ÆËãÄ£¿é
-        //²¢ÇÒ·µ»Ø
-        $config = ConfigManager::getInstance();       //Î´Íê³ÉµÄ
+        //è®¡ç®—æ¨¡å—
+        //å¹¶ä¸”è¿”å›
+        $config = ConfigManager::getInstance();       //æœªå®Œæˆçš„
         $pathinfo_query = $config->env['pathinfo_query'];
         $modulelist     = is_array($config->modulelist)?$config->modulelist:[];
 
-        //¸ù¾İÕâÁ½¸ö¼ÆËã³öÄ£¿éĞÅÏ¢
+        //æ ¹æ®è¿™ä¸¤ä¸ªè®¡ç®—å‡ºæ¨¡å—ä¿¡æ¯
 //        D($pathinfo_query);
 //        D($modulelist);
 
@@ -195,9 +195,9 @@ class Router
 
         $pq = explode('&',$pathinfo_query);
 
-        //µÚÒ»¸ö´æÔÚµÈºÅ
+        //ç¬¬ä¸€ä¸ªå­˜åœ¨ç­‰å·
         if(!isset(explode('=',  current($pq))[1])){
-            $mo_ = current(explode('/',trim(array_shift($pq),'/')));     //Èç¹û´æÔÚµÄ»°,mo¾ÍÊÇµÚÒ»¸ö/Ö®Ç°µÄÖµ
+            $mo_ = current(explode('/',trim(array_shift($pq),'/')));     //å¦‚æœå­˜åœ¨çš„è¯,moå°±æ˜¯ç¬¬ä¸€ä¸ª/ä¹‹å‰çš„å€¼
         }
 
         foreach($pq as $key=>$value){
@@ -206,7 +206,7 @@ class Router
         }
         $mo_ = $pq__['m']?:$mo_?:'';
 
-        //¼à²âÊÇ·ñÔÚmodulelistÖĞ
+        //ç›‘æµ‹æ˜¯å¦åœ¨modulelistä¸­
         if($mo_){
             $mo = in_array($mo_,$modulelist)?$mo_:'';
         }

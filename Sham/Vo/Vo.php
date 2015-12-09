@@ -37,13 +37,14 @@ class Vo extends Set
       public $routerMiddleware = array();             //路由中间件 实例
       public $Middleware      = array();             //中间件 实例
 
-      private $rootpath       = '../App/Config/';     //配置文件的根目录
+      private $rootpath       = '';     //配置文件的根目录
 
       /**
        * @param string $conf
        * 根据配置获取设定
        */
       private function __construct(){
+            $this->rootpath = rtrim(APPROOT,'/').'/Config/';
             $voconfig = $this->load($this->rootpath."Vo.config.php");
             $this->FileReflect      = $voconfig['FileReflect'];         //配置文件映射
             $this->Providers        = $voconfig['Providers'];           //对象映射
@@ -53,7 +54,6 @@ class Vo extends Set
                         $this->ObjectConfig[ucfirst($key)] =  $this->load($file);
                   }
             }
-
            // print_r($this->ObjectConfig);       //获得配置 $this->ObjectConfig
       }
 
@@ -75,26 +75,6 @@ class Vo extends Set
       |------------------------------------------------------------
       |
       */
-      public function routerMiddleware($abstract)
-      {
-            $abstract = ucfirst($abstract);
-            // If an instance of the type is currently being managed as a singleton we'll
-            // just return an existing instance instead of instantiating new instances
-            // so the developer can keep using the same objects instance every time.
-            if (isset($this->instances[$abstract])) {
-                  return $this->instances[$abstract];
-            }
-            //未定义的服务类 返回空值;
-            if (!isset($this->Providers[$abstract])) {
-                  return null;
-            }
-            // echo $abstract;
-
-            $parameters = $parameters?:isset($this->ObjectConfig[$abstract])?$this->ObjectConfig[$abstract]:[];
-
-            $this->instances[$abstract] = $this->build($abstract,$parameters);
-            return $this->instances[$abstract];
-      }
 
       public function make($abstract,$parameters=[])
       {

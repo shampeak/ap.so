@@ -3,12 +3,26 @@
     |--------------------------------------------------------------------------
     | 文件配置信息
     |--------------------------------------------------------------------------
+    | 这部分设计为不要随便改动;部分配置改动需要配合系统级调试界面
+    | 注意大小写
+    | 格式:对象名首字母大写
     |
-    | 配置信息在文件中,访问 : Sham\Wise\Wise::getInstance()->ObjectConfig
-    | 格式,对象名首字母大写
     */
 
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | 系统中间件定义 -
+    |--------------------------------------------------------------------------
+    |
+    */
+    'BaseMiddleware' => [
+        'Base' => [
+            'authRouter' => App\Middleware\Router::class,
+        ],
+    ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -20,14 +34,12 @@ return [
     */
 
     'FileReflect'    => [
-        'Db'        => '../App/Config/Db.php',         //Mysql对象的
-        'Geter'     => '../App/Config/Geter.php',      //cache对象的
-        'Struct'    => '../App/Config/Struct.php',      //cache对象的
-        'Cookies'   => '../App/Config/Cookies.php',      //cache对象的
-        'Ap'        => '../App/Config/Ap.php',      //cache对象的
-        'Mmc'       => '../App/Config/Mmc.php',      //cache对象的
-//        'Dbr'    => '../SApp/Config/Dbr.php',         //Mysql对象的
-//        'Cache' => '../SApp/Config/Cache.php',      //cache对象的
+        'Db'        => '../App/Config/Db.php',         //Mysql配置
+        'Geter'     => '../App/Config/Geter.php',      //geter配置
+        'Struct'    => '../App/Config/Struct.php',
+        'Cookies'   => '../App/Config/Cookies.php',
+        'Ap'        => '../App/Config/Ap.php',
+        'Mmc'       => '../App/Config/Mmc.php',
     ],
 
     /*
@@ -40,16 +52,16 @@ return [
     */
 
     'Providers'=>[
-        'Db'        => Sham\Db\Db::class,
-        'Geter'     => Sham\Geter\Geter::class,
-        'Req'     => Sham\Req\Req::class,
-        'Bus'     => Sham\Bus\Bus::class,
-        'Struct'     => Sham\Struct\Struct::class,
-        'Cookies'     => Sham\Cookies\Cookies::class,
-        'Ap'     => Sham\Ap\Ap::class,
-        'Mmc'     => Sham\Mmc\Mmc::class,
+        'Db'        => Sham\Db\Db::class,       //数据访问对象
+        'Geter'     => Sham\Geter\Geter::class, //静态化数据获取
+        'Req'       => Sham\Req\Req::class,     //前端数据获取
+        'Bus'       => Sham\Bus\Bus::class,     //信息流对象
+        'Struct'    => Sham\Struct\Struct::class,   //后台结构
+        'Config'    => Sham\Config\Config::class,   //获取配置信息
+        'Cookies'   => Sham\Cookies\Cookies::class, //cookie操作对象
+        'Ap'        => Sham\Ap\Ap::class,           //操作流对象
+        'Mmc'       => Sham\Mmc\Mmc::class,         //memcache对象
     ],
-
 
 ];
 

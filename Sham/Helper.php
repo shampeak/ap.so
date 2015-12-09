@@ -1,14 +1,78 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| 基础函数
-|--------------------------------------------------------------------------
-| 小写  sap sc
-|
-*/
 
 //这里注意不要跟别的系统函数名冲突
+
+//bus访问
+//sapp('bus')['get'] ->bus('get')
+//查看所有 bus()
+//查看单个 bus('get')
+//设置值   bus('get',$_get)
+
+
+    /*
+    |------------------------------------------------------
+    | @param $arr
+    | 取代print_r()的条数函数
+    |
+    */
+if (! function_exists('D')) {
+      function D($arr = [])
+      {
+            echo '<pre>';
+            print_r($arr);
+            echo '</pre>';
+            exit;
+      }
+}
+if (! function_exists('bus')) {
+      function bus($key = null, $value = array())
+      {
+            $args = func_num_args();
+            //1 : 返回配置信息
+            if ($args == 0) {
+                  return sapp('bus')->all();
+            }
+            //2 : 有一个参数
+            if ($args == 1) {
+                  if (is_string($key)) {  //如果传入的key是字符串
+                        return sapp('bus')[$key];
+                  }
+                  if (is_array($key)) {
+                        if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
+                              foreach($key as $k=>$v){
+                                    sapp('bus')[$k] = $v;
+                              }
+                              //Sham\Wise\Wise::getInstance()->_config = array_merge(Sham\Wise\Wise::getInstance()->_config, $key);
+                        } else {
+                              $ret = array();
+                              foreach ($key as $k) {
+                                    //sapp('bus')[$k] = $key[$k];
+                                    $ret[$k] = sapp('bus')[$k];
+                              }
+                              return $ret;
+                        }
+                  }
+            } else {
+                  //设置一个值
+                  if (is_string($key)) {
+                        //Sham\Wise\Wise::getInstance()->_config[$key] = $value;
+                        sapp('bus')[$key] = $value;
+                  }
+            }
+            return null;
+      }
+}
+
+
+if (! function_exists('shamhash')) {
+      function shamhash($key = null,$salt = '')
+      {
+            //hash算法
+            $key = "0000000000.$key.000000000.$salt";
+            return md5($key);
+      }
+}
 
 if (! function_exists('sapp')) {
       function sapp($make = null, $parameters = [])
@@ -25,7 +89,7 @@ if (! function_exists('geter')) {
       {
             $res =  Sham\Vo\Vo::getInstance()->make('geter')->get($key);
             return $res;
-            //return sapp('geter')->get($key);
+            //这里直接return 会报一个错误;
       }
 }
 
@@ -80,6 +144,32 @@ if (! function_exists('sc')) {
 //                  }
             }
             return null;
+      }
+}
+
+/**
+ * VoConfig
+ */
+if (! function_exists('config')) {
+      function config($configTarget = null)
+      {
+            if (is_null($configTarget)) {
+                  return array();
+            }
+            $config = Sham\Vo\Vo::getInstance()->make('config')->get($configTarget);
+            return $config;
+      }
+}
+
+
+/**
+ * 如果文件存在就include进来
+ * @param string $path 文件路径
+ * @return void
+ */
+function includeIfExist($path){
+      if(file_exists($path)){
+            include $path;
       }
 }
 

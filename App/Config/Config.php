@@ -6,22 +6,84 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | 应用实体路径
+    | 执行环境参数
+    |--------------------------------------------------------------------------
+    |
+    | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
+    |
+    */
+    'Env' => [
+        'APPROOT'           => '../App/',             //在入口进行定义 [这里只是占位]
+        'WDS'               => DIRECTORY_SEPARATOR,
+
+        /*
+        |--------------------------------------------------------------------------
+        | 时区
+        |--------------------------------------------------------------------------
+        | Asia/Shanghai – 上海
+        | Asia/Chongqing – 重庆
+        | Asia/Urumqi – 乌鲁木齐
+        | Asia/Hong_Kong – 香港
+        | Asia/Macao – 澳门
+        | Asia/Taipei – 台北
+        | Asia/Singapore – 新加坡
+        | RPC - 中国
+        |
+        */
+        'default_timezone'  => 'PRC',
+
+        'charset'           => 'utf-8',         //编码说明
+
+        /*
+        |--------------------------------------------------------------------------
+        | 调试开关
+        | 1 : error_report 模式
+        | 2 : Middleware 输出调试信息
+        |--------------------------------------------------------------------------
+        |
+        */
+        'debug'             => true,
+
+        /*
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        error_reporting(E_ALL | E_PARSE);
+        E_ALL ^ E_PARSE,
+        */
+        'error_reporting'      => E_ALL,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | App相关定义
+    |--------------------------------------------------------------------------
+    |
+    | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
+    |
+    */
+    'App' => [
+        'default_controller'                => 'home',
+        'default_controller_method'         => 'index',
+        'default_controller_method_prefix'  => 'do',
+
+        'error_page_404'    => 'error/error_404.php',
+        'error_page_500'    => 'error/error_500.php',
+        'error_page_msg'    => 'error/error_msg.php',
+        'message_page_view' => 'error/error_view.php',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | App /m模块定义
     |--------------------------------------------------------------------------
     |
     */
-    'APPROOT'           => '../App/',             //在入口进行定义 [这里只是占位]
-    'WDS'               => DIRECTORY_SEPARATOR,
-    'default_timezone'  => 'PRC',
-    'charset'           => 'utf-8',
-    'error_page_404'    => 'error/error_404.php',
-    'error_page_500'    => 'error/error_500.php',
-    'error_page_msg'    => 'error/error_msg.php',
-    'message_page_view' => 'error/error_view.php',
-    'default_controller'                => 'home',
-    'default_controller_method'         => 'index',
-    'default_controller_method_prefix'  => 'do',
-    'debug'             => true,
+    'Modulelist' => [
+        'doc'   => 'hmvc_doc',
+        's'     => 'hmvc_s',
+        'v'     => 'hmvc_v',
+        'man'   => 'hmvc_man',
+        'admin' => 'hmvc_admin',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -31,7 +93,7 @@ return [
     | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
     |
     */
-    'user'=>[
+    'User'=>[
         'tablename' => 'dy_user',            //表名
         'field'=>[                          //字段设定 [ 在相关类中用到的 ]
             'userlogin'     => 'uname',
@@ -39,47 +101,6 @@ return [
             'expire'        => 'expire',
             'active'        => 'active',
         ],
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | 中间件定义
-    |--------------------------------------------------------------------------
-    | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
-    | 对Router进行操作
-    |
-    */
-    'RouterMiddleware' => [
-        'auth' => App\Middleware\Router::class,
-    ],
-
-
-    /*
-    |--------------------------------------------------------------------------
-    | 中间件定义
-    |--------------------------------------------------------------------------
-    |
-    | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
-    |
-    */
-    'Middleware' => [
-        'auth' => App\Middleware\User::class,
-    ],
-
-
-    /*
-    |--------------------------------------------------
-    | Conf.php 原始配置
-    |--------------------------------------------------
-    |
-    */
-    //模块映射
-    'modulelist' => [
-        'doc'   => 'hmvc_doc',
-        's'     => 'hmvc_s',
-        'v'     => 'hmvc_v',
-        'man'   => 'hmvc_man',
-        'admin' => 'hmvc_admin',
     ],
 
     //控制器扩展
@@ -92,9 +113,17 @@ return [
         'vf',       //显示
     ],
 
-
-
-
+    /*
+    |--------------------------------------------------------------------------
+    | 用户中间件注册
+    |--------------------------------------------------------------------------
+    |
+    | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
+    |
+    */
+    'Middleware' => [
+        'authUser' => App\Middleware\User::class,
+    ],
 
 
     /*

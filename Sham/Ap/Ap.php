@@ -4,16 +4,9 @@ namespace Sham\Ap;
 
     /*
     | --------------------------------------------------------------------------
-    | AP的定义
+    | AP的定义 - 对中间件进行调用和定义,执行,包括输出信息
     | --------------------------------------------------------------------------
-    | Ap代表了虚拟全局定义,对Ap的引用表示
-    | 从方法上直接进行流式操作
-    | 例如 AP()->md()->do()->handle();
-    |
-    | 数据流操作如下
-    | $this->instance = $this->handle('hand1')->handle(hand2)->handle(handle3);;
-    |
-    |
+    | 这里不对middle列表进行定义和检查,交给上层Application
     |
     */
 
@@ -21,27 +14,18 @@ use Sham\Set\Base;
 
     /*
     | --------------------------------------------------------------------------
-    | 数据处理流
-    | --------------------------------------------------------------------------
-    | ap($bus())->md([
-    | 'middleware' =>   [
-                              //''=>
-                        ]
-    | ])->go('根据输出标记进行输出,或者不输出');
-    | 致命错误直接end
-    | 其他错误warn
-    | 信息 notice
+    | 可以对middleware进行输出信息查看 方法为 $md->display();
     | --------------------------------------------------------------------------
     |
-    | psr-3
-    | const EMERGENCY = 'emergency';
-    | const ALERT     = 'alert';
-    | const CRITICAL  = 'critical';
-    | const ERROR     = 'error';
-    | const WARNING   = 'warning';
-    | const NOTICE    = 'notice';
-    | const INFO      = 'info';
-    | const DEBUG     = 'debug';
+    if(is_array($middleware)){
+          foreach($middleware as $key => $value){
+                $md = new $value;
+                $next    = $md->next();
+                $request = $md->request();
+                $request = $md->AfterHandle($md->Handle($md->BeforeHandle($request,$next),$next),$next);
+                $md->terminate($request);
+          }
+    }
     |
     */
 
@@ -50,133 +34,126 @@ class Ap extends Base
 {
 
       private $_config              = array();
-      private $routeMiddleware      = array();
-
-      //映射为整个bus
-      private $stream               = array();        //用作穿过中间件的数据流
-      //映射为bus['display']
-      private $display               = array();       //显示的标记 [type code mb msg temppath cacheonly]
+      private $middlewarelist              = array();
 
       public function __construct($config = array()){
             $this->_config = $config;
-            //对ap 进行一些基础设置
-            $this->routeMiddleware = [
-                'beforeController' => \App\Middleware\BeforeController::class,
-            ];
-
-            /*
-            |-------------------------------------------
-            | 建立信息sc
-            |-------------------------------------------
-            | 主要是配置信息
-            | App/config.php + C() + Struct;
-            */
-            // print_r(sc());
-            sc(C());
-            sc('Struct',sapp('struct')->all());
-
-
-            /*
-            |-------------------------------------------
-            | 建立信息bus
-            |-------------------------------------------
-            | 主要是运行过程中的信息,和运算结果
-            | bus 初始化执行
-            */
-            bus('modules',    C('Router')['method_modules']);         //模块
-            bus('controller', C('Router')['method_controller']);      //控制器
-            bus('method',     C('Router')['method_action']);          //行为
-            bus('ext',        C('Router')['method_action_ext']);      //行为扩展
-
-            //添加Middleware 进入bus
-//          bus('Middleware', sc('Middleware'));                  //中间件定义
-
-            bus('router',     C('Router'));        //路由
-
-            bus('user',       geter('user.info'));                //用户相关
-            bus('usergroup',  geter('user.group'));               //用户组信息
-            bus('userrulelib',geter('user.rulelib'));             //用户组权限信息
-
-            bus('menu', []);               //后台菜单
-            bus('page', []);               //页面信息
-            bus('rules',sc('rules'));     //rbacrules
-            bus('app',  sc('app'));         //app相关
-
-            //req -> request
-            bus('req',[
-                'get'       => C('Router')['params'],
-                'post'      => $_POST,
-                'cookies'   => $_COOKIE,
-                'session'   => $_SESSION,
-                'server'    => $_SERVER,
-            ]);
-            bus('display',    []);               //页面信息
-            bus('touchlist',  []);               //接触日志
-
-
-
-            sapp('Mmc')->set('demo1',null,10000);
-            $ms1 = sapp('Mmc')->get('demo1');
-
-
-
       }
 
       /*
       |--------------------------------------------------------------------------
-      | 把bus教给中间件处理
+      | 执行中间件
       |--------------------------------------------------------------------------
       |
       */
-      public function md($request,Closure $next)
+      public function Middleware($middlewarelist)
       {
-            /*
-             * r  读取检查 - md
-             * up 读取更改 - md
-             * ne 新建     - md
-             */
-            //touchlist
-            //执行中间件,返回request
+            if(is_array($middlewarelist)){
+                  foreach($middlewarelist as $key => $value){
+                        //这里需要进一步测试,来展示对资源的占用情况
+                        if(sc('Env')['debug']){
+                              $this->middlewarelist[$key] = new $value;
+                              $this->middlewarelist[$key]->run();;         //执行中间件
+                        }else{
+                              //debug = false unset
+                              (new $value)->run();;         //执行中间件
+                              //or 这里关系到对内存的占用情况
+                              $ms = new $value;
+                              $ms->run();
+                              unset($ms);
+                        }
+                  }
+            }
       }
 
-
-
-      //=======================================
-      public function demo()
+      /*
+      |--------------------------------------------------------------------------
+      | 调试方法
+      |--------------------------------------------------------------------------
+      | sapp()->view('SysMiddlewareBusini');
+      |
+      */
+      public function view($middlewarekey = null)
       {
-
-            //echo 'ap demo!';
-            /**
-             *    获得对get post cookie file session 的支持
-             */
+            if(!sc('Env')['debug']) return null;
+            if($middlewarekey){
+                  return $this->middlewarelist[$middlewarekey]->view();
+            }else{
+                  return null;
+            }
       }
 
 }
 
 
-/**
- *
-public function handle($request, Closure $next)
-{
-if ($request->input('age') <= 200) {
-return redirect('home');
-}
 
-return $next($request);
-} */
 /*
-xcache_get(string name)
-bool xcache_set(string name, mixed value [, int ttl])
-bool xcache_isset(string name)
-bool xcache_unset(string name)
+sc('Struct',config('Struct'));
 
+   //$md = config('Struct');          //利用函数获取配置
+print_r(sc());
 
-eAccelerator,xcache是PHP缓存扩展
-memcached、APC缓存是数据库缓存扩展
-采用方案xcache + memcached
+echo 'mark';
+exit;
+print_r(vc());
+print_r(sc());
 
-xcache 存储 系统文件设置的 cs
-memcached 存储数据库和用户的数据 bus
-
-是什么数据需要缓存必须有一个明确的界限
-*/
+//            //对ap 进行一些基础设置
+//
+//            /*
+//            |-------------------------------------------
+//            | 建立信息sc
+//            |-------------------------------------------
+//            | 主要是配置信息
+//            | App/config.php + C() + Struct;
+//            */
+//            // print_r(sc());
+//            sc(C());
+//
+//
+//
+//            /*
+//            |-------------------------------------------
+//            | 建立信息bus
+//            |-------------------------------------------
+//            | 主要是运行过程中的信息,和运算结果
+//            | bus 初始化执行
+//            */
+//            bus('modules',    C('Router')['method_modules']);         //模块
+//            bus('controller', C('Router')['method_controller']);      //控制器
+//            bus('method',     C('Router')['method_action']);          //行为
+//            bus('ext',        C('Router')['method_action_ext']);      //行为扩展
+//
+//            //添加Middleware 进入bus
+//            bus('Middleware', sc('Middleware'));                  //中间件定义
+//
+//            bus('router',     C('Router'));        //路由
+//
+//            bus('user',       geter('user.info'));                //用户相关
+//            bus('usergroup',  geter('user.group'));               //用户组信息
+//            bus('userrulelib',geter('user.rulelib'));             //用户组权限信息
+//
+//            bus('menu', []);               //后台菜单
+//            bus('page', []);               //页面信息
+//            bus('rules',sc('rules'));     //rbacrules
+//            bus('app',  sc('app'));         //app相关
+//
+//            //req -> request
+//            bus('req',[
+//                'get'       => C('Router')['params'],
+//                'post'      => $_POST,
+//                'cookies'   => $_COOKIE,
+//                'session'   => $_SESSION,
+//                'server'    => $_SERVER,
+//            ]);
+//            bus('display',    []);               //页面信息
+//            bus('touchlist',  []);               //接触日志
+//
+//
+//
+//            sapp('Mmc')->set('demo1',null,10000);
+//            $ms1 = sapp('Mmc')->get('demo1');
+//print_r($this->routeMiddleware);
+//print_r($this->Middleware);
+//
+//sc();
