@@ -22,9 +22,19 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
       */
       public function request()
       {
+            return null;
+      }
+
+      /*
+      |--------------------------------------------------------
+      | 定义 中间件主体
+      |--------------------------------------------------------
+      |
+      */
+      public function handle($request, \Closure $next)
+      {
             //根据设置配置时区
             date_default_timezone_set(sc('Env')['default_timezone']);
-
 
             /*
             |--------------------------------------------------------
@@ -49,24 +59,6 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
             //echo "<p>{$html['name']} writes:<br />";
             //echo "<blockquote>{$html['comment']}</blockquote></p>";
 
-
-
-
-            //htmlentities()或是htmlspecialchars()。
-
-phpinfo();
-
-            return null;
-      }
-
-      /*
-      |--------------------------------------------------------
-      | 定义 中间件主体
-      |--------------------------------------------------------
-      |
-      */
-      public function handle($request, \Closure $next)
-      {
             // Perform action
 
             return $next($request);
