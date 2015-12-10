@@ -15,15 +15,20 @@ class Wise extends Set
        * wise单例调用
        */
       private static $_instance = null;       //单例调用
-      public $_config  = array();              //C函数的存储     //所有的配置信息存储在这里
-      private $rootpath = '../App/Config/';     //配置文件的根目录
+      public $_config  = array();              //C函数的存储
+      public $_configdc  = array();              //文件配置file
+      public $_configec  = array();              //环境配置evn
+      public $_configuc  = array();              //用户配置
+      public $_configbus  = array();              //用户配置
+      private $rootpath = '';
 
       /**
        * @param string $conf
        * 根据配置获取设定
        */
       private function __construct(){
-            $this->_config = $this->load($this->rootpath."Config.php");
+            $this->rootpath = rtrim(APPROOT,'/').'/Config/';            //配置文件的根目录
+            $this->_configdc = $this->load($this->rootpath."Config.php");
       }
 
       /**
@@ -39,35 +44,17 @@ class Wise extends Set
       }
 
       /**
-       * Ensure a value or object will remain globally unique
-       * @param  string  $key   The value or object name
-       * @param  Closure        The closure that defines the object
-       * @return mixed
-       */
-      public function singleton($key, $value)
-      {
-
-            $this->set($key, function ($c) use ($value) {
-                  static $object;
-                  if (null === $object) {
-                        $object = $value($c);
-                  }
-                  return $object;
-            });
-      }
-
-      /**
        * @param $key
        * @return null
        * 调用其中的数据
        */
-      function __invoke($key) {
+      function __invoke($key = null) {
             //设置一个值
-            if(is_string($key)){
-                  return $this->_config[$key];
-            }else{
-                  return null;
-            }
+            $res['dc'] = $this->_configdc[$key];
+            $res['ec'] = $this->_configec[$key];
+            $res['uc'] = $this->_configuc[$key];
+            $res['bus'] = $this->_configbus[$key];
+            return $res;
       }
 
 }

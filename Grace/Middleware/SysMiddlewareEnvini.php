@@ -1,7 +1,7 @@
 <?php
       /*
       |--------------------------------------------------------
-      | 执行初始化操作
+      | 不进行数据操作 定义出接口底层数据, nc
       |--------------------------------------------------------
       | 不对sc 和bus 进行实质性操作
       |
@@ -16,13 +16,32 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
-      | 定义 需要操作的数据
+      | 执行一些前置操作
       |--------------------------------------------------------
-      | 特殊情况下进行修改
+      |
       */
-      public function request()
+      public function BeforeHandle($request, \Closure $next)
       {
-            return null;
+            //建立sc模板
+            //根据dc 得到sc unset(dc);
+            sc([
+                'App'         => '',
+                'Env'         => '',
+                'Router'      => '',
+                'Get'         => '',
+                'Post'        => '',
+                'Usertable'        => '',
+                'Page'        => '',
+                'Menu'        => '',
+                'Middleware'  => '',
+                'Modulelist'  => '',
+                'ActionExt'   => '',
+                'Environment' => '',
+                'Vo'          => '',
+                'Lb'          => '',
+            ]);
+            // Perform action
+            //return $next($request);
       }
 
       /*
@@ -33,35 +52,52 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
       */
       public function handle($request, \Closure $next)
       {
-            //根据设置配置时区
-            date_default_timezone_set(sc('Env')['default_timezone']);
 
-            /*
-            |--------------------------------------------------------
-            | 定义 xss 过滤
-            | 定义 xss 过滤 - 同理还有sql 防注入
-            |--------------------------------------------------------
-            | 方案 - 对要输入到页面的内容建立xss中间件
-            htmlentities
-            htmlspecialchars
-            反函数 htmlspecialchars_decode
-
-            addslashes()
-            stripslashes()
-
-            urldecode()
-            urlencode()
-            */
-            //
-            //方案 - 对要输入到页面的内容建立xss中间件
-            //$html['name'] = htmlentities($clean['name'], ENT_QUOTES, 'UTF-8');
-            //$html['comment'] = htmlentities($clean['comment'], ENT_QUOTES, 'UTF-8');
-            //echo "<p>{$html['name']} writes:<br />";
-            //echo "<blockquote>{$html['comment']}</blockquote></p>";
-
-            // Perform action
-
+            sc([
+                'App'         => isset(dc('Module')['App'])?array_merge(dc('App'),dc('Module')['App']):dc('App'),
+                'Env'         => isset(dc('Module')['Env'])?array_merge(dc('Env'),dc('Module')['Env']):dc('Env'),
+                'Router'      => '',
+                'Get'         => dc('Req')['get'],
+                'Post'        => dc('Req')['post'],
+                'Usertable'   => dc('Usertable'),
+                'Page'        => '',
+                'Menu'        => '',
+                'Middleware'  => isset(dc('Module')['Middleware'])?array_merge(dc('Middleware'),dc('Module')['Middleware']):dc('Middleware'),
+                'Modulelist'  => dc('Modulelist'),
+                'ActionExt'   => dc('ActionExt'),
+                'Environment' => dc('Environment'),
+                'Vo'          => dc('Vo'),
+            ]);
             return $next($request);
       }
 
+      public function terminate($request = null)
+      {
+            $dc = dc();
+            unset($dc['debug']);
+            unset($dc['error_reporting']);
+            unset($dc['App']);
+            unset($dc['Env']);
+            unset($dc['Module']['App']);
+            unset($dc['Module']['Env']);
+            unset($dc['Middleware']);
+            unset($dc['Module']['Middleware']);
+            unset($dc['Modulelist']);
+            unset($dc['ActionExt']);
+            unset($dc['Req']);
+            unset($dc['Vo']);
+            unset($dc['Usertable']);
+            unset($dc['Environment']);
+            sc('Lb',$dc);
+
+            //ok 完成了sc 的建立
+            //unset(dc());
+            //注销dc
+            if(sc('debug')){
+                  $this->res['end'] = $request; //记录结果数据
+            }else{
+                  \Sham\Wise\Wise::getInstance()->_configdc = array();   //值置空
+            }
+            //return $request;
+      }
 }

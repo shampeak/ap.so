@@ -55,6 +55,32 @@ class SysMiddlewareBusini extends MiddlewareBase implements MiddlewareInterface
       public function handle($request, \Closure $next)
       {
             // Perform action
+
+
+
+//            //根据设置配置时区
+//            date_default_timezone_set(dc('Env')['default_timezone']);
+
+            //消灭dc 建立nc
+
+            /*
+            |--------------------------------------------------------
+            | 定义 xss 过滤
+            | 定义 xss 过滤 - 同理还有sql 防注入
+            |--------------------------------------------------------
+            | 方案 - 对要输入到页面的内容建立xss中间件
+            htmlentities
+            htmlspecialchars
+            反函数 htmlspecialchars_decode
+
+            addslashes()
+            stripslashes()
+
+            urldecode()
+            urlencode()
+            */
+
+
             return $next($request);
       }
 

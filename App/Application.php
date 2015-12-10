@@ -18,26 +18,25 @@ class Application extends Set
       | 信息流入口
       |------------------------------------------------
       | 对信息流底层进行各种中间件操作,执行最后结果交给控制器
-      |
-      |
       |------------------------------------------------
-      |
-      |
-      |
-      |
       |
       */
 
       public static function run()
       {
+            sc([
+                'debug'             => dc('debug'),
+                'error_reporting'   => dc('error_reporting'),
+            ]);
+
             /*
             |------------------------------------------------
             | 错误抑制
             |------------------------------------------------
             */
-            if(sc('Env')['debug']){
+            if(sc('debug')){
                   //错误报告
-                  ini_set('error_reporting', sc('Env')['error_reporting']);
+                  ini_set('error_reporting', sc('error_reporting'));
             }else{
                   //不报告任何错误
                   error_reporting(0);
@@ -55,45 +54,29 @@ class Application extends Set
             */
             //print_r(sc());     //原始信息
 
-            /*
-            |------------------------------------------------
-            | 载入系统初始化信息 Vo.config.php初始化 App/Config/Config.php
-            |------------------------------------------------
-            */
-            sc('_Vo',config('Vo.config'));
-
-
-            /*
-            |------------------------------------------------
-            | 系统 对这两部分信息进行mix操作
-            |------------------------------------------------
-            */
+            //开始执行底层中间件
             sapp('ap')->Middleware([
                   //初始化的信息流处理
-                'SysMiddlewareEnvini'           => \Grace\Middleware\SysMiddlewareEnvini::class,
-               // 'SysMiddlewareConfigini'        => \Grace\Middleware\SysMiddlewareConfigini::class,
-               // 'SysMiddlewareBusini'           => \Grace\Middleware\SysMiddlewareBusini::class,
-               // 'SysMiddlewareControllerset'    => \Grace\Middleware\SysMiddlewareControllerset::class,
+                  'SysMiddlewareConfigini'      => \Grace\Middleware\SysMiddlewareConfigini::class,         //建立dc
+                  'SysMiddlewareEnvini'         => \Grace\Middleware\SysMiddlewareEnvini::class,            //建立sc() unset dc
+                  'SysMiddlewareRouter'         => \Grace\Middleware\SysMiddlewareRouter::class,
             ]);
+            //D(sc());
+            //D(dc());          //debug = false 的时候置空
+
+
+
+echo 123;
 
             /*
              * 对中间件的调试
              * debug 模式下查看中间数据
              * */
-            D(sapp('ap')->view('SysMiddlewareEnvini'));           //对中间件的调试
-
-
-
-
+//            D(sapp('ap')->view('SysMiddlewareEnvini'));           //对中间件的调试
 
             //需要对执行的Middleware进行边界检查,是否已经注册
 
-
-
-
-
-
-            print_r(sc());     //原始信息
+           //print_r(sc());     //原始信息
 exit;
 
 //

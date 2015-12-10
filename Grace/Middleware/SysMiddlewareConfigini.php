@@ -28,34 +28,16 @@ namespace Grace\Middleware;
 use Grace\Set\MiddlewareBase;
 use Grace\Set\MiddlewareInterface;
 
-
+      /*
+       * 跟环境和用户无关 主要是固定不变的配置文件信息
+      |--------------------------------------------------------
+      | 定义 最后的动作 获得底层数据 dc();
+      |--------------------------------------------------------
+      | 跟用户无关,配置文件的信息
+      |
+      */
 class SysMiddlewareConfigini extends MiddlewareBase implements MiddlewareInterface
 {
-      public function __construct(){}
-
-      /*
-      |--------------------------------------------------------
-      | 定义callback
-      |--------------------------------------------------------
-      | 特殊情况下进行修改
-      */
-      public function next()
-      {
-            return function($request){return $request;};
-      }
-
-      /*
-      |--------------------------------------------------------
-      | 定义 需要操作的数据
-      |--------------------------------------------------------
-      | 特殊情况下进行修改
-      */
-      public function request()
-      {
-            //对整个sc目录结构进行调整
-            return null;
-//            return sc();
-      }
 
       /*
       |--------------------------------------------------------
@@ -66,45 +48,36 @@ class SysMiddlewareConfigini extends MiddlewareBase implements MiddlewareInterfa
       public function handle($request, \Closure $next)
       {
             // Perform action
+
+            /*
+            |------------------------------------------------
+            | 载入系统初始化信息 Vo.config.php初始化 App/Config/Config.php
+            |------------------------------------------------
+            */
+            //载入模块配置信息
+            dc('Vo',config('Vo.config'));                  //vc() 获取
+
+            //环境信息
+            dc('Environment',\Grace\Environment::getInstance()->all());
+
+            //get / post 信息
+            $res['get']       = sapp('req')->get;
+            $res['post']       = sapp('req')->post;
+            dc('Req',$res);
+
+            /*
+            |--------------------------------------------------------
+            | 模块信息 / 根据根据get post 获取
+            |--------------------------------------------------------
+            */
+            //
+            if(dc('Req')['get']['m']){
+                  //修改fc 记录用户config
+                  $file = rtrim(APPROOT,'/').'/Modules/'.dc('Modulelist')[dc('Req')['get']['m']].'/Conf.php';
+                  $config = $this->load($file);
+                  dc('Module',$config);
+            }
             return $next($request);
       }
 
-      /*
-      |--------------------------------------------------------
-      | 执行一些前置操作
-      |--------------------------------------------------------
-      |
-      */
-      public function BeforeHandle($request, \Closure $next)
-      {
-            // Perform action
-            return $next($request);
-      }
-
-      /*
-      |--------------------------------------------------------
-      | 执行一些后置操作
-      |--------------------------------------------------------
-      |
-      */
-      public function AfterHandle($request, \Closure $next)
-      {
-            $response = $next($request);
-            // Perform action
-            return $response;
-      }
-
-
-      /*
-      |--------------------------------------------------------
-      | 定义 最后的动作
-      |--------------------------------------------------------
-      | 可以不返回数据,中断执行或设置某些数据
-      |
-      */
-      public function terminate($request = null)
-      {
-            //处理结束后做一些操作
-            // Store the session data...
-      }
 }

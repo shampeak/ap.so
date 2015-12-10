@@ -6,6 +6,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | 调试开关
+    | 1 : error_report 模式
+    | 2 : Middleware 输出调试信息
+    |--------------------------------------------------------------------------
+    |
+    */
+    'debug'             => false,
+
+    /*
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
+    error_reporting(E_ALL | E_PARSE);
+    E_ALL ^ E_PARSE,
+    */
+    'error_reporting'      => E_ALL,
+
+    /*
+    |--------------------------------------------------------------------------
     | 执行环境参数
     |--------------------------------------------------------------------------
     |
@@ -13,7 +30,7 @@ return [
     |
     */
     'Env' => [
-        'APPROOT'           => '../App/',             //在入口进行定义 [这里只是占位]
+        //'APPROOT'           => '-',             //在入口进行定义 [这里只是占位]
         'WDS'               => DIRECTORY_SEPARATOR,
 
         /*
@@ -34,22 +51,7 @@ return [
 
         'charset'           => 'utf-8',         //编码说明
 
-        /*
-        |--------------------------------------------------------------------------
-        | 调试开关
-        | 1 : error_report 模式
-        | 2 : Middleware 输出调试信息
-        |--------------------------------------------------------------------------
-        |
-        */
-        'debug'             => true,
 
-        /*
-        error_reporting(E_ERROR | E_WARNING | E_PARSE);
-        error_reporting(E_ALL | E_PARSE);
-        E_ALL ^ E_PARSE,
-        */
-        'error_reporting'      => E_ALL,
     ],
 
     /*
@@ -93,7 +95,7 @@ return [
     | 配置信息,访问 : Sham\Wise\Wise::getInstance()->_config
     |
     */
-    'User'=>[
+    'Usertable'=>[
         'tablename' => 'dy_user',            //表名
         'field'=>[                          //字段设定 [ 在相关类中用到的 ]
             'userlogin'     => 'uname',
@@ -125,7 +127,6 @@ return [
         'authUser' => App\Middleware\User::class,
     ],
 
-
     /*
         //对现有的路由进行映射
         'Router'=>[
@@ -136,6 +137,8 @@ return [
             ]
         ],
     */
+
+
 
 ];
 

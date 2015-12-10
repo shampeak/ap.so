@@ -13,7 +13,7 @@ class MiddlewareBase extends Set
 
       public function __construct(){
             //记录入口数据
-             if(sc('Env')['debug']) $this->res['begin'] = $this->request();
+             if(sc('debug')) $this->res['begin'] = $this->request();
       }
       /*
       |--------------------------------------------------------
@@ -108,7 +108,7 @@ class MiddlewareBase extends Set
       {
             //处理结束后做一些操作
             // Store the session data...
-            if(sc('Env')['debug']) $this->res['end'] = $request; //记录结果数据
+            if(sc('debug')) $this->res['end'] = $request; //记录结果数据
             //return $request;
       }
 

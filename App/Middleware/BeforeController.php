@@ -19,7 +19,7 @@ class BeforeController
       }
 
 
-      //¸ù¾İlogin·µ»ØÓÃ»§
+      //æ ¹æ®loginè¿”å›ç”¨æˆ·
       public function login($userlogin = '')
       {
             if ($request->input('age') <= 200) {
@@ -36,7 +36,7 @@ class BeforeController
 
 
 /*
-//Ö´ĞĞÒ»Ğ©Ç°ÖÃ²Ù×÷
+//æ‰§è¡Œä¸€äº›å‰ç½®æ“ä½œ
 
 class BeforeMiddleware
 {
@@ -48,7 +48,7 @@ class BeforeMiddleware
       }
 }
 
-//Ö´ĞĞÒ»Ğ©ºóÖÃ²Ù×÷
+//æ‰§è¡Œä¸€äº›åç½®æ“ä½œ
 
 class AfterMiddleware
 {

@@ -13,19 +13,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | 系统中间件定义 -
-    |--------------------------------------------------------------------------
-    |
-    */
-    'BaseMiddleware' => [
-        'Base' => [
-            'authRouter' => App\Middleware\Router::class,
-        ],
-    ],
-
-
-    /*
-    |--------------------------------------------------------------------------
     | 配置信息映射
     |--------------------------------------------------------------------------
     |
@@ -38,7 +25,7 @@ return [
         'Geter'     => '../App/Config/Geter.php',      //geter配置
         'Struct'    => '../App/Config/Struct.php',
         'Cookies'   => '../App/Config/Cookies.php',
-        'Ap'        => '../App/Config/Ap.php',
+//        'Ap'        => '../App/Config/Ap.php',
         'Mmc'       => '../App/Config/Mmc.php',
     ],
 
@@ -55,12 +42,12 @@ return [
         'Db'        => Sham\Db\Db::class,       //数据访问对象
         'Geter'     => Sham\Geter\Geter::class, //静态化数据获取
         'Req'       => Sham\Req\Req::class,     //前端数据获取
-        'Bus'       => Sham\Bus\Bus::class,     //信息流对象
         'Struct'    => Sham\Struct\Struct::class,   //后台结构
         'Config'    => Sham\Config\Config::class,   //获取配置信息
         'Cookies'   => Sham\Cookies\Cookies::class, //cookie操作对象
         'Ap'        => Sham\Ap\Ap::class,           //操作流对象
         'Mmc'       => Sham\Mmc\Mmc::class,         //memcache对象
+        'Wise'      => Sham\Wise\Wise::class,         //memcache对象
     ],
 
 ];

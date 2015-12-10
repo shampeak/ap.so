@@ -51,12 +51,12 @@ class Ap extends Base
             if(is_array($middlewarelist)){
                   foreach($middlewarelist as $key => $value){
                         //这里需要进一步测试,来展示对资源的占用情况
-                        if(sc('Env')['debug']){
+                        if(sc('debug')){
+                              //debug 模式下直接调用
                               $this->middlewarelist[$key] = new $value;
                               $this->middlewarelist[$key]->run();;         //执行中间件
                         }else{
                               //debug = false unset
-                              (new $value)->run();;         //执行中间件
                               //or 这里关系到对内存的占用情况
                               $ms = new $value;
                               $ms->run();
@@ -75,7 +75,7 @@ class Ap extends Base
       */
       public function view($middlewarekey = null)
       {
-            if(!sc('Env')['debug']) return null;
+            if(!sc('debug')) return null;
             if($middlewarekey){
                   return $this->middlewarelist[$middlewarekey]->view();
             }else{
