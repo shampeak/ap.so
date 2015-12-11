@@ -22,25 +22,33 @@ class SysMiddlewareRouter extends MiddlewareBase implements MiddlewareInterface
       */
       public function handle($request, \Closure $next)
       {
-            sc('Router',[
-                'm'     => sc('Get')['m'],
-                'c'     => sc('Get')['c'],
-                'a'     => sc('Get')['a'],
-                'e'     => sc('Get')['e'],
-                'aPrefix'     => 'do',
-                'param'       => sc('Get')['_param'],
-                'params'      => sc('Get'),
-                'type'      => sc('Environment')['REQUEST_METHOD'],
+            $action   = 'do'.ucfirst(sc('Get')['a']?:sc('App')['default_controller_method']);
+            if(sc('Get')['e']) $action .= '_'.ucfirst(sc('Get')['e']);
+            if(sc('Environment')['REQUEST_METHOD'] != 'GET') $action .= ucfirst(strtolower(sc('Environment')['REQUEST_METHOD']));
 
-                'action'      => 'do'.ucfirst(sc('Get')['a']),
-                'actionExt'   => 'do'.ucfirst(sc('Get')['a']).'_'.ucfirst(sc('Get')['e']),            //加后缀 _get _post
-                'tpl'         => sc('Get')['a'].'.htm',
-                'Appbase'     => '../App/basdfasdf/asdf/asdf',
-               // 'cname'       => asdfasdfsf::Lclass,            //控制器调用地址
+            //echo $action;
+
+            sc('Router',[
+                  'type'      => sc('Environment')['REQUEST_METHOD'],
+                  'm'         => sc('Get')['m'],
+                  'c'         => sc('Get')['c']?:sc('App')['default_controller'],
+                  'a'         => sc('Get')['a']?:sc('App')['default_controller_method'],
+                  'e'         => sc('Get')['e'],
+                  'Prefix'    => sc('App')['default_controller_method_prefix'],
+                  'param'     => sc('Get')['_param'],
+                  'params'    => sc('Get'),
+                  'action'   => $action,                   //方法引导
+                  //|--------------------------------------------------------
+                  //文件 controller.action.php
+                  //或者 controller.php
+                  //|--------------------------------------------------------
+                  //'actionFile'=> ucfirst(sc('Get')['a']),   //文件引导      //同A
+                  //'tpl'       => sc('Get')['a'].'.htm',                     //a.htm
+                  //'Appbase'   => '../App/basdfasdf/asdf/asdf',
+                  //'cname'   => asdfasdfsf::Lclass,            //控制器调用地址
             ]);
             // Perform action
             //建立router信息
-            D(sc());  //转控制器 转bus();
             return $next($request);
       }
 

@@ -21,44 +21,7 @@
     <favorites_list name="ap.so" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Application.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.178572">
-              <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysMiddlewareEnvini.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.785714">
-              <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
-              <folding>
-                <element signature="e#12#215#0#PHP" expanded="true" />
-                <element signature="e#246#275#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysMiddlewareRouter.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7793264">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding>
-                <element signature="e#12#183#0#PHP" expanded="true" />
-                <element signature="e#214#243#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,19 +62,21 @@
         <option value="$PROJECT_DIR$/wwwroot/index.php" />
         <option value="$PROJECT_DIR$/Grace/Environment.php" />
         <option value="$PROJECT_DIR$/Sham/Req/Req.php" />
-        <option value="$PROJECT_DIR$/Sham/Wise/Wise.php" />
-        <option value="$PROJECT_DIR$/Sham/Helper.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusini.php" />
-        <option value="$PROJECT_DIR$/App/Middleware/BeforeController.php" />
         <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php" />
         <option value="$PROJECT_DIR$/App/Config/Vo.config.php" />
         <option value="$PROJECT_DIR$/Grace/Set/MiddlewareBase.php" />
-        <option value="$PROJECT_DIR$/App/Config/Config.php" />
-        <option value="$PROJECT_DIR$/Sham/Ap/Ap.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php" />
-        <option value="$PROJECT_DIR$/App/Application.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php" />
+        <option value="$PROJECT_DIR$/Sham/Wise/Wise.php" />
+        <option value="$PROJECT_DIR$/Sham/Helper.php" />
+        <option value="$PROJECT_DIR$/App/Config/Config.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/BeforeController.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/ControllerAfterMiddleware.php" />
+        <option value="$PROJECT_DIR$/App/Middleware/ControllerBeforeMiddleware.php" />
+        <option value="$PROJECT_DIR$/Sham/Ap/Ap.php" />
+        <option value="$PROJECT_DIR$/App/Application.php" />
       </list>
     </option>
   </component>
@@ -172,7 +137,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,6 +243,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Grace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -297,16 +279,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules" />
+              <option name="myItemId" value="Middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hmvc_admin" />
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,11 +315,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\ap.so\App\Middleware" />
       <recent name="E:\www\ap.so\Grace\Middleware" />
       <recent name="E:\www\ap.so\Grace\Set" />
       <recent name="E:\www\ap.so\Grace" />
       <recent name="E:\www\ap.so\Sham\Config" />
-      <recent name="E:\www\ap.so\Sham\Ap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\www\ap.so\App" />
@@ -374,9 +371,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2628205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26923078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -412,17 +409,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#183#0#PHP" expanded="true" />
-            <element signature="e#214#243#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Controller/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.607142">
@@ -635,14 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sham/Set/Set.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4134727">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sham/Set/Base.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19860627">
@@ -673,14 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sham/Wise/Wise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728223">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Grace/Environment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6224852">
@@ -696,19 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Middleware/BeforeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.607142">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41717792">
           <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,86 +687,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Set/MiddlewareBase.php">
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28687572">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.13937283">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusini.php">
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9488966">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.60278744">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="e#12#692#0#PHP" expanded="true" />
-            <element signature="e#723#752#0#PHP" expanded="true" />
+            <element signature="e#12#215#0#PHP" expanded="false" />
+            <element signature="e#246#275#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81649244">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="e#12#183#0#PHP" expanded="true" />
+            <element signature="e#214#243#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sham/Set/Set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2775842">
+          <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sham/Wise/Wise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46341464">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sham/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.321428">
-          <caret line="214" column="70" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="70" />
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Config/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sham/Ap/Ap.php">
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.392857">
-          <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.821428">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+        <state vertical-scroll-proportion="-14.214286">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
             <element signature="e#723#752#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php">
+    <entry file="file://$PROJECT_DIR$/Grace/Set/MiddlewareBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.785714">
-          <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+        <state vertical-scroll-proportion="-18.321428">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerAfterMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35307783">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#12#215#0#PHP" expanded="true" />
-            <element signature="e#246#275#0#PHP" expanded="true" />
+            <element signature="e#583#612#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerBeforeMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3089431">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#583#612#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sham/Ap/Ap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2206737">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572">
-          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.57375145">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7793264">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <element signature="e#12#183#0#PHP" expanded="true" />
-            <element signature="e#214#243#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

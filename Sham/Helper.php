@@ -65,6 +65,10 @@ if (! function_exists('vc')) {
       }
 }
 
+function mark($vo = null){
+      echo $vo;
+}
+
 //sc 即将弃用
 // ->
 // ec环境
@@ -75,26 +79,29 @@ if (! function_exists('vc')) {
 if (! function_exists('sc')) {
       function sc($key = '', $value = array())
       {
+
             $args = func_num_args();
+            $wise = Sham\Wise\Wise::getInstance();
+
 
             //1 : 返回配置信息
             if ($args == 0) {
-                  return Sham\Wise\Wise::getInstance()->_config;
+                  return $wise->_config;
             }
 
             //2 : 有一个参数
             if ($args == 1) {
 
                   if (is_string($key)) {  //如果传入的key是字符串
-                        return isset(Sham\Wise\Wise::getInstance()->_config[$key]) ? Sham\Wise\Wise::getInstance()->_config[$key] : null;
+                        return isset($wise->_config[$key]) ? $wise->_config[$key] : null;
                   }
                   if (is_array($key)) {
                         if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
-                              Sham\Wise\Wise::getInstance()->_config = array_merge(Sham\Wise\Wise::getInstance()->_config, $key);
+                              $wise->_config = array_merge($wise->_config, $key);
                         } else {
                               $ret = array();
                               foreach ($key as $k) {
-                                    $ret[$k] = isset(Sham\Wise\Wise::getInstance()->_config[$k]) ? Sham\Wise\Wise::getInstance()->_config[$k] : null;
+                                    $ret[$k] = isset($wise->_config[$k]) ? $wise->_config[$k] : null;
                               }
                               return $ret;
                         }
@@ -103,7 +110,7 @@ if (! function_exists('sc')) {
             } else {
                   //设置一个值
                   if (is_string($key)) {
-                        Sham\Wise\Wise::getInstance()->_config[$key] = $value;
+                        $wise->_config[$key] = $value;
                   }
                   //else {
 //                        halt('传入参数不正确');
@@ -113,86 +120,6 @@ if (! function_exists('sc')) {
       }
 }
 
-if (! function_exists('fc')) {
-      function fc($key = '', $value = array())
-      {
-            $args = func_num_args();
-
-            //1 : 返回配置信息
-            if ($args == 0) {
-                  return Sham\Wise\Wise::getInstance()->_configfc;
-            }
-
-            //2 : 有一个参数
-            if ($args == 1) {
-
-                  if (is_string($key)) {  //如果传入的key是字符串
-                        return isset(Sham\Wise\Wise::getInstance()->_configfc[$key]) ? Sham\Wise\Wise::getInstance()->_configfc[$key] : null;
-                  }
-                  if (is_array($key)) {
-                        if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
-                              Sham\Wise\Wise::getInstance()->_configfc = array_merge(Sham\Wise\Wise::getInstance()->_configfc, $key);
-                        } else {
-                              $ret = array();
-                              foreach ($key as $k) {
-                                    $ret[$k] = isset(Sham\Wise\Wise::getInstance()->_configfc[$k]) ? Sham\Wise\Wise::getInstance()->_configfc[$k] : null;
-                              }
-                              return $ret;
-                        }
-                  }
-
-            } else {
-                  //设置一个值
-                  if (is_string($key)) {
-                        Sham\Wise\Wise::getInstance()->_configfc[$key] = $value;
-                  }
-                  //else {
-//                        halt('传入参数不正确');
-//                  }
-            }
-            return null;
-      }
-}
-if (! function_exists('ec')) {
-      function ec($key = '', $value = array())
-      {
-            $args = func_num_args();
-
-            //1 : 返回配置信息
-            if ($args == 0) {
-                  return Sham\Wise\Wise::getInstance()->_configec;
-            }
-
-            //2 : 有一个参数
-            if ($args == 1) {
-
-                  if (is_string($key)) {  //如果传入的key是字符串
-                        return isset(Sham\Wise\Wise::getInstance()->_configec[$key]) ? Sham\Wise\Wise::getInstance()->_configec[$key] : null;
-                  }
-                  if (is_array($key)) {
-                        if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
-                              Sham\Wise\Wise::getInstance()->_configec = array_merge(Sham\Wise\Wise::getInstance()->_configec, $key);
-                        } else {
-                              $ret = array();
-                              foreach ($key as $k) {
-                                    $ret[$k] = isset(Sham\Wise\Wise::getInstance()->_configec[$k]) ? Sham\Wise\Wise::getInstance()->_configec[$k] : null;
-                              }
-                              return $ret;
-                        }
-                  }
-
-            } else {
-                  //设置一个值
-                  if (is_string($key)) {
-                        Sham\Wise\Wise::getInstance()->_configec[$key] = $value;
-                  }
-                  //else {
-//                        halt('传入参数不正确');
-//                  }
-            }
-            return null;
-      }
-}
 
 if (! function_exists('dc')) {
       function dc($key = '', $value = array())
@@ -276,45 +203,6 @@ if (! function_exists('bus')) {
       }
 }
 
-//
-//if (! function_exists('bus')) {
-//      function bus($key = null, $value = array())
-//      {
-//            $args = func_num_args();
-//            //1 : 返回配置信息
-//            if ($args == 0) {
-//                  return sapp('bus')->all();
-//            }
-//            //2 : 有一个参数
-//            if ($args == 1) {
-//                  if (is_string($key)) {  //如果传入的key是字符串
-//                        return sapp('bus')[$key];
-//                  }
-//                  if (is_array($key)) {
-//                        if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
-//                              foreach($key as $k=>$v){
-//                                    sapp('bus')[$k] = $v;
-//                              }
-//                              //Sham\Wise\Wise::getInstance()->_config = array_merge(Sham\Wise\Wise::getInstance()->_config, $key);
-//                        } else {
-//                              $ret = array();
-//                              foreach ($key as $k) {
-//                                    //sapp('bus')[$k] = $key[$k];
-//                                    $ret[$k] = sapp('bus')[$k];
-//                              }
-//                              return $ret;
-//                        }
-//                  }
-//            } else {
-//                  //设置一个值
-//                  if (is_string($key)) {
-//                        //Sham\Wise\Wise::getInstance()->_config[$key] = $value;
-//                        sapp('bus')[$key] = $value;
-//                  }
-//            }
-//            return null;
-//      }
-//}
 
 /**
  * VoConfig

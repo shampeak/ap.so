@@ -17,8 +17,6 @@ class Wise extends Set
       private static $_instance = null;       //单例调用
       public $_config  = array();              //C函数的存储
       public $_configdc  = array();              //文件配置file
-      public $_configec  = array();              //环境配置evn
-      public $_configuc  = array();              //用户配置
       public $_configbus  = array();              //用户配置
       private $rootpath = '';
 
