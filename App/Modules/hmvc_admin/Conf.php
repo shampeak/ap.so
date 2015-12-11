@@ -28,8 +28,6 @@ return [
         */
         'default_timezone'  => 'PRC',
         'charset'           => 'utf-2228',         //编码说明
-        'charse2t'           => 'utf-8',         //编码说明
-        'charset3'           => 'utf-8',         //编码说明
     ],
 
     /*
@@ -41,8 +39,8 @@ return [
     |
     */
     'App' => [
-        'default_controllerer'                => 'home2',
-        'default_controller'                => 'home2',
+        'default_controllerer'                => 'home',
+        'default_controller'                => 'home',
         'default_controller_method'         => 'index',
         'default_controller_method_prefix'  => 'do',
 

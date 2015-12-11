@@ -15,6 +15,7 @@ class MiddlewareBase extends Set
             //记录入口数据
              if(sc('debug')) $this->res['begin'] = $this->request();
       }
+
       /*
       |--------------------------------------------------------
       | 中间件封装执行

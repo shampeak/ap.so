@@ -176,15 +176,15 @@ if (! function_exists('bus')) {
             if ($args == 1) {
 
                   if (is_string($key)) {  //如果传入的key是字符串
-                        return isset(Sham\Wise\Wise::getInstance()->_configuc[$key]) ? Sham\Wise\Wise::getInstance()->_configuc[$key] : null;
+                        return isset(Sham\Wise\Wise::getInstance()->_configbus[$key]) ? Sham\Wise\Wise::getInstance()->_configbus[$key] : null;
                   }
                   if (is_array($key)) {
                         if (array_keys($key) !== range(0, count($key) - 1)) {  //如果传入的key是关联数组
-                              Sham\Wise\Wise::getInstance()->_configuc = array_merge(Sham\Wise\Wise::getInstance()->_configuc, $key);
+                              Sham\Wise\Wise::getInstance()->_configbus = array_merge(Sham\Wise\Wise::getInstance()->_configbus, $key);
                         } else {
                               $ret = array();
                               foreach ($key as $k) {
-                                    $ret[$k] = isset(Sham\Wise\Wise::getInstance()->_configuc[$k]) ? Sham\Wise\Wise::getInstance()->_configuc[$k] : null;
+                                    $ret[$k] = isset(Sham\Wise\Wise::getInstance()->_configbus[$k]) ? Sham\Wise\Wise::getInstance()->_configbus[$k] : null;
                               }
                               return $ret;
                         }
@@ -193,7 +193,7 @@ if (! function_exists('bus')) {
             } else {
                   //设置一个值
                   if (is_string($key)) {
-                        Sham\Wise\Wise::getInstance()->_configuc[$key] = $value;
+                        Sham\Wise\Wise::getInstance()->_configbus[$key] = $value;
                   }
                   //else {
 //                        halt('传入参数不正确');

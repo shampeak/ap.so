@@ -12,25 +12,6 @@ namespace Sham\Ap;
 
 use Sham\Set\Base;
 
-
-    /*
-    | --------------------------------------------------------------------------
-    | 可以对middleware进行输出信息查看 方法为 $md->display();
-    | --------------------------------------------------------------------------
-    |
-    if(is_array($middleware)){
-          foreach($middleware as $key => $value){
-                $md = new $value;
-                $next    = $md->next();
-                $request = $md->request();
-                $request = $md->AfterHandle($md->Handle($md->BeforeHandle($request,$next),$next),$next);
-                $md->terminate($request);
-          }
-    }
-    |
-    */
-
-
 class Ap extends Base
 {
 
@@ -43,7 +24,68 @@ class Ap extends Base
       public function Router()
       {
             //根据路由执行系列操作
-      }
+            $basepath =       sc('Router')['m']?rtrim(APPROOT,'/').'/Modules/'.sc('Modulelist')[sc('Router')['m']].'/':rtrim(APPROOT,'/').'/';
+            bus('basepath',   $basepath);
+            bus('app',        sc('App'));
+            bus('router',     sc('Router'));
+            bus('env',        sc('Env'));
+            //|-----------------------------------------------
+            $controller = '\Controller\\'.sc('Router')['c'];
+            $action = sc('Router')['action'];
+            $params = sc('Router')['param'];
+
+            if(sc('Router')['m']){
+                  $basepath = rtrim(APPROOT,'/').'/Modules/'.sc('Modulelist')[sc('Router')['m']].'/Controller/';
+            }else{
+                  $basepath = rtrim(APPROOT,'/').'/'.'Controller/';
+            }
+            $basecontrollerpath     = $basepath.'BaseController.php';
+            $controllerextpath      = $basepath.(sc('Router')['c']).'.'.(sc('Router')['a']).'.php';
+            $controllerpath         = $basepath.(sc('Router')['c']).'.php';
+
+            //加载基类 - 如果基类存在,则加载
+            includeIfExist($basecontrollerpath);
+
+            //尝试扩展控制器 - 尝试控制器
+            includeIfExist($controllerextpath);
+            if(!class_exists($controller)){
+                  includeIfExist($controllerpath);
+            }
+            //--------------------------------------------------------
+
+            if(!class_exists($controller)){     //控制器还没有找到,则报错
+                  //404
+                  echo $controller.'404 controller miss';
+            }
+
+            //实例化
+            $app = new $controller();                 //这里已经正常了
+
+            //寻找扩展方法
+            if(!method_exists($app, $action)){
+                  echo $action.'404 method miss';
+            }
+
+
+            //$behaviors  = $app->behaviors();    //行为约束
+            //$middleware = $app->middleware();   //中间件
+
+            //执行中间件
+            //$this->md([
+            //    'asdf' => 'asdf',
+            //    'asdf' => 'asdf',
+            //    'asdf' => 'asdf',
+            //    'asdf' => 'asdf',
+            //    'asdf' => 'asdf',
+            //]);
+
+
+            //执行
+            $app->$action($params);//执行
+            //$app->response();
+            //后继的工作是ControllerAfterMiddleware
+
+     }
       /*
       |--------------------------------------------------------------------------
       | 执行中间件
@@ -75,10 +117,10 @@ class Ap extends Base
       |--------------------------------------------------------------------------
       | 调试方法
       |--------------------------------------------------------------------------
-      | sapp()->view('SysMiddlewareBusini');
+      | sapp()->vv('SysMiddlewareBusini');
       |
       */
-      public function view($middlewarekey = null)
+      public function _vv($middlewarekey = null)
       {
             if(!sc('debug')) return null;
             if($middlewarekey){

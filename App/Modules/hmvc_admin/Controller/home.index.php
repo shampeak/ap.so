@@ -7,7 +7,6 @@ namespace Controller;
  * @  “已授权“
  */
 
-
 class home extends BaseController {
 
       public function doIndexPost()
@@ -15,8 +14,8 @@ class home extends BaseController {
             echo 'uuu';
       }
 
-      public function doIndex(){
-          echo '--';
+      public function doIndex_de(){
+          echo '--ede';
         //=======================================
         //print_r(bus(['user','modules']));     //获取bus信息
 //               print_r(sc());
