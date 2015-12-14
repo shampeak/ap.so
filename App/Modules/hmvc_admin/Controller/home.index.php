@@ -16,7 +16,7 @@ class home extends BaseController {
 
       }
 
-      public function doIndex(){
+      public function doIn2dex(){
             View('index',[]);
 //            sapp('ap')->Middleware([
 //                'mdflit'    => \Controller\Middleware\mdflit::class,         //初始化视图

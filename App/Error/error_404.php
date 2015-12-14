@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xenon - Homepage</title>
+    <title>Xenon - Homepage1</title>
 
     <link rel="stylesheet" href="/assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="/assets/css/fonts/fontawesome/css/font-awesome.min.css">

@@ -72,7 +72,12 @@ class ControllerRouterMiddleware extends MiddlewareBase implements MiddlewareInt
 
             if(!class_exists($controller)){     //控制器还没有找到,则报错
                   //404
-                  echo $controller.'404 controller miss';
+                  bus('e' ,[
+                          'msg'=>'404 controller miss'
+                      ]
+                  );
+                  geter('e.e404');
+//                  echo $controller.'404 controller miss';
             }
 
             //实例化
@@ -80,7 +85,12 @@ class ControllerRouterMiddleware extends MiddlewareBase implements MiddlewareInt
 
             //寻找扩展方法
             if(!method_exists(bus('controller'), $action)){
-                  echo $action.'404 method miss';
+                  bus('e' ,[
+                          'msg'=>'404 method miss'
+                      ]
+                  );
+                  geter('e.e404');
+//                  echo $action.'404 method miss';
             }
 
 

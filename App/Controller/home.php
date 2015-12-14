@@ -12,12 +12,14 @@ class home extends BaseController {
     //根据情况进行跳转
     public function doIndex(){
 
+//        geter('e.e404');
 //halt('test');
+
         View('index',[
 
         ]);
 
-        require('asdf.htm');
+//        require('asdf.htm');
 //        W('index.htm',[
 //            'username'=>'alice'
 //        ]);
