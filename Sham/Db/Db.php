@@ -4,7 +4,12 @@ namespace Sham\Db;
 
 use Sham\Set\Base;
 
-
+/*
+ * 进一步设计,优化 : 包括
+ * 读写分离
+ * 垂直分库
+ * 水平分库
+ */
 
 class Db extends Base
 {

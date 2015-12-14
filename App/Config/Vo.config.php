@@ -48,6 +48,7 @@ return [
         'Ap'        => Sham\Ap\Ap::class,           //操作流对象
         'Mmc'       => Sham\Mmc\Mmc::class,         //memcache对象
         'Wise'      => Sham\Wise\Wise::class,         //memcache对象
+        'View'      => Sham\View\View::class,         //memcache对象
     ],
 
 ];

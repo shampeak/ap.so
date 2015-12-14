@@ -23,15 +23,13 @@ $list = [
 |
 */
 
-namespace App\Middleware;
+namespace Controller\Middleware;
 
 use Grace\Set\MiddlewareBase;
 use Grace\Set\MiddlewareInterface;
 
 
-
-
-class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInterface
+class Init extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
@@ -41,12 +39,16 @@ class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInt
       */
       public function handle($request, \Closure $next)
       {
-            //建立中间件 & 行为
+            assign('get',sc('Get'));
+            assign('post',sc('Post'));
+            assign('router',sc('Router'));
 
-
-
+//            assign('v3',[
+//            'routerv3'=>'v33',
+//            ]);
             // Perform action
             return $next($request);
       }
 
 }
+

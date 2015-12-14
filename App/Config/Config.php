@@ -19,7 +19,7 @@ return [
     error_reporting(E_ALL | E_PARSE);
     E_ALL ^ E_PARSE,
     */
-    'error_reporting'      => E_ALL,
+    'error_reporting'      => E_ALL ^ E_NOTICE,
 
     /*
     |--------------------------------------------------------------------------

@@ -34,5 +34,9 @@ class BaseController extends ControllerAbs{
 //        ];
 //    }
 
-
+      public function middleware(){
+            return [
+                  // \Controller\TestMiddleware:class,
+            ];
+      }
 } 

@@ -26,6 +26,11 @@ class SysMiddlewareRouter extends MiddlewareBase implements MiddlewareInterface
             if(sc('Get')['e']) $action .= '_'.ucfirst(sc('Get')['e']);
             if(sc('Environment')['REQUEST_METHOD'] != 'GET') $action .= ucfirst(strtolower(sc('Environment')['REQUEST_METHOD']));
 
+            $tpl   = sc('Get')['a']?:sc('App')['default_controller_method'];
+            if(sc('Get')['e']) $tpl .= '_'.sc('Get')['e'];
+            if(sc('Environment')['REQUEST_METHOD'] != 'GET') $tpl .= strtolower(sc('Environment')['REQUEST_METHOD']);
+
+
             //echo $action;
 
             sc('Router',[
@@ -37,7 +42,9 @@ class SysMiddlewareRouter extends MiddlewareBase implements MiddlewareInterface
                   'Prefix'    => sc('App')['default_controller_method_prefix'],
                   'param'     => sc('Get')['_param'],
                   'params'    => sc('Get'),
-                  'action'   => $action,                   //方法引导
+                'action'      => $action,                   //方法引导
+                'tpl'         => $tpl,                   //方法引导
+
                   //|--------------------------------------------------------
                   //文件 controller.action.php
                   //或者 controller.php

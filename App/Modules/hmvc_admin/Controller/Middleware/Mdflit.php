@@ -23,15 +23,15 @@ $list = [
 |
 */
 
-namespace App\Middleware;
+namespace Controller\Middleware;
 
 use Grace\Set\MiddlewareBase;
 use Grace\Set\MiddlewareInterface;
 
 
+echo 'in';
 
-
-class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInterface
+class mdflit extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
@@ -41,12 +41,10 @@ class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInt
       */
       public function handle($request, \Closure $next)
       {
-            //建立中间件 & 行为
-
-
 
             // Perform action
             return $next($request);
       }
 
 }
+

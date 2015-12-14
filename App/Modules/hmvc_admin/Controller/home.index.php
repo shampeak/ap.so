@@ -9,12 +9,21 @@ namespace Controller;
 
 class home extends BaseController {
 
-      public function doIndexPost()
+      public function doIndex_DePost()
       {
-            echo 'uuu';
+            View('index',[]);
+            D(bus());
+
       }
 
-      public function doIndex_de(){
+      public function doIndex(){
+            View('index',[]);
+//            sapp('ap')->Middleware([
+//                'mdflit'    => \Controller\Middleware\mdflit::class,         //初始化视图
+//            ]);
+
+            D(bus());
+            D(bus());
           echo '--ede';
         //=======================================
         //print_r(bus(['user','modules']));     //获取bus信息

@@ -31,7 +31,7 @@ use Grace\Set\MiddlewareInterface;
 
 
 
-class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInterface
+class ControllerRunMiddleware extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
@@ -42,7 +42,9 @@ class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInt
       public function handle($request, \Closure $next)
       {
             //建立中间件 & 行为
-
+            $action = bus('router')['action'];
+            $params = bus('router')['param'];
+            bus('controller')->$action($params);
 
 
             // Perform action

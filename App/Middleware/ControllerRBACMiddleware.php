@@ -31,7 +31,7 @@ use Grace\Set\MiddlewareInterface;
 
 
 
-class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInterface
+class ControllerRBACMiddleware extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
@@ -43,6 +43,8 @@ class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInt
       {
             //建立中间件 & 行为
 
+            bus('md',         bus('controller')->middleware());
+            bus('behavior',   bus('controller')->behaviors());
 
 
             // Perform action

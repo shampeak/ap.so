@@ -7,32 +7,38 @@ use Grace\ControllerAbs;
 //hook
 class BaseController extends ControllerAbs{
 
-//    public function __construct()
-//    {
-//        parent::__construct();
-//    }
-//
-//    public function _init(){
-//        header("Content-Type:text/html; charset=utf-8");
-//        //+--------------------------------------------------
-//    }
-//
-//    public function behaviors()
-//    {
-//
-//        return [
-//            'access' => [
-//                'only' => [],
-//                'rules' => [
-//                    [
-//                        'actions' => ['signout'],
-//                        'allow' => true,
-//                        'roles' => ['G'],
-//                    ],
-//                ],
-//            ],
-//        ];
-//    }
+      public function __construct(){
+            parent::__construct();
+            sapp('ap')->Middleware([
+                'Init'    => \Controller\Middleware\Init::class,         //初始化视图
+            ]);
+      }
+      //  '*'     //所有
+      //  '@'     //登陆用户
+      //  'A'     //管理员
+      //  'G'     //游客
+      //  '?'     //查询数据库
 
+      public function behaviors()
+      {
+            return [
+                'access' => [
+                    'only' => [],                         //行为限定
+                    'rules' => [
+                        [
+                            'actions' => [],              //行为限定
+                            'allow' => true,              //判定
+                            'roles' => ['G'],
+                        ],
+                    ],
+                ],
+            ];
+      }
+
+      public function middleware(){
+            return [
+               // \Controller\TestMiddleware:class,
+              ];
+    }
 
 }

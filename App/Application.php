@@ -32,20 +32,19 @@ class Application extends Set
             */
 
             //D(sc());
-            //执行前置中间件
-            sapp('ap')->Middleware([
-                  //初始化的信息流处理
-                  'ControllerBeforeMiddleware'      => \App\Middleware\ControllerBeforeMiddleware::class,         //建立dc
-            ]);
 
-            sapp('ap')->Router();
+            //psr-0     //自动加载middleware
+            spl_autoload_register(array('App\Application', 'autoload_middleware'));
 
-            /*
-            |------------------------------------------------
-            */
+
+            //建立视图bus
             sapp('ap')->Middleware([
-                  //初始化的信息流处理
-                'ControllerAfterMiddleware'      => \App\Middleware\ControllerAfterMiddleware::class,         //建立dc
+                'ControllerViewMiddleware' => \App\Middleware\ControllerViewMiddleware::class,         //初始化视图
+                'ControllerRouterMiddleware' => \App\Middleware\ControllerRouterMiddleware::class,       //建立控制器
+                'ControllerRBACMiddleware' => \App\Middleware\ControllerRBACMiddleware::class,         //建立md beharivers 并且执行RBAC
+                'ControllerBeforeMiddleware' => \App\Middleware\ControllerBeforeMiddleware::class,       //
+                'ControllerRunMiddleware' => \App\Middleware\ControllerRunMiddleware::class,          //执行
+                  // 'ControllerAfterMiddleware'   => \App\Middleware\ControllerAfterMiddleware::class,        //后置操作
             ]);
             exit;
       }
@@ -55,10 +54,16 @@ class Application extends Set
             !defined('APPROOT') && define('APPROOT', '../App/');;
 
             sc([
-                'debug'               => dc('debug'),
-                'error_reporting'   => dc('error_reporting'),
+                'debug' => dc('debug'),
+                'error_reporting' => dc('error_reporting'),
             ]);
 
+            // 应用到类
+
+            //set_error_handler(array(&$this,'my_error_handler'));
+            set_error_handler(array('App\Application', 'my_error_handler'));
+//            示例的做法
+//            set_error_handler("");
 
             /*
             |------------------------------------------------
@@ -66,10 +71,10 @@ class Application extends Set
             |------------------------------------------------
             */
 
-            if(sc('debug')){
+            if (sc('debug')) {
                   //错误报告
                   ini_set('error_reporting', sc('error_reporting'));
-            }else{
+            } else {
                   //不报告任何错误
                   error_reporting(0);
             }
@@ -82,12 +87,14 @@ class Application extends Set
             */
             sapp('ap')->Middleware([
                   //初始化的信息流处理
-                  'SysMiddlewareConfigini'      => \Grace\Middleware\SysMiddlewareConfigini::class,         //建立dc
-                  'SysMiddlewareEnvini'         => \Grace\Middleware\SysMiddlewareEnvini::class,            //建立sc() unset dc
-                  'SysMiddlewareRouter'         => \Grace\Middleware\SysMiddlewareRouter::class,
+                'SysMiddlewareConfigini' => \Grace\Middleware\SysMiddlewareConfigini::class,         //建立dc
+                'SysMiddlewareEnvini' => \Grace\Middleware\SysMiddlewareEnvini::class,            //建立sc() unset dc
+                'SysMiddlewareRouter' => \Grace\Middleware\SysMiddlewareRouter::class,
+                'SysMiddlewareBusbuild' => \Grace\Middleware\SysMiddlewareBusbuild::class,
             ]);
             //D(sc());
             //D(dc());          //debug = false 的时候置空
+
 
             /* -> 获得底层数据sc
             |------------------------------------------------
@@ -98,59 +105,29 @@ class Application extends Set
             self::DoController();
 
       }
+
+      /**
+       * 自动加载函数
+       *
+       * @param string $class 类名
+       *                      加载 Controller/middleware
+       */
+      public static function autoload_middleware($class)
+      {
+            $classpath = bus('root') . 'Controller/Middleware/';
+            $class = str_replace('Controller\Middleware\\', '', $class);
+            $classfile = $classpath . $class . '.php';
+            //首先检查在应用目录中是否存在该类，存在加载，不存在，则到根下寻找
+            includeIfExist($classfile);
+      }
+
+      public static function my_error_handler($errno, $errstr, $errfile, $errline)
+      {
+            echo 123;
+      }
+
+
 }
-
-
-
-
-
-
-//
-//            /*
-//            |-------------------------------------------
-//            | 建立信息bus
-//            |-------------------------------------------
-//            | 主要是运行过程中的信息,和运算结果
-//            | bus 初始化执行
-//            */
-//            bus('modules',    C('Router')['method_modules']);         //模块
-//            bus('controller', C('Router')['method_controller']);      //控制器
-//            bus('method',     C('Router')['method_action']);          //行为
-//            bus('ext',        C('Router')['method_action_ext']);      //行为扩展
-//
-//            //添加Middleware 进入bus
-//            bus('Middleware', sc('Middleware'));                  //中间件定义
-//
-//            bus('router',     C('Router'));        //路由
-//
-//            bus('user',       geter('user.info'));                //用户相关
-//            bus('usergroup',  geter('user.group'));               //用户组信息
-//            bus('userrulelib',geter('user.rulelib'));             //用户组权限信息
-//
-//            bus('menu', []);               //后台菜单
-//            bus('page', []);               //页面信息
-//            bus('rules',sc('rules'));     //rbacrules
-//            bus('app',  sc('app'));         //app相关
-//
-//            //req -> request
-//            bus('req',[
-//                'get'       => C('Router')['params'],
-//                'post'      => $_POST,
-//                'cookies'   => $_COOKIE,
-//                'session'   => $_SESSION,
-//                'server'    => $_SERVER,
-//            ]);
-//            bus('display',    []);               //页面信息
-//            bus('touchlist',  []);               //接触日志
-//
-//
-//
-//            sapp('Mmc')->set('demo1',null,10000);
-//            $ms1 = sapp('Mmc')->get('demo1');
-//print_r($this->routeMiddleware);
-//print_r($this->Middleware);
-//
-//sc();
 
 
 
