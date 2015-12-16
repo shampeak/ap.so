@@ -55,6 +55,8 @@ class Geter
             $a = $mc[1]?:'index';
             $p = isset($mc[2])?$mc[2]:'';
             //===========================================================
+            sapp('Ground')->geter($key);  //底层数据记录
+
             $class = $this->getClass($c);
             return $class->$a($p);
       }

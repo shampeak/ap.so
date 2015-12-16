@@ -46,17 +46,6 @@ class Group
             return sapp('db')->getrow($sql);
       }
 
-      public function iscache(){
-
-      }
-
-      public function setcache(){
-
-      }
-
-      public function getcache(){
-
-      }
 
 
 }

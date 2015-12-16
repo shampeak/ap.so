@@ -1,5 +1,8 @@
-<?php
-print_r($v3);
-?>
-echo
--------------
+login
+
+main
+
+
+/admin/auth/login
+/admin/auth/logout
+

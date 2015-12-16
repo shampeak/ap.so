@@ -42,7 +42,6 @@ class ControllerViewMiddleware extends MiddlewareBase implements MiddlewareInter
       public function handle($request, \Closure $next)
       {
 
-
             bus('view',[
                   'viewpath' =>    bus('root').bus('basepath').'View/',
             ]);

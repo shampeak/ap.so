@@ -34,5 +34,18 @@ use Grace\Set\MiddlewareInterface;
 class ControllerAfterMiddleware extends MiddlewareBase implements MiddlewareInterface
 {
 
+      /*
+      |--------------------------------------------------------
+      | 定义 中间件主体
+      |--------------------------------------------------------
+      |
+      */
+      public function handle($request, \Closure $next)
+      {
+            //|--------------------------------------------------------
+            sapp('Ground')->mcae();
 
+            // Perform action
+            return $next($request);
+      }
 }

@@ -8,7 +8,6 @@ use Grace\Set\Set;
     |------------------------------------------------
     | 总控类
     |------------------------------------------------
-    |
     */
 
 class Application extends Set
@@ -40,11 +39,11 @@ class Application extends Set
             //建立视图bus
             sapp('ap')->Middleware([
                 'ControllerViewMiddleware' => \App\Middleware\ControllerViewMiddleware::class,         //初始化视图
-                'ControllerRouterMiddleware' => \App\Middleware\ControllerRouterMiddleware::class,       //建立控制器
+                'ControllerRouterMiddleware' => \App\Middleware\ControllerRouterMiddleware::class,     //建立控制器
                 'ControllerRBACMiddleware' => \App\Middleware\ControllerRBACMiddleware::class,         //建立md beharivers 并且执行RBAC
-                'ControllerBeforeMiddleware' => \App\Middleware\ControllerBeforeMiddleware::class,       //
-                'ControllerRunMiddleware' => \App\Middleware\ControllerRunMiddleware::class,          //执行
-                  // 'ControllerAfterMiddleware'   => \App\Middleware\ControllerAfterMiddleware::class,        //后置操作
+                'ControllerBeforeMiddleware' => \App\Middleware\ControllerBeforeMiddleware::class,     //
+                'ControllerRunMiddleware' => \App\Middleware\ControllerRunMiddleware::class,           //执行
+                'ControllerAfterMiddleware'   => \App\Middleware\ControllerAfterMiddleware::class,        //后置操作
             ]);
             exit;
       }
@@ -60,10 +59,8 @@ class Application extends Set
 
             // 应用到类
 
-            //set_error_handler(array(&$this,'my_error_handler'));
-            set_error_handler(array('App\Application', 'my_error_handler'));
+//            set_error_handler(array('App\Application', 'my_error_handler'));
 //            示例的做法
-//            set_error_handler("");
 
             /*
             |------------------------------------------------
@@ -121,10 +118,10 @@ class Application extends Set
             includeIfExist($classfile);
       }
 
-      public static function my_error_handler($errno, $errstr, $errfile, $errline)
-      {
-            echo 123;
-      }
+//      public static function my_error_handler($errno, $errstr, $errfile, $errline)
+//      {
+//            echo 123;
+//      }
 
 
 }

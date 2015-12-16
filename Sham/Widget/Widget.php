@@ -38,8 +38,8 @@ class Widget {
        * 渲染模板
        * @param string $tpl 模板路径，如果为空则用类名作为模板名
        */
-      protected function display($tpl='',$data){
-
+      protected function display($tpl='',$data = array()){
+            $this->_data = array();
             foreach($data as $key=>$value){
                   $this->_data[$key] = $value;
             }

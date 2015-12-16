@@ -16,15 +16,15 @@ class home extends BaseController {
 
       }
 
-      public function doIn2dex(){
-            View('index',[]);
+      public function doIndex(){
+//            View('index',[]);
 //            sapp('ap')->Middleware([
 //                'mdflit'    => \Controller\Middleware\mdflit::class,         //初始化视图
 //            ]);
-
-            D(bus());
-            D(bus());
-          echo '--ede';
+//
+//            D(bus());
+//            D(bus());
+//          echo '--ede';
         //=======================================
         //print_r(bus(['user','modules']));     //获取bus信息
 //               print_r(sc());
@@ -91,14 +91,14 @@ class home extends BaseController {
          | ----------------------------------------------------------
          */
 
-
-          exit;
-        //print_r(geter('user.all'));
-
-        //ok
-        ap()->md([
-            'd'=>'md',
-        ])->go('v1');
+//
+//          exit;
+//        //print_r(geter('user.all'));
+//
+//        //ok
+//        ap()->md([
+//            'd'=>'md',
+//        ])->go('v1');
     }
 
 }

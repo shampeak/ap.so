@@ -1,9 +1,23 @@
 <?php
-// ¶¨Òå BASE_PATH
+// ï¿½ï¿½ï¿½ï¿½ BASE_PATH
+
+$u  = function(){
+  return 1;
+};
+var_dump($u);
+
+$db = new SQLite3('../Db/Gracedb.s3db');
+
+var_dump($db);
+
+$conn  =  sqlite_open('../Db/Gracedb.s3db');
+var_dump($conn);
+
+exit;
 
 define('BASE_PATH', __DIR__);
 
-// Autoload ×Ô¶¯ÔØÈë
+// Autoload ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
 
 require BASE_PATH.'/../vendor/autoload.php';
 

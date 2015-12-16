@@ -48,5 +48,6 @@ phpMyAdmin
 # editplus
 *.bak
 
+vendor
 
 

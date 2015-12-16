@@ -27,6 +27,7 @@ return [
         'Cookies'   => '../App/Config/Cookies.php',
 //        'Ap'        => '../App/Config/Ap.php',
         'Mmc'       => '../App/Config/Mmc.php',
+        'SQLite'       => '../App/Config/SQLite.php',
     ],
 
     /*
@@ -49,6 +50,8 @@ return [
         'Mmc'       => Sham\Mmc\Mmc::class,         //memcache对象
         'Wise'      => Sham\Wise\Wise::class,         //memcache对象
         'View'      => Sham\View\View::class,         //memcache对象
+        'SQLite'      => Sham\SQLite\SQLite::class,         //memcache对象
+        'Ground'      => Sham\Ground\Ground::class,         //系统脚手架
     ],
 
 ];

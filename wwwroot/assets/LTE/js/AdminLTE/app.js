@@ -4,8 +4,39 @@
  * Description:
  *      This file should be included in all pages
  !**/
- 
- function showAjaxModal(url,title)
+
+function setcookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function getcookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function setc(name){
+    var is = getcookie(name);
+    if(is == 1){
+        var ns = 0;
+    }else{
+        var ns = 1;
+    }
+    setcookie(name,ns,1);
+}
+
+function showAjaxModal(url,title)
 {
     if ( $("#modal-sham").length > 0 ) {
     } else {

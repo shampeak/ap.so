@@ -4,7 +4,7 @@ namespace App\Widget;
 
 use Sham\Widget\Widget;
 
-class TestWidget extends Widget {
+class Head_messageWidget extends Widget {
 
     public function invoke($data){
 

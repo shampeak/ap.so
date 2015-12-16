@@ -34,7 +34,14 @@ class User
       public function info()
       {
             $res = array();
-            $userlogin = $this->cookies();            //$userlogin = 'irones';
+            $userlogin = $this->cookies();            //
+
+            //test
+            $userlogin = 'irones';
+
+
+
+
             if($userlogin){
                   $userlogin = addslashes($userlogin);
                   //根据用户名查询出用户信息 -> to bus
@@ -46,6 +53,10 @@ class User
                               )";
                   $res = sapp('db')->getrow($sql);
             }
+
+
+            $res['pic'] = '/assets/LTE/img/avatar3.png';
+
             return $res;
       }
 

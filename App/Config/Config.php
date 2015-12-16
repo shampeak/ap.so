@@ -107,12 +107,8 @@ return [
 
     //控制器扩展
     'ActionExt'=>[
-        'po',       //post  有post
         'ed',       //修改
-        'cf',       //修改状态
-        'de',       //删除
-        'json',     // json
-        'vf',       //显示
+        'box',       //
     ],
 
     /*

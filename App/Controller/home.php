@@ -15,9 +15,9 @@ class home extends BaseController {
 //        geter('e.e404');
 //halt('test');
 
-        View('index',[
-
-        ]);
+//        View('index',[
+//
+//        ]);
 
 //        require('asdf.htm');
 //        W('index.htm',[
@@ -28,7 +28,7 @@ class home extends BaseController {
 
 
 
-        exit;
+//        exit;
 //        D(bus());
 
         /*

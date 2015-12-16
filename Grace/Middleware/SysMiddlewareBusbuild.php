@@ -25,9 +25,16 @@ class SysMiddlewareBusbuild extends MiddlewareBase implements MiddlewareInterfac
 
             //初步建立bus
             bus('root',       sc('Router')['m']?rtrim(APPROOT,'/').'/Modules/'.sc('Modulelist')[sc('Router')['m']].'/':rtrim(APPROOT,'/').'/');
+            bus('page', sc('Router')['m']."_".sc('Router')['c']."_".sc('Router')['a']);
+            bus('pageex', sc('Router')['m']."_".sc('Router')['c']."_".sc('Router')['a']."_".sc('Router')['e']."_".sc('Router')['type']);
+
             bus('app',        sc('App'));
             bus('router',     sc('Router'));
             bus('env',        sc('Env'));
+
+            bus('get',        sapp('Req')->get);
+            bus('post',        sapp('Req')->post);
+
             bus('view',        []);
 
             // Perform action

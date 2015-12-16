@@ -29,10 +29,11 @@ class Ap extends Base
       */
       public function Middleware($middlewarelist)
       {
+
             if(is_array($middlewarelist)){
                   foreach($middlewarelist as $key => $value){
                         //这里需要进一步测试,来展示对资源的占用情况
-
+                        sapp('ground')->middleware($key,$value);                //ground
                         if(sc('debug')){
                               //debug 模式下直接调用
                               $this->middlewarelist[$key] = new $value;
