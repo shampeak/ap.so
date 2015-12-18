@@ -10,6 +10,17 @@
 //设置值   bus('get',$_get)
 
 
+function saddslashes($string) {
+      if(is_array($string)) {
+            foreach($string as $key => $val) {
+                  $string[$key] = saddslashes($val);
+            }
+      } else {
+            $string = addslashes($string);
+      }
+      return $string;
+}
+
     /*
     |------------------------------------------------------
     | @param $arr

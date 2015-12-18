@@ -15,87 +15,29 @@ class set extends BaseController {
             view();
       }
 
-      public function doGeter_BoxPost()
-      {
-            $id = bus('post')['id'];
-            $des = bus('post')['des'];
-
-            sapp('SQLite')->update('geter','des',$des,'id',intval($id));
-            echo json_encode([
-                'code'=> 200,
-                'msg' => '-'
-            ]);
+      public function doDebug(){
+            D(bus());
       }
 
-      public function doGeter_Box($param)
-      {
-            $sql = "select * from geter where id = ".intval($param);
-            $res = sapp('SQLite')->getrow($sql);
-            view('',[
-                      'res'=>$res
-                ]);
-      }
+      /*
+      |---------------------------------------------------------------
+      | 标准的 ca 事件
+      |---------------------------------------------------------------
+      */
 
-      public function doGeter_Ed($param)
-      {
-            $sql = "select active from geter where id = ".intval($param);
-            $st = sapp('SQLite')->getone($sql);
-            $newactive = $st?0:1;
-
-            sapp('SQLite')->update('geter','active',$newactive,'id',intval($param));
-
-
-            echo json_encode([
-                  'code'=> 200,
-                  'msg' => '-'
-            ]);
-      }
-
-      public function doGeterPost()
-      {
-            $list = bus('post')['s'];
-            foreach($list as $key=>$value){
-                  $value = intval($value);
-                  sapp('SQLite')->update('geter','sort',$value,'id',$key);
-            }
-            R('/admin/set/geter/');
-      }
-
-      public function doGeter(){
-            $where = 1;
-            //去除无效的
-            if($_COOKIE['set_get_list']){
-                  $where .= " and active != 0";
-            }
-
-            $sql = "select * from geter where $where order by sort desc";
-            $res = sapp('SQLite')->getall($sql);
-
-            view('',[
-                  'res' => $res
-            ]);
-      }
-
-
-      public function doMcae(){
-            //echo 主界面
-            view();
-      }
-
-      public function doMcae_menu(){
-            //echo 主界面
-            view();
-      }
-
-      public function doMiddleware(){
-            //echo 主界面
-            view();
-      }
-
-      public function doWidget(){
-            //echo 主界面
-            view();
-      }
+      public function doGroupPost(){}
+      public function doGroup(){}
+      public function doGroup_BoxPost(){}
+      public function doGroup_Box(){}
+      public function doGroup_DialogPost(){}
+      public function doGroup_Dialog($param){}
+      //标准扩展
+      public function doGroup_Delete($param){}
+      public function doGroup_States($param){}
+      //
+      public function doGroup_Ext($param){}
+      public function doGroup_Ed($param){}
+      public function doGroup_De($param){}
 
 
 }

@@ -23,11 +23,21 @@ class Group
 
       private $res = array(); //数据结果集
 
-      //返回所有的用户
-      public function all()
+      public function KeyGroupidActiveTrue()
       {
-
-            $sql = "select * from user_group order by sort desc";
+            $sql = "    select * from user_group
+                        where active = 1
+                        order by sort desc,groupId desc";
+            $this->res = sapp('db')->getall($sql,'groupId');
+            return $this->res;
+      }
+            //返回所有的用户
+      public function all($active = 1)
+      {
+            $active = intval($active);
+            $sql = "    select * from user_group
+                        where active = $active
+                        order by sort desc,groupId desc";
             $this->res = sapp('db')->getall($sql);
             return $this->res;
       }

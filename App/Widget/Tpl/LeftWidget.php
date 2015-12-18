@@ -33,15 +33,28 @@ $pic = bus('user')['pic'];
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                   <li>
-                        <a href="../../index.html">
+                        <a href="/admin/main/">
                               <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         </a>
                   </li>
                   <li>
-                        <a href="../widgets.html">
-                              <i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
+                        <a href="/admin/set/">
+                              <i class="fa fa-th"></i> <span>Ground</span> <small class="badge pull-right bg-green">new</small>
                         </a>
                   </li>
+
+                  <li class="treeview active">
+                        <a href="#">
+                              <i class="fa fa-bar-chart-o"></i>
+                              <span>管理</span>
+                              <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                              <li><a href="/admin/user/group/"><i class="fa fa-angle-double-right"></i> 用户组管理</a></li>
+                              <li><a href="/admin/user/"><i class="fa fa-angle-double-right"></i> 用户管理</a></li>
+                        </ul>
+                  </li>
+                  
                   <li class="treeview">
                         <a href="#">
                               <i class="fa fa-bar-chart-o"></i>
@@ -54,6 +67,7 @@ $pic = bus('user')['pic'];
                               <li><a href="../charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
                         </ul>
                   </li>
+                  
                   <li class="treeview">
                         <a href="#">
                               <i class="fa fa-laptop"></i>

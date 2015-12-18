@@ -24,7 +24,8 @@
 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 	  <!-- Left side column. contains the logo and sidebar -->
-	  <?php W('Ground_left');?>
+	<?php W('Ground_left');?>
+
 
 	  <!-- Right side column. Contains the navbar and content of the page -->
 	  <aside class="right-side">
@@ -53,19 +54,22 @@
 										  </div>
 									</div><!-- /.box-header -->
 									<div class="box-body table-responsive no-padding">
-										  <form action="/admin/set/geter/"  method="post">
+										  <form action=""  method="post">
 										  <table class="table table-hover">
 												<tr>
 													  <th width="60">排序</th>
-													  <th width="350">访问 [Controller.Action.Params]</th>
+													  <th width="250">name</th>
+
 													  <th>DES</th>
 													  <th width="200">操作</th>
 												</tr>
                                                 <?php foreach($res as $key =>$value) {?>
 												<tr>
 													  <td><input name="s[<?php echo $value['id'];?>]" type="text" id="textfield" size="5" maxlength="5" value="<?php echo $value['sort'];?>"></td>
-													  <td><?php echo $value['controller'].'.'.$value['action'].'.'.$value['params'];?></td>
-													  <td><?php echo $value['des'];?></td>
+													  <td><?=$value['name']?></td>
+
+
+													  <td><?=$value['des'];?></td>
 													  <td>
 															<?php	if($value['active']) {
 																  ?>
@@ -91,9 +95,10 @@
 												<tr>
 													  <td>
 												      <input type="submit" name="button" id="button" value="排序"  class="btn btn-primary shamtest submit"></td>
+													  <td>&nbsp;</td>
+													  <td>&nbsp;</td>
 
 													  <td>&nbsp;</td>
-													<td>&nbsp;</td><td>&nbsp;</td>
 												</tr>
 										  </table>
 										  </form>
@@ -125,16 +130,15 @@
 
 			//调用
 			$('.shamedit').click(function(){
-
 				  var relid = $(this).attr("relid");
-				  showAjaxModal('/admin/set/geter/box/'+relid,'编辑geter')
+				  showAjaxModal('/admin/set/widget/box/'+relid,'编辑Middleware')
 			});
 
 			$('.shamdelete').click(function(){
 				  if (confirm("确认要删除？")) {
 						var relid = $(this).attr("relid");
 						var res = $.ajax({
-							  url : '/admin/set/geter/de/'+relid,
+							  url : '/admin/set/widget/de/'+relid,
 							  type: 'get',
 							  data: {},
 							  dataType: "json",
@@ -163,7 +167,7 @@
 				  var relid = $(this).attr("relid");
 
 				  var res = $.ajax({
-						url : '/admin/set/geter/ed/'+relid,
+						url : '/admin/set/widget/ed/'+relid,
 						type: 'get',
 						data: {},
 						dataType: "json",

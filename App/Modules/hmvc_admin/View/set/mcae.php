@@ -26,6 +26,7 @@
 	  <!-- Left side column. contains the logo and sidebar -->
 	  <?php W('Ground_left');?>
 
+
 	  <!-- Right side column. Contains the navbar and content of the page -->
 	  <aside class="right-side">
 			<!-- Content Header (Page header) -->
@@ -53,37 +54,46 @@
 										  </div>
 									</div><!-- /.box-header -->
 									<div class="box-body table-responsive no-padding">
-										  <form action="/admin/set/geter/"  method="post">
+										  <form action=""  method="post">
 										  <table class="table table-hover">
 												<tr>
 													  <th width="60">排序</th>
-													  <th width="350">访问 [Controller.Action.Params]</th>
+													<th width="200">访问 [m.c]</th>
+													<th width="300">访问 [m.c.a.e.MOTHED]</th>
+													<th width="250">url</th>
+
 													  <th>DES</th>
 													  <th width="200">操作</th>
 												</tr>
                                                 <?php foreach($res as $key =>$value) {?>
 												<tr>
 													  <td><input name="s[<?php echo $value['id'];?>]" type="text" id="textfield" size="5" maxlength="5" value="<?php echo $value['sort'];?>"></td>
-													  <td><?php echo $value['controller'].'.'.$value['action'].'.'.$value['params'];?></td>
+													<td><?=$value['module'].'.'.$value['controller'].'.'.$value['action'];?></td>
+													<td><?=$value['module'].'.'.$value['controller'].'.'.$value['action'].'.'.$value['actionext'].'.'.$value['mothed'];?></td>
+													<td>
+													<a href="<?='/'.$value['module'].'/'.$value['controller'].'/'.$value['action'].'/'.$value['actionext'];?>" target="_blank">
+															<?='/'.$value['module'].'/'.$value['controller'].'/'.$value['action'].'/'.$value['actionext'];?>
+														</a>
+													</td>
 													  <td><?php echo $value['des'];?></td>
 													  <td>
 															<?php	if($value['active']) {
 																  ?>
 
-																  <a relid=<?php echo $value['id'];?> class="btn btn-primary btn-sm changestate" data-target="#compose-modal" data-toggle="modal">有效</a>
+																  <a class="btn btn-primary btn-sm changestate" data-target="#compose-modal" data-toggle="modal" relid=<?=$value['id'];?>>有效</a>
 
 																  <?php
 															}else {
 																  //else
 																  ?>
-																  <a relid=<?php echo $value['id'];?> class="btn btn-warning btn-sm changestate" data-target="#compose-modal" data-toggle="modal">无效</a>
+																  <a class="btn btn-warning btn-sm changestate" data-target="#compose-modal" data-toggle="modal" relid=<?=$value['id'];?>>无效</a>
 																  <?php
 															}
 															//else
 															?>
 
-															<a relid=<?php echo $value['id'];?> class="btn btn-primary btn-sm shamedit">编辑</a>
-															<a relid=<?php echo $value['id'];?> class="btn btn-primary btn-sm shamdelete">删除</a>
+															<a class="btn btn-primary btn-sm shamedit" relid=<?=$value['id'];?>>编辑</a>
+															<a class="btn btn-primary btn-sm shamdelete" relid=<?=$value['id'];?>>删除</a>
 													  </td>
 												</tr>
                                                 <?php } ?>
@@ -92,8 +102,9 @@
 													  <td>
 												      <input type="submit" name="button" id="button" value="排序"  class="btn btn-primary shamtest submit"></td>
 
-													  <td>&nbsp;</td>
-													<td>&nbsp;</td><td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td> <td>&nbsp;</td>
+													<td>&nbsp;</td> <td>&nbsp;</td>
 												</tr>
 										  </table>
 										  </form>
@@ -127,14 +138,14 @@
 			$('.shamedit').click(function(){
 
 				  var relid = $(this).attr("relid");
-				  showAjaxModal('/admin/set/geter/box/'+relid,'编辑geter')
+				  showAjaxModal('/admin/set/mcae/box/'+relid,'编辑geter')
 			});
 
 			$('.shamdelete').click(function(){
 				  if (confirm("确认要删除？")) {
 						var relid = $(this).attr("relid");
 						var res = $.ajax({
-							  url : '/admin/set/geter/de/'+relid,
+							  url : '/admin/set/mcae/de/'+relid,
 							  type: 'get',
 							  data: {},
 							  dataType: "json",
@@ -163,7 +174,7 @@
 				  var relid = $(this).attr("relid");
 
 				  var res = $.ajax({
-						url : '/admin/set/geter/ed/'+relid,
+						url : '/admin/set/mcae/ed/'+relid,
 						type: 'get',
 						data: {},
 						dataType: "json",

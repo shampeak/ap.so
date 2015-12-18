@@ -46,7 +46,7 @@ class Init extends MiddlewareBase implements MiddlewareInterface
 
             bus('user', geter('user.info'));
             bus('group',geter('user.group'));
-            bus('menu', geter('menu.my'));
+            //bus('menu', geter('menu.my'));
 
 
             assign('get',sc('Get'));

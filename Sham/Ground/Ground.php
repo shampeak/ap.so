@@ -125,17 +125,19 @@ class Ground
 
             //|--------------------------------------------------------
             //提炼出 page_menu
-            $page = "{$moudle}_{$controller}_{$action}";
-            $mcaemenu = sapp('SQLite')->getall('select * from mcae_menu');
+            $mc         = "{$moudle}.{$controller}";
+            $mca        = "{$moudle}.{$controller}.{$action}";
+
+            $mcaemenu = sapp('SQLite')->getall('select * from menu');
             $ms = array();
             foreach($mcaemenu as $value){
-                  $ms[$value['page']] = 1;
+                  $ms[$value['mc']][$value['mca']] = 1;
             }
-            //sapp('SQLite')->query('delete from mcae_menu');
-            if(!$ms[$page]){
-                  sapp('SQLite')->insert('mcae_menu',[
-                      'page'        => $page,
-                      'icon'        => 'fa fa-th'
+            if(!$ms[$mc][$mca]){
+                  sapp('SQLite')->insert('menu',[
+                      'mc'        => $mc,
+                      'mca'       => $mca,
+                      'icon'      => 'fa fa-th'
                   ]);
             }
 

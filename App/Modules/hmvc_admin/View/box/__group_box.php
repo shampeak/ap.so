@@ -2,7 +2,7 @@
 
       <div class="box box-danger collapsed-box">
             <div class="box-header">
-                  <h3 class="box-title"><a class="btn btn-default" data-toggle="tooltip" data-widget="collapse" data-original-title="Collapse">添加用户组12</a>
+                  <h3 class="box-title"><a class="btn btn-default" data-toggle="tooltip" data-widget="collapse" data-original-title="Collapse">添加用户组</a>
                   </h3>
                   <div class="box-tools pull-right">
                         <button class="btn btn-default btn-sm" title="" data-toggle="tooltip" data-widget="collapse" data-original-title="Collapse">
@@ -43,7 +43,6 @@
                                     <div class="callout callout-danger">
                                           <h4>I am a danger callout!</h4>
                                           <p>
-
                                           <div class=" col-xs-2"><input type="checkbox" checked> active</div>
                                           <div class=" col-xs-2"><input type="checkbox" checked> active</div>
                                           <div class=" col-xs-2"><input type="checkbox" checked> active</div>
@@ -54,8 +53,6 @@
                                           <div class=" col-xs-2"><input type="checkbox" checked> active</div>
                                           <div class=" col-xs-2"><input type="checkbox" checked> active</div>
                                           -
-
-
                                           </p>
                                     </div>
                               </div>
@@ -89,3 +86,10 @@
       </div>
 
 </div>
+
+
+<script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+
+      })
+</script>

@@ -43,8 +43,6 @@ class ControllerBeforeMiddleware extends MiddlewareBase implements MiddlewareInt
       {
             //建立中间件 & 行为
 
-
-
             // Perform action
             return $next($request);
       }

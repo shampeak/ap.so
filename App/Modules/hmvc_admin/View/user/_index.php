@@ -35,7 +35,7 @@
 			<!--#include virtual = "/box/Usergroupadd" -->
 
 
-
+			<!-- ?php view('../box/Usergroupadd',[]);?>
 
 			<!-- Main content -->
 			<section class="content">

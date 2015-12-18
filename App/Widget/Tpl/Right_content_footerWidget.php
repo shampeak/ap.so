@@ -1,4 +1,4 @@
-<div class="col-xs-12" id="content_footer">
+<!--div class="col-xs-12" id="content_footer">
       <hr>
       <dl class="dl-horizontal">
             <dt>Description lists</dt>
@@ -15,4 +15,4 @@
             <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
       </dl>
 
-</div>
+</div -->

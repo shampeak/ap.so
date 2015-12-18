@@ -43,6 +43,7 @@ class Init extends MiddlewareBase implements MiddlewareInterface
             assign('post',sc('Post'));
             assign('router',sc('Router'));
 
+
 //            assign('v3',[
 //            'routerv3'=>'v33',
 //            ]);
