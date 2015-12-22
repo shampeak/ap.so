@@ -9,6 +9,55 @@
 //查看单个 bus('get')
 //设置值   bus('get',$_get)
 
+/*
+ * 中间件执行模式
+ * $str = Md($request,[
+ *    'auth'      => '\Sham\Middleware\auth',
+ *    'cache'     => '\Sham\Middleware\cache',
+ * ]);
+ */
+
+//public function Middleware($middlewarelist)
+//{
+//
+//      if(is_array($middlewarelist)){
+//            foreach($middlewarelist as $key => $value){
+//                  //这里需要进一步测试,来展示对资源的占用情况
+//                  sapp('ground')->middleware($key,$value);                //ground
+//                  if(sc('debug')){
+//                        //debug 模式下直接调用
+//                        $this->middlewarelist[$key] = new $value;
+//                        $this->middlewarelist[$key]->run();;         //执行中间件
+//                  }else{
+//                        //debug = false unset
+//                        //or 这里关系到对内存的占用情况
+//                        $ms = new $value;
+//                        $ms->run();
+//                        unset($ms);
+//                  }
+//            }
+//      }
+//}
+
+/*
+$request = Md([123123123,12,1,23123],[
+    'test'=> \App\Middleware\Controllertest::class
+]);
+*/
+function Md($request,$middlewarelist = []){
+      if(is_array($middlewarelist)){
+            foreach($middlewarelist as $key => $value){
+                  sapp('ap')->middlewarelist[$key] = new $value;
+                  $request = sapp('ap')->middlewarelist[$key]->run($request);
+                  if(!sc('debug')){
+                        unset(sapp('ap')->middlewarelist[$key]);
+                  }
+            }
+      }
+      return $request;
+}
+
+
 
 function saddslashes($string) {
       if(is_array($string)) {

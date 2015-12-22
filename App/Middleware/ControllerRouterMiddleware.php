@@ -82,6 +82,9 @@ class ControllerRouterMiddleware extends MiddlewareBase implements MiddlewareInt
 
             //实例化
             bus('controller', new $controller());                 //这里已经正常了
+            bus('middlewareBefore', bus('controller')->middlewareBefore());
+            bus('middlewareAfter',  bus('controller')->middlewareAfter());
+            bus('behavior',         bus('controller')->behaviors());
 
             //寻找扩展方法
             if(!method_exists(bus('controller'), $action)){

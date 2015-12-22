@@ -31,30 +31,11 @@ use Grace\Set\MiddlewareInterface;
 
 
 
-class ControllerRunMiddleware extends MiddlewareBase implements MiddlewareInterface
+class Controllertest extends MiddlewareBase implements MiddlewareInterface
 {
-      /*
-      |--------------------------------------------------------
-      | 定义 中间件主体
-      |--------------------------------------------------------
-      |
-      */
-      public function handle($request, \Closure $next)
-      {
-            //建立中间件 & 行为
-            $action = bus('router')['action'];
-            $params = bus('router')['param'];
 
 
-            //执行controller自带的中间件
 
-            //建立视图bus
-            sapp('ap')->Middleware(bus('controller')->middlewareBefore());
-            bus('controller')->$action($params);
-            sapp('ap')->Middleware(bus('controller')->middlewareAfter());
 
-            // Perform action
-            return $next($request);
-      }
 
 }

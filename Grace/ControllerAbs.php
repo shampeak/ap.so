@@ -33,10 +33,16 @@ class ControllerAbs //extends ControllerInterface
         ];
     }
 
-    public function middleware(){
+    public function middlewareBefore(){
         return [
-            // \Controller\TestMiddleware:class,
+           // 'Init'    => \Controller\Middleware\Init::class,
         ];
+    }
+
+    public function middlewareAfter(){
+//        return [
+//            'Init'    => \Controller\Middleware\Init::class,
+//        ];
     }
 
 

@@ -43,9 +43,8 @@ class ControllerRBACMiddleware extends MiddlewareBase implements MiddlewareInter
       {
             //建立中间件 & 行为
 
-            bus('md',         bus('controller')->middleware());
-            bus('behavior',   bus('controller')->behaviors());
             bus('mymca',      geter('menu.mymca'));               //当前的mca信息
+            bus('mypath',     geter('menu.mypath'));
             bus('menu',       geter('menu.menu'));                 //当前的mca信息
 
 

@@ -20,7 +20,7 @@ return [
     E_ALL ^ E_PARSE,
     */
     'error_reporting'      => E_ALL ^ E_NOTICE,
-
+    'mcaroot'              => "admin.main.index",
     /*
     |--------------------------------------------------------------------------
     | 执行环境参数

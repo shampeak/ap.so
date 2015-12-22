@@ -41,8 +41,6 @@ class Init extends MiddlewareBase implements MiddlewareInterface
       {
 
 
-            bus('mcae', geter('mcae.self'));
-            bus('path', geter('mcae.path'));
 
             bus('user', geter('user.info'));
             bus('group',geter('user.group'));

@@ -17,6 +17,10 @@ class auth extends BaseController {
             ]);
       }
 
+      public function doIndex(){
+            R('/admin/auth/login');
+      }
+
       public function doLogin(){
             //echo 主界面
             view();

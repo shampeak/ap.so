@@ -11,6 +11,7 @@ namespace Controller;
 class set extends BaseController {
 
       public function doIndex(){
+
             //echo 主界面
             view();
       }

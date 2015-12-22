@@ -23,14 +23,15 @@ class MiddlewareBase extends Set
       | 调用 (new $Middle)->run();
       |
       */
-      public function run()
+      public function run($request = [])
       {
             $next    = $this->next();
-            $this->terminate(
+            $request = $this->request()?:$request;
+            return $this->terminate(
                 $this->AfterHandle(
                     $this->Handle(
                         $this->BeforeHandle(
-                            $this->request(),$next
+                            $request,$next
                         ),$next
                     ),$next
                 )
@@ -110,7 +111,7 @@ class MiddlewareBase extends Set
             //处理结束后做一些操作
             // Store the session data...
             if(sc('debug')) $this->res['end'] = $request; //记录结果数据
-            //return $request;
+            return $request;
       }
 
       public function view()

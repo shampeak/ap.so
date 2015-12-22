@@ -34,6 +34,7 @@ class SysMiddlewareBusbuild extends MiddlewareBase implements MiddlewareInterfac
             bus('mc', "$m.$c");
             bus('mca', "$m.$c.$a");
             bus('mcaet', "$m.$c.$a.$e.$t");
+            bus('mcaroot', sc('mcaroot'));
 
             //bus('page', sc('Router')['m']."_".sc('Router')['c']."_".sc('Router')['a']);
            // bus('pageex', sc('Router')['m']."_".sc('Router')['c']."_".sc('Router')['a']."_".sc('Router')['e']."_".sc('Router')['type']);

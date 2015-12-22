@@ -38,12 +38,12 @@ class Application extends Set
 
             //建立视图bus
             sapp('ap')->Middleware([
-                'ControllerViewMiddleware' => \App\Middleware\ControllerViewMiddleware::class,         //初始化视图
-                'ControllerRouterMiddleware' => \App\Middleware\ControllerRouterMiddleware::class,     //建立控制器
-                'ControllerRBACMiddleware' => \App\Middleware\ControllerRBACMiddleware::class,         //建立md beharivers 并且执行RBAC
-                'ControllerBeforeMiddleware' => \App\Middleware\ControllerBeforeMiddleware::class,     //
-                'ControllerRunMiddleware' => \App\Middleware\ControllerRunMiddleware::class,           //执行
-                'ControllerAfterMiddleware'   => \App\Middleware\ControllerAfterMiddleware::class,        //后置操作
+                'ControllerViewMiddleware'      => \App\Middleware\ControllerViewMiddleware::class,         //初始化视图
+                'ControllerRouterMiddleware'    => \App\Middleware\ControllerRouterMiddleware::class,     //建立控制器
+                'ControllerRBACMiddleware'      => \App\Middleware\ControllerRBACMiddleware::class,         //建立md beharivers 并且执行RBAC
+                'ControllerBeforeMiddleware'    => \App\Middleware\ControllerBeforeMiddleware::class,     //
+                'ControllerRunMiddleware'       => \App\Middleware\ControllerRunMiddleware::class,           //执行
+                'ControllerAfterMiddleware'     => \App\Middleware\ControllerAfterMiddleware::class,        //后置操作
             ]);
             exit;
       }
@@ -53,8 +53,9 @@ class Application extends Set
             !defined('APPROOT') && define('APPROOT', '../App/');;
 
             sc([
-                'debug' => dc('debug'),
-                'error_reporting' => dc('error_reporting'),
+                'debug'             => dc('debug'),
+                'error_reporting'   => dc('error_reporting'),
+                'mcaroot'           => dc('mcaroot'),
             ]);
 
             // 应用到类

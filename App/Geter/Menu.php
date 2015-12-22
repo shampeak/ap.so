@@ -67,7 +67,24 @@ class Menu
         //计算路径
         return $_menulib;
     }
+    public function mypath()
+    {
+        $mca = $this->mymca();
+        if($mca['parant']){
+            $res['name']    = $mca['parant']['title'];
+            $res['url']     = $mca['parant']['url'];
+            $res['icon']    = $mca['parant']['icon'];
+            $res['mca']     = $mca['parant']['mca'];
+            $path[] = $res;
+        }
+        $res['name']    = $mca['title'];
+        $res['url']     = $mca['url'];
+        $res['icon']    = $mca['icon'];
+        $res['mca']     = $mca['mca'];
+        $path[] = $res;
+        return $path;
 
+    }
     //根据当前的menu配置和当前的mca 获得mca信息和path信息
     public function mymca()
     {

@@ -11,30 +11,42 @@
 
 return [
 	[
-		'mca'		=> '1N.home.index',
-		'title'		=> '用户管理',
+		'mca'		=> 'admin.home.inde123312x',
+		'title'		=> '仪表盘',
 		'subtitle'	=> '对用户的增删改',
-		'icon'		=> 'icon primary',
-		'ismenu'    => true,                    //是否显示到菜单上
+		'icon'		=> 'fa fa-dashboard',
+		'ismenu'    => false,                    //是否显示到菜单上
 		'child'	=> [
 			[
-				'mca'		=> 'N.home.index',
+				'mca'		=> 'admin.home.in123123dex',
 				'title'		=> '用户管理2',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
-				'ismenu'    => true,
+				'ismenu'    => false,
 			],
 			[
-				'mca'		=> 'su.admio.user3',
+				'mca'		=> 'su.admio.us123123er3',
 				'title'		=> '用户管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary1',
-				'ismenu'    => true,
+				'ismenu'    => false,
 			],
 		],
 	],
+
+
+
 	[
-		'mca'		=> 'su.admio.user4',
+		'mca'		=> 'admin.main.index',
+		'title'		=> '仪表盘',
+		'subtitle'	=> '显示各项系统数据',
+		'icon'		=> 'fa fa-dashboard',
+		'ismenu'    => true,                    //是否显示到菜单上
+
+	],
+
+	[
+		'mca'		=> 'admin.user.user4',
 		'title'		=> '用户管理',
 		'subtitle'	=> '对用户的增删改',
 		'icon'		=> 'icon primary',
@@ -57,14 +69,37 @@ return [
 		],
 	],
 	[
+		'mca'		=> 'admin.user.user4',
+		'title'		=> '用户管理',
+		'subtitle'	=> '对用户的增删改',
+		'icon'		=> 'icon primary',
+		'ismenu'    => true,                    //是否显示到菜单上
+		'child'	=> [
+			[
+				'mca'		=> 'su.admio.user5',
+				'title'		=> '用户管理',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'su.admio.user6',
+				'title'		=> '用户管理',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+		],
+	],
+
+
+	[
 		'mca'		=> 'su.admio.user7',
 		'title'		=> '用户管理',
 		'subtitle'	=> '对用户的增删改',
 		'icon'		=> 'icon primary',
 		'ismenu'    => true,                    //是否显示到菜单上
 	],
-
-
 
 ];
 

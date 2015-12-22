@@ -16,7 +16,7 @@ class Ap extends Base
 {
 
       private $_config              = array();
-      private $middlewarelist              = array();
+      public $middlewarelist              = array();
 
       public function __construct($config = array()){
             $this->_config = $config;
