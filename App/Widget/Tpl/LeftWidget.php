@@ -43,15 +43,15 @@ $pic = bus('user')['pic'];
                   foreach($menu as $key=>$value) {
                   ?>
                         <!--li class="treeview active"-->
+                        <?php
+                        if($value['child']){
+                        ?>
                         <li class="treeview <?php if($value['mca'] == bus('mymca')['parant']['mca'] || $value['mca'] == bus('mymca')['mca']){ ?>active<?php }?>">
-                              <a href="<?php if($value['child']){echo $value['url'];}else{echo '#';}?>">
+                              <a href="#">
                                     <i class="<?=$value['icon']?>"></i>
                                     <span><?=$value['title']?></span>
-                                    <?php if($value['child']){ ?><i class="fa fa-angle-left pull-right"></i><?php }?>
+                                    <i class="fa fa-angle-left pull-right"></i>
                               </a>
-                              <?php
-                              if($value['child']){
-                              ?>
                                     <ul class="treeview-menu">
                                           <?
                                           foreach($value['child'] as $k=>$v) {
@@ -61,10 +61,19 @@ $pic = bus('user')['pic'];
                                           }
                                           ?>
                                     </ul>
-                              <?php
-                              }
-                              ?>
                         </li>
+                        <?php
+                        }else{
+                        ?>
+                        <li>
+                              <a href="<?=$value['url']?>">
+                                    <i class="<?=$value['icon']?>"></i> <span><?=$value['title']?></span>
+                              </a>
+                        </li>
+
+                        <?php
+                        }
+                        ?>
                   <?php
                   }
                   ?>
@@ -117,7 +126,7 @@ $pic = bus('user')['pic'];
                   </li -->
 
                   <!-- 系统设置 -->
-                  <li class="treeview">
+                  <!-- li class="treeview">
                         <a href="javascript:void(0)">
                               <i class="fa fa-table"></i> <span>Set</span>
                               <i class="fa fa-angle-left pull-right"></i>

@@ -10,29 +10,29 @@
  */
 
 return [
-	[
-		'mca'		=> 'admin.home.inde123312x',
-		'title'		=> '仪表盘',
-		'subtitle'	=> '对用户的增删改',
-		'icon'		=> 'fa fa-dashboard',
-		'ismenu'    => false,                    //是否显示到菜单上
-		'child'	=> [
-			[
-				'mca'		=> 'admin.home.in123123dex',
-				'title'		=> '用户管理2',
-				'subtitle'	=> '对用户的增删改',
-				'icon'		=> 'icon primary',
-				'ismenu'    => false,
-			],
-			[
-				'mca'		=> 'su.admio.us123123er3',
-				'title'		=> '用户管理',
-				'subtitle'	=> '对用户的增删改',
-				'icon'		=> 'icon primary1',
-				'ismenu'    => false,
-			],
-		],
-	],
+//	[
+//		'mca'		=> 'admin.home.inde123312x',
+//		'title'		=> '仪表盘',
+//		'subtitle'	=> '对用户的增删改',
+//		'icon'		=> 'fa fa-dashboard',
+//		'ismenu'    => false,                    //是否显示到菜单上
+//		'child'	=> [
+//			[
+//				'mca'		=> 'admin.home.in123123dex',
+//				'title'		=> '用户管理2',
+//				'subtitle'	=> '对用户的增删改',
+//				'icon'		=> 'icon primary',
+//				'ismenu'    => false,
+//			],
+//			[
+//				'mca'		=> 'su.admio.us123123er3',
+//				'title'		=> '用户管理',
+//				'subtitle'	=> '对用户的增删改',
+//				'icon'		=> 'icon primary1',
+//				'ismenu'    => false,
+//			],
+//		],
+//	],
 
 
 
@@ -46,45 +46,22 @@ return [
 	],
 
 	[
-		'mca'		=> 'admin.user.user4',
+		'mca'		=> 'admin.user.index',
 		'title'		=> '用户管理',
 		'subtitle'	=> '对用户的增删改',
-		'icon'		=> 'icon primary',
+		'icon'		=> 'glyphicon glyphicon-user',
 		'ismenu'    => true,                    //是否显示到菜单上
 		'child'	=> [
 			[
-				'mca'		=> 'su.admio.user5',
+				'mca'		=> 'admin.user.index',
 				'title'		=> '用户管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
 			],
 			[
-				'mca'		=> 'su.admio.user6',
-				'title'		=> '用户管理',
-				'subtitle'	=> '对用户的增删改',
-				'icon'		=> 'icon primary',
-				'ismenu'    => true,
-			],
-		],
-	],
-	[
-		'mca'		=> 'admin.user.user4',
-		'title'		=> '用户管理',
-		'subtitle'	=> '对用户的增删改',
-		'icon'		=> 'icon primary',
-		'ismenu'    => true,                    //是否显示到菜单上
-		'child'	=> [
-			[
-				'mca'		=> 'su.admio.user5',
-				'title'		=> '用户管理',
-				'subtitle'	=> '对用户的增删改',
-				'icon'		=> 'icon primary',
-				'ismenu'    => true,
-			],
-			[
-				'mca'		=> 'su.admio.user6',
-				'title'		=> '用户管理',
+				'mca'		=> 'admin.user.group',
+				'title'		=> '用户组管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
@@ -92,14 +69,56 @@ return [
 		],
 	],
 
-
 	[
-		'mca'		=> 'su.admio.user7',
-		'title'		=> '用户管理',
-		'subtitle'	=> '对用户的增删改',
-		'icon'		=> 'icon primary',
+		'mca'		=> 'admin.set.index',
+		'title'		=> 'Ground',
+		'subtitle'	=> '更底层数据管理',
+		'icon'		=> 'glyphicon glyphicon-th',
+		'ismenu'    => true,                    //是否显示到菜单上
+		'child'	=> [
+			[
+				'mca'		=> 'admin.set.geter',
+				'title'		=> '静态化数据',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'admin.set.mcae',
+				'title'		=> '控制器标识',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'admin.set.widget',
+				'title'		=> '页面部件',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'admin.set.middleware',
+				'title'		=> '中间件',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'admin.set.menu',
+				'title'		=> '菜单',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+		],
+	],
+	[
+		'mca'		=> 'admin.test.index',
+		'title'		=> '测试',
+		'subtitle'	=> '不成熟的控制器测试',
+		'icon'		=> 'glyphicon glyphicon-th',
 		'ismenu'    => true,                    //是否显示到菜单上
 	],
-
 ];
 

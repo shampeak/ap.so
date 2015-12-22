@@ -24,7 +24,7 @@
             ?>
 <?php
 foreach($re as $value){
-      echo '<li class="'.$value['icon'].'"> <a href="'.$value['url'].'">'.$value['name'].'</a></li>';
+      echo '<li class=""> <i class="'.$value['icon'].'"></i> <a href="'.$value['url'].'">'.$value['name'].'</a></li>';
 }
 ?>
       </ol>

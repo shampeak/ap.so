@@ -24,7 +24,7 @@
 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 	  <!-- Left side column. contains the logo and sidebar -->
-	<?php W('Ground_left');?>
+	<?php W('left');?>
 
 
 	  <!-- Right side column. Contains the navbar and content of the page -->
