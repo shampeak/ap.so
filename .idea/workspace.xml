@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72743c26-4662-427e-bc2a-8ad38a9d7030" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\www\ap.so\App\Controller\box.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\www\ap.so\App\Widget\Tpl\Ground_LeftWidget.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Db/Gracedb.s3db" afterPath="$PROJECT_DIR$/Db/Gracedb.s3db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/BaseController.php" afterPath="$PROJECT_DIR$/App/Controller/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sham/Cookies/Cookies.php" afterPath="$PROJECT_DIR$/Sham/Cookies/Cookies.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Widget/Tpl/Head_useraccountWidget.php" afterPath="$PROJECT_DIR$/App/Widget/Tpl/Head_useraccountWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/Middleware/Init.php" afterPath="$PROJECT_DIR$/App/Controller/Middleware/Init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Widget/Tpl/LeftWidget.php" afterPath="$PROJECT_DIR$/App/Widget/Tpl/LeftWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/Menulib.php" afterPath="$PROJECT_DIR$/App/Config/Menulib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sham/Mmc/Mmc.php" afterPath="$PROJECT_DIR$/Sham/Mmc/Mmc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Geter/User.php" afterPath="$PROJECT_DIR$/App/Geter/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/Vo.config.php" afterPath="$PROJECT_DIR$/App/Config/Vo.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/__demo.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/__demo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/home.php" afterPath="$PROJECT_DIR$/App/Controller/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/main/index.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/main/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/View/test/index.php" afterPath="$PROJECT_DIR$/App/View/test/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/main.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/menu.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Log/Mysql/Slowquery/slowquery.php" afterPath="$PROJECT_DIR$/App/Log/Mysql/Slowquery/slowquery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controller/test.php" afterPath="$PROJECT_DIR$/App/Controller/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php" />
+    <list default="true" id="72743c26-4662-427e-bc2a-8ad38a9d7030" name="Default" comment="12.24">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Lib/Mcrypt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Config/Token.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sham/Token/Token.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/View/box/__group_box.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/View/box/user_group_box.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/View/box/user_index_box.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ap.so.iws" />
@@ -112,8 +96,8 @@
       <file leaf-file-name="Mmc.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sham/Mmc/Mmc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73641616">
-              <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.8645833">
+              <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -367,6 +351,13 @@
       <option name="number" value="Default" />
       <updated>1449477045166</updated>
     </task>
+    <task id="LOCAL-00001" summary="12.24">
+      <created>1450921732750</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1450921732750</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -379,7 +370,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -406,7 +397,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="12.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sham/Mmc/Mmc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73641616">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.8645833">
+          <caret line="106" column="2" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
           <folding />
         </state>
       </provider>
