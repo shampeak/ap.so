@@ -39,15 +39,21 @@ class Init extends MiddlewareBase implements MiddlewareInterface
       */
       public function handle($request, \Closure $next)
       {
+
+            bus('user', geter('user.info'));
+            bus('group',geter('user.group'));
+            //bus('menu', geter('menu.my'));
+
+
             assign('get',sc('Get'));
             assign('post',sc('Post'));
             assign('router',sc('Router'));
-
 
 //            assign('v3',[
 //            'routerv3'=>'v33',
 //            ]);
             // Perform action
+
             return $next($request);
       }
 

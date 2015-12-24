@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '\\' => array($baseDir . '/Grace/Lib'),
+    '' => array($baseDir . '/App/Lib'),
 );

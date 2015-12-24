@@ -11,7 +11,7 @@ class home extends BaseController {
     }
     //根据情况进行跳转
     public function doIndex(){
-
+        die('deny');
 D(bus());
 
 //        geter('e.e404');

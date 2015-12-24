@@ -101,8 +101,7 @@ class user extends BaseController {
             $rc = saddslashes($rc);
             sapp('db')->autoExecute('user',$rc,'INSERT');
 
-            $mc['userId'] = sapp('db')->insert_id();
-            sapp('db')->autoExecute('user_profile',$mc,'INSERT');
+
             //--------------------------------------------------------
             echo json_encode([
                 'code'=> 200,
@@ -127,8 +126,8 @@ class user extends BaseController {
             $where = 1;						//去除无效的
             if($_COOKIE['set_get_list'])	$where .= " and user.active != 0";
 
-            $where .= " and user.userId = user_profile.userId";
-            $res = sapp('db')->getall("	select user.*,user_profile.* from user,user_profile
+
+            $res = sapp('db')->getall("	select user.* from user
 									where $where
 									order by user.userId desc
 									");

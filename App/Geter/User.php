@@ -45,17 +45,13 @@ class User
             if($userlogin){
                   $userlogin = addslashes($userlogin);
                   //根据用户名查询出用户信息 -> to bus
-                  $sql =     "SELECT * FROM `user`, user_profile
-                              WHERE `user`.userid = user_profile.userid
-                              AND `user`.userid =(
-                                select userid from `user`
-                                where login = '$userlogin'
-                              )";
+                  $sql =     "SELECT * FROM `user`
+                              WHERE login = '$userlogin'";
                   $res = sapp('db')->getrow($sql);
             }
 
 
-            $res['pic'] = '/assets/LTE/img/avatar3.png';
+            $res['gravatar'] = '/assets/LTE/img/avatar3.png';
 
             return $res;
       }
@@ -112,9 +108,7 @@ class User
       //返回所有的用户
       public function all()
       {
-            $sql =     "SELECT * FROM `user`, user_profile
-                              WHERE `user`.userid = user_profile.userid
-                              order by sort desc
+            $sql =     "SELECT * FROM `user` order by sort desc
                               ";
             $res = sapp('db')->getall($sql);
             return $res;
@@ -123,9 +117,8 @@ class User
       //根据id返回用户
       public function id($userid = 0)
       {
-            $sql =     "SELECT * FROM `user`, user_profile
-                              WHERE `user`.userid = user_profile.userid
-                              and `user`.userid = $userid
+            $sql =     "SELECT * FROM `user`
+                              WHERE `user`.userid = $userid
                               ";
             $res = sapp('db')->getrow($sql);
             return $res;
@@ -134,9 +127,8 @@ class User
       //根据login返回用户
       public function login($userlogin = '')
       {
-            $sql =     "SELECT * FROM `user`, user_profile
-                              WHERE `user`.userid = user_profile.userid
-                              and `user`.login = $userlogin
+            $sql =     "SELECT * FROM `user`
+                              WHERE `user`.login = $userlogin
                               ";
             $res = sapp('db')->getrow($sql);
             return $res;

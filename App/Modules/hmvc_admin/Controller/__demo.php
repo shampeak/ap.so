@@ -5,6 +5,10 @@ namespace Controller;
 /**
  * ?  “访客”
  * @  “已授权“
+ *
+ * access_token 	获取到的凭证
+expires_in 	凭证有效时间，单位：秒
+ *
  */
 
 class home extends BaseController {

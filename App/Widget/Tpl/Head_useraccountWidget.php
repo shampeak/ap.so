@@ -12,7 +12,7 @@ $pic = bus('user')['pic'];
       <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header bg-light-blue">
-                  <img src="<?php echo bus('user')['pic'];?>" class="img-circle" alt="User Image" />
+                  <img src="<?php echo bus('user')['gravatar'];?>" class="img-circle" alt="User Image" />
                   <p>
                         <?php echo $username;?> - <?php echo bus('group')['groupname']?>
                         <small>Member since <?php echo date('Y-m-d',bus('user')['createAt']);;?></small>

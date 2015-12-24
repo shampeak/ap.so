@@ -24,7 +24,7 @@
             "Sham\\": "Sham"
         },
         "psr-0": {
-            "\\": "Grace//Lib"
+            "": "App//Lib"
         }
     }
 }

@@ -3,22 +3,22 @@
 namespace Sham\Cookies;
 
 
-/** Cookies class ±£´æ,¶ÁÈ¡,¸üĞÂ,Çå³ıcookiesÊı¾İ¡£¿ÉÉèÖÃÇ°×º¡£Ç¿ÖÆ³¬Ê±¡£Êı¾İ¿ÉÒÔÊÇ×Ö·û´®,Êı×é,¶ÔÏóµÈ¡£
+/** Cookies class ä¿å­˜,è¯»å–,æ›´æ–°,æ¸…é™¤cookiesæ•°æ®ã€‚å¯è®¾ç½®å‰ç¼€ã€‚å¼ºåˆ¶è¶…æ—¶ã€‚æ•°æ®å¯ä»¥æ˜¯å­—ç¬¦ä¸²,æ•°ç»„,å¯¹è±¡ç­‰ã€‚
  *  Date:  2013-12-22
  *  Author: fdipzone
  *  Ver:  1.0
  *
  *  Func:
- *  public  set    ÉèÖÃcookie
- *  public  get    ¶ÁÈ¡cookie
- *  public  update   ¸üĞÂcookie
- *  public  clear   Çå³ıcookie
- *  public  setPrefix ÉèÖÃÇ°×º
- *  public  setExpire ÉèÖÃ¹ıÆÚÊ±¼ä
- *  private authcode  ¼ÓÃÜ/½âÃÜ
- *  private pack    ½«Êı¾İ´ò°ü
- *  private unpack   ½«Êı¾İ½â°ü
- *  private getName  »ñÈ¡cookie name,Ôö¼Óprefix´¦Àí
+ *  public  set    è®¾ç½®cookie
+ *  public  get    è¯»å–cookie
+ *  public  update   æ›´æ–°cookie
+ *  public  clear   æ¸…é™¤cookie
+ *  public  setPrefix è®¾ç½®å‰ç¼€
+ *  public  setExpire è®¾ç½®è¿‡æœŸæ—¶é—´
+ *  private authcode  åŠ å¯†/è§£å¯†
+ *  private pack    å°†æ•°æ®æ‰“åŒ…
+ *  private unpack   å°†æ•°æ®è§£åŒ…
+ *  private getName  è·å–cookie name,å¢åŠ prefixå¤„ç†
  */
 
 class Cookies{ // class start
@@ -29,9 +29,9 @@ class Cookies{ // class start
       private $_securekey = 'ekOt4_Ut0f3XE-fJcpBvRFrg506jpcuJeixezgPNyALm';  // encrypt key
       private $_expire = 3600;                       // default expire
 
-      /** ³õÊ¼»¯
+      /** åˆå§‹åŒ–
        * @param String $prefix   cookie prefix
-       * @param int  $expire   ¹ıÆÚÊ±¼ä
+       * @param int  $expire   è¿‡æœŸæ—¶é—´
        * @param String $securekey cookie secure key
        */
       public function __construct($config = array()){
@@ -56,10 +56,10 @@ class Cookies{ // class start
 
       }
 
-      /** ÉèÖÃcookie
+      /** è®¾ç½®cookie
        * @param String $name  cookie name
-       * @param mixed $value cookie value ¿ÉÒÔÊÇ×Ö·û´®,Êı×é,¶ÔÏóµÈ
-       * @param int  $expire ¹ıÆÚÊ±¼ä
+       * @param mixed $value cookie value å¯ä»¥æ˜¯å­—ç¬¦ä¸²,æ•°ç»„,å¯¹è±¡ç­‰
+       * @param int  $expire è¿‡æœŸæ—¶é—´
        */
       public function set($name, $value, $expire=0){
             $cookie_name = $this->getName($name);
@@ -73,7 +73,7 @@ class Cookies{ // class start
 
       }
 
-      /** ¶ÁÈ¡cookie
+      /** è¯»å–cookie
        * @param String $name  cookie name
        * @return mixed     cookie value
        */
@@ -88,7 +88,7 @@ class Cookies{ // class start
             }
       }
 
-      /** ¸üĞÂcookie,Ö»¸üĞÂÄÚÈİ,ÈçĞèÒª¸üĞÂ¹ıÆÚÊ±¼äÇëÊ¹ÓÃset·½·¨
+      /** æ›´æ–°cookie,åªæ›´æ–°å†…å®¹,å¦‚éœ€è¦æ›´æ–°è¿‡æœŸæ—¶é—´è¯·ä½¿ç”¨setæ–¹æ³•
        * @param String $name  cookie name
        * @param mixed $value cookie value
        * @return boolean
@@ -102,11 +102,11 @@ class Cookies{ // class start
                   $old_cookie_value = $this->authcode($_COOKIE[$cookie_name], 'DECODE', $this->_securekey);
                   $old_cookie_value = $this->unpack($old_cookie_value);
 
-                  if(isset($old_cookie_value[1]) && $old_cookie_vlaue[1]>0){ // »ñÈ¡Ö®Ç°µÄ¹ıÆÚÊ±¼ä
+                  if(isset($old_cookie_value[1]) && $old_cookie_vlaue[1]>0){ // è·å–ä¹‹å‰çš„è¿‡æœŸæ—¶é—´
 
                         $cookie_expire = $old_cookie_value[1];
 
-                        // ¸üĞÂÊı¾İ
+                        // æ›´æ–°æ•°æ®
                         $cookie_value = $this->pack($value, $cookie_expire);
                         $cookie_value = $this->authcode($cookie_value, 'ENCODE', $this->_securekey);
 
@@ -119,7 +119,7 @@ class Cookies{ // class start
             return false;
       }
 
-      /** Çå³ıcookie
+      /** æ¸…é™¤cookie
        * @param String $name  cookie name
        */
       public function clear($name){
@@ -128,7 +128,7 @@ class Cookies{ // class start
             setcookie($cookie_name);
       }
 
-      /** ÉèÖÃÇ°×º
+      /** è®¾ç½®å‰ç¼€
        * @param String $prefix cookie prefix
        */
       public function setPrefix($prefix){
@@ -138,7 +138,7 @@ class Cookies{ // class start
             }
       }
 
-      /** ÉèÖÃ¹ıÆÚÊ±¼ä
+      /** è®¾ç½®è¿‡æœŸæ—¶é—´
        * @param int $expire cookie expire
        */
       public function setExpire($expire){
@@ -148,7 +148,7 @@ class Cookies{ // class start
             }
       }
 
-      /** »ñÈ¡cookie name
+      /** è·å–cookie name
        * @param String $name
        * @return String
        */
@@ -157,8 +157,8 @@ class Cookies{ // class start
       }
 
       /** pack
-       * @param Mixed $data   Êı¾İ
-       * @param int  $expire  ¹ıÆÚÊ±¼ä ÓÃÓÚÅĞ¶Ï
+       * @param Mixed $data   æ•°æ®
+       * @param int  $expire  è¿‡æœŸæ—¶é—´ ç”¨äºåˆ¤æ–­
        * @return
        */
       private function pack($data, $expire){
@@ -174,8 +174,8 @@ class Cookies{ // class start
       }
 
       /** unpack
-       * @param Mixed $data Êı¾İ
-       * @return       array(Êı¾İ,¹ıÆÚÊ±¼ä)
+       * @param Mixed $data æ•°æ®
+       * @return       array(æ•°æ®,è¿‡æœŸæ—¶é—´)
        */
       private function unpack($data){
 
@@ -187,21 +187,21 @@ class Cookies{ // class start
 
             if(isset($cookie_data['value']) && isset($cookie_data['expire'])){
 
-                  if(time()<$cookie_data['expire']){ // Î´¹ıÆÚ
+                  if(time()<$cookie_data['expire']){ // æœªè¿‡æœŸ
                         return array($cookie_data['value'], $cookie_data['expire']);
                   }
             }
             return array('', 0);
       }
 
-      /** ¼ÓÃÜ/½âÃÜÊı¾İ
-       * @param String $str    Ô­ÎÄ»òÃÜÎÄ
+      /** åŠ å¯†/è§£å¯†æ•°æ®
+       * @param String $str    åŸæ–‡æˆ–å¯†æ–‡
        * @param String $operation ENCODE or DECODE
-       * @return String      ¸ù¾İÉèÖÃ·µ»ØÃ÷ÎÄ»îÃÜÎÄ
+       * @return String      æ ¹æ®è®¾ç½®è¿”å›æ˜æ–‡æ´»å¯†æ–‡
        */
       private function authcode($string, $operation = 'DECODE'){
 
-            $ckey_length = 4;  // Ëæ»úÃÜÔ¿³¤¶È È¡Öµ 0-32;
+            $ckey_length = 4;  // éšæœºå¯†é’¥é•¿åº¦ å–å€¼ 0-32;
 
             $key = $this->_securekey;
 
@@ -251,57 +251,3 @@ class Cookies{ // class start
             }
       }
 } // class end
-
-/*
-
-$type = isset($_GET['type'])? strtolower($_GET['type']) : '';
-
-if(!in_array($type, array('set','get','update','clear'))){
-      exit('type not exists');
-}
-
-$obj = new Cookies('member', 10); // obj
-
-switch($type){
-
-      case 'set': // ÉèÖÃ
-            $data = array(
-                'name' => 'fdipzone',
-                'gender' => 'male'
-            );
-            $obj->set('me', $data, 5);
-            echo 'set cookies';
-            break;
-
-      case 'get': // ¶ÁÈ¡
-            $result = $obj->get('me');
-
-            echo '<pre>';
-            print_r($result);
-            echo '</pre>';
-
-            echo 'get cookies';
-            break;
-
-      case 'update': // ¸üĞÂ
-            $data = array(
-                'name' => 'angelababy',
-                'gender' => 'female'
-            );
-            $flag = $obj->update('me', $data);
-
-            if($flag){
-                  echo 'update cookies success';
-            }else{
-                  echo 'update cookies false';
-            }
-
-            break;
-
-      case 'clear': // Çå³ı
-            $obj->clear('me');
-            echo 'clear cookies';
-            break;
-}
-
-*/

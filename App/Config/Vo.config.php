@@ -28,6 +28,7 @@ return [
 //        'Ap'        => '../App/Config/Ap.php',
         'Mmc'       => '../App/Config/Mmc.php',
         'SQLite'       => '../App/Config/SQLite.php',
+        'Token'       => '../App/Config/Token.php',
     ],
 
     /*
@@ -52,6 +53,7 @@ return [
         'View'      => Sham\View\View::class,         //memcache对象
         'SQLite'      => Sham\SQLite\SQLite::class,         //memcache对象
         'Ground'      => Sham\Ground\Ground::class,         //系统脚手架
+        'Token'      => Sham\Token\Token::class,         //系统脚手架
     ],
 
 ];

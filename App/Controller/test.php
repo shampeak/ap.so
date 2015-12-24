@@ -4,6 +4,8 @@ namespace Controller;
 
 use Sham\View\View;
 
+
+
 class test extends BaseController {
 
     public function __construct(){
@@ -12,6 +14,35 @@ class test extends BaseController {
     //根据情况进行跳转
     public function doIndex(){
 
+        echo 'get a token';
+
+
+
+
+exit;
+
+
+
+
+
+
+
+        //根据
+        //appid / secret / deviceId / userId / timestamp / nonce
+        //根据这些信息计算获取一个token
+        //opensec = 'kasksakkdsfkfd'        //第一层       //多层加密
+
+        /*
+         * 二次记录
+         * 1 : 获取参数
+         * 2 : 根据参数计算出token
+         * - : 删除原来的token       //保证该token是唯一的
+         * 3 : 写入数据库
+         * 4 : 返回该token
+        */
+
+
+//        View('index',[]);
 
         /*
         |-----------------------------------------------------
@@ -45,7 +76,6 @@ class test extends BaseController {
 //        geter('e.e404');
 //halt('test');
 
-        View('index',[]);
 //          echo 'mark';
 //
 //          exit;

@@ -29,15 +29,15 @@ class Mmc {
                   $memConfig['MEM_GROUP'] = 'tag';
             }
 
-            //ÊµÏÖaddServer¹¦ÄÜ
+            //å®žçŽ°addServeråŠŸèƒ½
             foreach($memConfig['MEM_SERVER'] as $config) {
                   /*
-                  *ÏÈ½«$memConfig['MEM_SERVER']ÖÐµÄ·þÎñÆ÷ÐÅÏ¢±éÀú³öÀ´£¬·þÎñÆ÷ÐÅÏ¢ÔÚÅäÖÃÎÄ¼þÖÐÉèÖÃ£¬
-                  ÊôÓÚarray('127.0.0.1', 11211)¡¢	array('127.0.0.2', 11211)....
-                  *ÕâÖÖÀàÐÍ£¬È»ºóµ÷ÓÃcall_user_func_array()º¯Êý£¬¸Ãº¯ÊýµÄ×÷ÓÃ,¾ÙÒ»¸öÀý×ÓËµÃ÷£º
-                  *µ±array('127.0.0.1', 11211)Ê±£¬¼´call_user_func_array(array($this->mmc, 'addServer'), $config);Ê±ÊÇÀí½âÎª
-                  *$this->mmc->addServer('127.0.0.1',11211),ÒòÎªcall_user_func_arrayº¯ÊýÒ²¿ÉÒÔµ÷ÓÃÀàÄÚ²¿µÄ·½·¨µÄ,$configÖÐµÄÔªËØ£¬¶ÔÓ¦
-                  *³ÉÎªaddServer·½·¨µÄ²ÎÊý
+                  *å…ˆå°†$memConfig['MEM_SERVER']ä¸­çš„æœåŠ¡å™¨ä¿¡æ¯éåŽ†å‡ºæ¥ï¼ŒæœåŠ¡å™¨ä¿¡æ¯åœ¨é…ç½®æ–‡ä»¶ä¸­è®¾ç½®ï¼Œ
+                  å±žäºŽarray('127.0.0.1', 11211)ã€	array('127.0.0.2', 11211)....
+                  *è¿™ç§ç±»åž‹ï¼Œç„¶åŽè°ƒç”¨call_user_func_array()å‡½æ•°ï¼Œè¯¥å‡½æ•°çš„ä½œç”¨,ä¸¾ä¸€ä¸ªä¾‹å­è¯´æ˜Žï¼š
+                  *å½“array('127.0.0.1', 11211)æ—¶ï¼Œå³call_user_func_array(array($this->mmc, 'addServer'), $config);æ—¶æ˜¯ç†è§£ä¸º
+                  *$this->mmc->addServer('127.0.0.1',11211),å› ä¸ºcall_user_func_arrayå‡½æ•°ä¹Ÿå¯ä»¥è°ƒç”¨ç±»å†…éƒ¨çš„æ–¹æ³•çš„,$configä¸­çš„å…ƒç´ ï¼Œå¯¹åº”
+                  *æˆä¸ºaddServeræ–¹æ³•çš„å‚æ•°
                   */
                   call_user_func_array(array($this->mmc, 'addServer'), $config);
             }
@@ -45,68 +45,68 @@ class Mmc {
             $this->ver = intval( $this->mmc->get($this->group.'_ver') );
       }
 
-      //»ñµÃmemcacheµÄ°æ±¾ÐÅÏ¢
+      //èŽ·å¾—memcacheçš„ç‰ˆæœ¬ä¿¡æ¯
       public function version(){
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->getVersion();
       }
 
-      //¶ÁÈ¡»º´æ
+      //è¯»å–ç¼“å­˜
       public function get($key) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->get($this->group.'_'.$this->ver.'_'.$key);
       }
 
-      //ÉèÖÃ»º´æ
+      //è®¾ç½®ç¼“å­˜
       public function set($key,$value,$expire = 1800) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->set($this->group.'_'.$this->ver.'_'.$key, $value, 0,$expire);
       }
 
-      //Ìí¼Ó»º´æ
+      //æ·»åŠ ç¼“å­˜
       public function add($key, $value, $expire = 1800) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             if(!$this->get($key)){
                   return $this->mmc->add($this->group.'_'.$this->ver.'_'.$key, $value,0,$expire);
             }else{
-                  echo "ÉèÖÃÊ§°Ü£¬¸Ã¼üÖµ±»ÒÑ±»×¢²á";
+                  echo "è®¾ç½®å¤±è´¥ï¼Œè¯¥é”®å€¼è¢«å·²è¢«æ³¨å†Œ";
                   return false;
             }
       }
 
-      //Ìæ»»»º´æ
+      //æ›¿æ¢ç¼“å­˜
       public function replace($key, $value, $expire = 1800){
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->replace($this->group.'_'.$this->ver."_".$key,0, $value);
       }
 
-      //×ÔÔö1
+      //è‡ªå¢ž1
       public function inc($key, $value = 1) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->increment($this->group.'_'.$this->ver.'_'.$key, $value);
       }
 
-      //×Ô¼õ1
+      //è‡ªå‡1
       public function des($key, $value = 1) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->decrement($this->group.'_'.$this->ver.'_'.$key, $value);
       }
 
-      //É¾³ý
+      //åˆ é™¤
       public function del($key) {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
             return $this->mmc->delete($this->group.'_'.$this->ver.'_'.$key);
       }
 
-      //È«²¿Çå¿Õ
+      //å…¨éƒ¨æ¸…ç©º
       public function clear() {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------
@@ -114,7 +114,7 @@ class Mmc {
             return  $this->mmc->set($this->group.'_ver', $this->ver);
       }
 
-      //¹Ø±Õ»º´æ
+      //å…³é—­ç¼“å­˜
       public function close() {
             if(!$this->_config['MEM_ENABLE']) return null;
             // | ------------------------------------------------------

@@ -29,13 +29,14 @@
 	  <!-- Right side column. Contains the navbar and content of the page -->
 	  <aside class="right-side">
 			<!-- Content Header (Page header) -->
-			<?php W('right_content_head',[]);?>
-			<?php W('right_content_info',[]);?>
+
+			<!-- ?php W('right_content_head',[]);? -->
+			<!-- ?php W('right_content_info',[]);? -->
 
 			<!--#include virtual = "/box/Usergroupadd" -->
 
 
-			<?php view('../box/Usergroupadd',[]);?>
+		  <!-- ?php view('../box/user_group_box',[]);? -->
 
 			<!-- Main content -->
 			<section class="content">

@@ -1,7 +1,6 @@
 <?php
-$username = bus('user')['nickname'];
-if(!$username)$username = bus('user')['truename'];
-$pic = bus('user')['pic'];
+$username_leftwidget = bus('user')['nickname'];
+if(!$username_leftwidget)$username_leftwidget = bus('user')['truename'];
 ?>
 <!-- Left side column. contains the logo and sidebar -->
 <aside class="left-side sidebar-offcanvas">
@@ -10,10 +9,10 @@ $pic = bus('user')['pic'];
             <!-- Sidebar user panel -->
             <div class="user-panel">
                   <div class="pull-left image">
-                        <img src="<?php echo $pic;?>" class="img-circle" alt="User Image" />
+                        <img src="<?=bus('user')['gravatar'];?>" class="img-circle" alt="User Image" />
                   </div>
                   <div class="pull-left info">
-                        <p>Hello,<?php echo $username;?></p>
+                        <p>Hello,<?=$username_leftwidget;?></p>
 
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                   </div>
@@ -39,8 +38,7 @@ $pic = bus('user')['pic'];
                   </li -->
 
                   <?
-                  $menu = bus('menu');
-                  foreach($menu as $key=>$value) {
+                  foreach(bus('menu') as $key=>$value) {
                   ?>
                         <!--li class="treeview active"-->
                         <?php
