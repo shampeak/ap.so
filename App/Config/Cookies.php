@@ -6,13 +6,13 @@
  * Time: 11:50
  */
 
-//Ö±½ÓÒýÈëµÄ
+//ç›´æŽ¥å¼•å…¥çš„
 
 return [
 
-      'prefix'   => 'sham',                                             // cookie prefix Ç°×º
-      'securekey'=> 'ekOt4_Ut0f3XE-fJcpBvRFrg506jpcuJeixezgPNyALm',     // encrypt key   ÃÜÔ¿
-      'expire'   => 36000,     //³¬Ê±Ê±¼ä
+      'prefix'   => 'sham',                                             // cookie prefix å‰ç¼€
+      'securekey'=> 'ekOt4_Ut0f3XE-fJcpBvRFrg506jpcuJeixezgPNyALm',     // encrypt key   å¯†é’¥
+      'expire'   => 36000,     //è¶…æ—¶æ—¶é—´
 
     ];
 

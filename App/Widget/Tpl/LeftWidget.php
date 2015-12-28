@@ -1,7 +1,3 @@
-<?php
-$username_leftwidget = bus('user')['nickname'];
-if(!$username_leftwidget)$username_leftwidget = bus('user')['truename'];
-?>
 <!-- Left side column. contains the logo and sidebar -->
 <aside class="left-side sidebar-offcanvas">
       <!-- sidebar: style can be found in sidebar.less -->
@@ -12,7 +8,7 @@ if(!$username_leftwidget)$username_leftwidget = bus('user')['truename'];
                         <img src="<?=bus('user')['gravatar'];?>" class="img-circle" alt="User Image" />
                   </div>
                   <div class="pull-left info">
-                        <p>Hello,<?=$username_leftwidget;?></p>
+                        <p>Hello, <?=bus('user')['nickName']?:bus('user')['trueName'];?></p>
 
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                   </div>

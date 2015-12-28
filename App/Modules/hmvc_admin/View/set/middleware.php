@@ -49,7 +49,7 @@
 										  <h3 class="box-title">RULE管理</h3>
 										  <div class="box-tools">
 												<div class="input-group pull-right">
-													  <input rel="set_get_list" type="checkbox" <?php if($_COOKIE['set_get_list']){ ?>checked<?php }?>> 去除无效
+													  <input rel="set_get_list" type="checkbox" <?php if($_COOKIE['set_get_list']){ ?>checked<?php }?>> 隐藏无效
 												</div>
 										  </div>
 									</div><!-- /.box-header -->
@@ -66,7 +66,7 @@
 												</tr>
                                                 <?php foreach($res as $key =>$value) {?>
 												<tr>
-													  <td><input name="s[<?php echo $value['id'];?>]" type="text" id="textfield" size="5" maxlength="5" value="<?php echo $value['sort'];?>"></td>
+													  <td><input name="s[<?php echo $value['id'];?>]" type="text" id="textfield" size="3" maxlength="3" value="<?php echo $value['sort'];?>"></td>
 													  <td><?=$value['key']?></td>
 
 													  <td><?=$value['value'];?></td>
@@ -95,9 +95,8 @@
                                                 <?php } ?>
 												
 												<tr>
-													  <td>
-												      <input type="submit" name="button" id="button" value="排序"  class="btn btn-primary shamtest submit"></td>
 													  <td>&nbsp;</td>
+													  <td><input type="submit" name="button" id="button" value="排序"  class="btn btn-primary shamtest submit"></td>
 													  <td>&nbsp;</td>
 
 													<td>&nbsp;</td><td>&nbsp;</td>

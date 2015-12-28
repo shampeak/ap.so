@@ -37,6 +37,7 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
                 'Modulelist'  => '',
                 'ActionExt'   => '',
                 'Environment' => '',
+                '_page' => '',
                 'Vo'          => '',
                 'Lb'          => '',
             ]);
@@ -66,6 +67,7 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
                 'Modulelist'  => dc('Modulelist'),
                 'ActionExt'   => dc('ActionExt'),
                 'Environment' => dc('Environment'),
+                '_page' => dc('_page'),
                 'Vo'          => dc('Vo'),
             ]);
             return $next($request);
@@ -87,7 +89,9 @@ class SysMiddlewareEnvini extends MiddlewareBase implements MiddlewareInterface
             unset($dc['Req']);
             unset($dc['Vo']);
             unset($dc['Usertable']);
-            unset($dc['Environment']);
+          unset($dc['mcaroot']);
+          unset($dc['Environment']);
+          unset($dc['_page']);
             sc('Lb',$dc);
 
             //ok 完成了sc 的建立

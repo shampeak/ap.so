@@ -18,7 +18,7 @@
 							</div>
 							<div class="col-md-10">
 								<div class="form-group">
-									<input type="email" class="form-control dialoggroupname" id="exampleInputEmail1" value="<?=$res['groupname']?>">
+									<input type="email" class="form-control dialoggroupname" id="exampleInputEmail1" value="<?=$res['groupName']?>">
 								</div>
 							</div>
 
@@ -28,7 +28,7 @@
 								</div>
 								<div class="col-md-10">
 									<div class="form-group">
-										<input type="email" class="form-control dialoggroupchr" id="exampleInputEmail1" value="<?=$res['groupchr']?>">
+										<input type="email" class="form-control dialoggroupchr" id="exampleInputEmail1" value="<?=$res['groupChr']?>">
 									</div>
 								</div>
 

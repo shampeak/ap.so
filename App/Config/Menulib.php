@@ -22,21 +22,21 @@ return [
 
 
 	[
-		'mca'		=> 'admin.user.index12',
+		'mca'		=> 'admin.patient.index',
 		'title'		=> '患者管理',
 		'subtitle'	=> '对用户的增删改',
 		'icon'		=> 'glyphicon glyphicon-user',
 		'ismenu'    => true,                    //是否显示到菜单上
 		'child'	=> [
 			[
-				'mca'		=> 'admin.user.index1',
+				'mca'		=> 'admin.patient.list',
 				'title'		=> '患者列表',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
 			],
 			[
-				'mca'		=> 'admin.user.index1',
+				'mca'		=> 'admin.patient.mea',
 				'title'		=> '测试数据',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
@@ -47,28 +47,28 @@ return [
 
 
 	[
-		'mca'		=> 'admin.user.index12',
+		'mca'		=> 'admin.msg.index',
 		'title'		=> '消息管理',
 		'subtitle'	=> '对用户的增删改',
 		'icon'		=> 'glyphicon glyphicon-user',
 		'ismenu'    => true,                    //是否显示到菜单上
 		'child'	=> [
 			[
-				'mca'		=> 'admin.user.index1',
+				'mca'		=> 'admin.msg.send',
 				'title'		=> '发消息',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
 			],
 			[
-				'mca'		=> 'admin.user.group2',
+				'mca'		=> 'admin.msg.receive',
 				'title'		=> '发件箱',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
 			],
 			[
-				'mca'		=> 'admin.user.group2',
+				'mca'		=> 'admin.msg.list',
 				'title'		=> '消息管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
@@ -79,21 +79,21 @@ return [
 
 
 	[
-		'mca'		=> 'admin.user.index12',
+		'mca'		=> 'admin.article.index',
 		'title'		=> '文章管理',
 		'subtitle'	=> '对用户的增删改',
 		'icon'		=> 'glyphicon glyphicon-user',
 		'ismenu'    => true,                    //是否显示到菜单上
 		'child'	=> [
 			[
-				'mca'		=> 'admin.user.index1',
+				'mca'		=> 'admin.article.index',
 				'title'		=> '文章管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,
 			],
 			[
-				'mca'		=> 'admin.user.group2',
+				'mca'		=> 'admin.article.category',
 				'title'		=> '分类管理',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',

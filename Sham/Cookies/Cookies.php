@@ -68,7 +68,7 @@ class Cookies{ // class start
             $cookie_value = $this->authcode($cookie_value, 'ENCODE', $this->_securekey);
 
             if($cookie_name && $cookie_value && $cookie_expire){
-                  setcookie($cookie_name, $cookie_value, $cookie_expire);
+                  setcookie($cookie_name, $cookie_value, $cookie_expire,'/');
             }
 
       }
@@ -111,7 +111,7 @@ class Cookies{ // class start
                         $cookie_value = $this->authcode($cookie_value, 'ENCODE', $this->_securekey);
 
                         if($cookie_name && $cookie_value && $cookie_expire){
-                              setcookie($cookie_name, $cookie_value, $cookie_expire);
+                              setcookie($cookie_name, $cookie_value, $cookie_expire,'/');
                               return true;
                         }
                   }
@@ -125,7 +125,7 @@ class Cookies{ // class start
       public function clear($name){
 
             $cookie_name = $this->getName($name);
-            setcookie($cookie_name);
+            setcookie($cookie_name,'',time()-100,'/');
       }
 
       /** 设置前缀

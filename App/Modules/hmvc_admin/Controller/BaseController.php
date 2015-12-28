@@ -13,12 +13,33 @@ class BaseController extends ControllerAbs{
         header('Content-Type: text/html; charset=utf-8'); //网页编码
     }
 
-    //ControllerBefore
+//    //ControllerBefore
     public function middlewareBefore(){
         return [
             'Init'    => \Controller\Middleware\Init::class,
         ];
     }
-
+//
+//    //ControllerBefore
+//    public function middlewareAfter(){
+//        return [
+//            //'Init'    => \Controller\Middleware\Init::class,
+//        ];
+//    }
+//    public function behaviors()
+//    {
+//        return [
+//            'access' => [
+//                'only' => [],                         //行为限定
+//                'rules' => [
+//                    [
+//                        'actions' => [],              //行为限定
+//                        'allow' => true,              //判定
+//                        'roles' => ['G'],
+//                    ],
+//                ],
+//            ],
+//        ];
+//    }
 
 } 

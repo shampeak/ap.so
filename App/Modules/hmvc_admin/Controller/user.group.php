@@ -14,18 +14,18 @@ class user extends BaseController {
 	public function doGroup_De($param){}
 	public function doGroup_Ext($param){}
 
-
 	public function doGroup_DialogPost(){
 		$id = intval(bus('post')['id']);
 		$rc['des'] 		= bus('post')['des'];
-		$rc['groupname']= bus('post')['groupname'];
-		$rc['groupchr'] = bus('post')['groupchr'];
+		$rc['groupName']= bus('post')['groupname'];
+		$rc['groupChr'] = bus('post')['groupchr'];
 		sapp('db')->autoExecute('user_group',$rc,'UPDATE','groupId = '.$id);
 		echo json_encode([
 			'code'=> 200,
 			'msg' => '-'
 		]);
 	}
+
 	public function doGroup_Dialog($param){
 		$sql = "select * from user_group where groupId = ".intval($param);
 		$res = sapp('db')->getrow($sql);

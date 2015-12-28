@@ -11,14 +11,28 @@ expires_in 	凭证有效时间，单位：秒
  *
  */
 
-class home extends BaseController {
+class demo extends BaseController {
 
       public function doIndex_DePost()
       {
             View('index',[]);
             D(bus());
-
       }
+
+    public function doTest2()
+    {
+        print_r($_COOKIE);
+
+    }
+    public function doTest()
+    {
+//        setcookie('tes', 'test', time()+100,'/');
+        sapp('cookies')->set('sccheck_demo','dfsadfasdfsdf',100000);
+        sapp('cookies')->set('sccheck_demo','dfsadfasdfsdf',100000);
+
+
+        print_r($_COOKIE);
+    }
 
       public function doIndex(){
 //            View('index',[]);

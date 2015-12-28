@@ -24,7 +24,17 @@ class User
       | user.login.chr  //根据login
       |
       */
-
+      public function islogin()
+      {
+            $userlogin  = sapp('Cookies')->get('userlogin');
+            $logintime  = sapp('Cookies')->get('logintime');
+            $sccheck    = sapp('Cookies')->get('sccheck');
+            if(shamhash($userlogin,$logintime) == $sccheck){
+                  return true;
+            }else{
+                  return false;
+            }
+      }
       /*
       |--------------------------------------------------
       | 用户数据库中的信息
@@ -35,13 +45,8 @@ class User
       {
             $res = array();
             $userlogin = $this->cookies();            //
-
             //test
-            $userlogin = 'irones';
-
-
-
-
+            $userlogin = sapp('cookies')->get('ulogin');
             if($userlogin){
                   $userlogin = addslashes($userlogin);
                   //根据用户名查询出用户信息 -> to bus
@@ -49,10 +54,7 @@ class User
                               WHERE login = '$userlogin'";
                   $res = sapp('db')->getrow($sql);
             }
-
-
             $res['gravatar'] = '/assets/LTE/img/avatar3.png';
-
             return $res;
       }
 
@@ -127,14 +129,13 @@ class User
       //根据login返回用户
       public function login($userlogin = '')
       {
+            $userlogin = saddslashes($userlogin);
             $sql =     "SELECT * FROM `user`
-                              WHERE `user`.login = $userlogin
+                              WHERE `user`.login = '$userlogin'
                               ";
             $res = sapp('db')->getrow($sql);
             return $res;
       }
-
-
 
 }
 
@@ -152,21 +153,14 @@ int xcache_inc(string name [, int value [, int ttl]])
 int xcache_dec(string name [, int value [, int ttl]])
    //自减函数，同上
 
-
     注意：xcache不能存放对象、资源等内容。
 
 2、管理函数：
 int xcache_count(int type)
 
-
-
 array xcache_list(int type, int id)
-
-
 
 void xcache_clear_cache(int type, int id)
 string xcache_coredump(int op_type)
-
-
 
 */

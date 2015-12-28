@@ -2,13 +2,11 @@
 
 namespace Controller;
 
-/**
- * ?  “访客”
- * @  “已授权“
+/*
+ * 对文章的管理
  */
 
-
-class user extends BaseController {
+class article extends BaseController {
 
 
       public function doIndexPost(){}
@@ -120,11 +118,12 @@ class user extends BaseController {
             ]);
       }
 
-      public function doIndex($page = 1){
+      public function doIndex(){
 
             //ruleLib不再管理范围之内,交给专门的程序去处理
             $where = 1;						//去除无效的
             if($_COOKIE['set_get_list'])	$where .= " and user.active != 0";
+
 
             $res = sapp('db')->getall("	select user.* from user
 									where $where

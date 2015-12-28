@@ -25,7 +25,7 @@
             <form method="post">
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="userid" class="form-control" placeholder="User ID"/>
+                        <input type="text" name="userlogin" class="form-control" placeholder="User ID"/>
                     </div>
                     <div class="form-group">
                         <input type="password" name="password" class="form-control" placeholder="Password"/>
@@ -61,15 +61,14 @@
 $(document).ready(function(){
 	//调用
 	$('.confirm').click(function(){
-		  
+		if($("input[name='userlogin']").val() == '') return false;
+		if($("input[name='password']").val() == '') return false;
 		var res = $.ajax({
 			url : '/admin/auth/login/',
 			type: 'post',
 			data: {
-			uname 	: $("input[name='uname']").val(),
-			pwd 	: $("input[name='pwd']").val(),
-			tname 	: $("input[name='tname']").val(),
-			groupid : $("select[name='groupid']").val(),
+			userlogin 	: $("input[name='userlogin']").val(),
+			password 	: $("input[name='password']").val(),
 			},
 			dataType: "json",
 			async:false,

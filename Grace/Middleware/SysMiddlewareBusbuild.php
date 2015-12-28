@@ -47,6 +47,7 @@ class SysMiddlewareBusbuild extends MiddlewareBase implements MiddlewareInterfac
             bus('post',        sapp('Req')->post);
 
             bus('view',        []);
+            bus('_page',        sc('_page'));
 
             // Perform action
             return $next($request);

@@ -1,14 +1,10 @@
 <?php
-
-
 //这里注意不要跟别的系统函数名冲突
-
 //bus访问
 //sapp('bus')['get'] ->bus('get')
 //查看所有 bus()
 //查看单个 bus('get')
 //设置值   bus('get',$_get)
-
 /*
  * 中间件执行模式
  * $str = Md($request,[
@@ -16,10 +12,8 @@
  *    'cache'     => '\Sham\Middleware\cache',
  * ]);
  */
-
 //public function Middleware($middlewarelist)
 //{
-//
 //      if(is_array($middlewarelist)){
 //            foreach($middlewarelist as $key => $value){
 //                  //这里需要进一步测试,来展示对资源的占用情况
@@ -38,12 +32,28 @@
 //            }
 //      }
 //}
-
 /*
 $request = Md([123123123,12,1,23123],[
     'test'=> \App\Middleware\Controllertest::class
 ]);
 */
+function page($pageinfo){
+      $info = [
+          'rescount'    => intval($pageinfo['count']),
+          'page'        => intval($pageinfo['page']),
+          'pagesize'    => $pageinfo['pagesize']?intval($pageinfo('pagesize')):intval(bus('pagesize')),
+      ];
+//
+//      bus('page',Md([
+//          'rescount'  => sapp('SQLite')->getone("select count(*) from menu where $where"),
+//          'page'      => intval($page),
+//          'pagesize'  => bus('pagesize'),
+//      ],[
+//          'ControllerPageMiddleware'     => \App\Middleware\ControllerPageMiddleware::class,        //后置操作
+//      ]));
+}
+
+
 function Md($request,$middlewarelist = []){
       if(is_array($middlewarelist)){
             foreach($middlewarelist as $key => $value){

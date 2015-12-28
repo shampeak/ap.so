@@ -12,18 +12,30 @@ class set extends BaseController {
 
 
 
-      public function doMenu(){
+      public function doMenu($page = 1){
+
             $where = 1;
             //去除无效的
             if($_COOKIE['set_get_list']){
                   $where .= " and active != 0";
             }
 
-            $sql = "select * from menu where $where order by sort desc,id desc";
-            $res = sapp('SQLite')->getall($sql);
+            //先进行分页运算
+            bus('page',Md([
+                'url'         => '/admin/set/menu/{$page}',
+                'page'        => $page,
+                'count'       => sapp('SQLite')->getone("select count(*) from menu where $where"),
+            ],[
+                'ControllerPageMiddleware'      => \App\Middleware\ControllerPageMiddleware::class,         //初始化视图
+            ]));
+            $limit = bus('page')['limit'];
 
+            $sql = "select * from menu where $where order by sort desc,id desc $limit";
+            $res = sapp('SQLite')->getall($sql);
+            //分页中间件
             view('',[
-                'res' => $res
+                  'res' => $res,
+                  'page'=>bus('page'),
             ]);
       }
 
