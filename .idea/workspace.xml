@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72743c26-4662-427e-bc2a-8ad38a9d7030" name="Default" comment="12.24">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/article/category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/article/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/msg/list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/patient/list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/patient/mea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/msg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/patient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/msg/receive.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/report.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/msg/send.php" />
-      <change type="DELETED" beforePath="E:\www\ap.so\wwwroot\v.JPG" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Db/Gracedb.s3db" afterPath="$PROJECT_DIR$/Db/Gracedb.s3db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/LTE/css/AdminLTE.css" afterPath="$PROJECT_DIR$/wwwroot/assets/LTE/css/AdminLTE.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/BaseController.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/Config.php" afterPath="$PROJECT_DIR$/App/Config/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/Cookies.php" afterPath="$PROJECT_DIR$/App/Config/Cookies.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sham/Cookies/Cookies.php" afterPath="$PROJECT_DIR$/Sham/Cookies/Cookies.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Widget/Tpl/Head_useraccountWidget.php" afterPath="$PROJECT_DIR$/App/Widget/Tpl/Head_useraccountWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sham/Helper.php" afterPath="$PROJECT_DIR$/Sham/Helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Widget/Tpl/LeftWidget.php" afterPath="$PROJECT_DIR$/App/Widget/Tpl/LeftWidget.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Config/Menulib.php" afterPath="$PROJECT_DIR$/App/Config/Menulib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusbuild.php" afterPath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusbuild.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php" afterPath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Geter/User.php" afterPath="$PROJECT_DIR$/App/Geter/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/auth.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/geter.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/geter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/group.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/group_dialog.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/group_dialog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/index.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/user/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/index.php" afterPath="$PROJECT_DIR$/wwwroot/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/auth/login.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/auth/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/mcae.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/mcae.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/menu.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/middleware.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/middleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.menu.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Doc/start.html" afterPath="$PROJECT_DIR$/wwwroot/Doc/start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.group.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/widget.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/widget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php" afterPath="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\www\ap.so\App\Modules\hmvc_admin\Controller\Middleware\Mdflit.php" afterPath="$PROJECT_DIR$/App/Middleware/ControllerPageMiddleware.php" />
-      <change type="MOVED" beforePath="E:\www\ap.so\App\Modules\hmvc_admin\Controller\__demo.php" afterPath="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/demo.php" />
-      <change type="MOVED" beforePath="E:\www\ap.so\wwwroot\v\index.php" afterPath="$PROJECT_DIR$/wwwroot/v/test.php" />
     </list>
     <ignored path="ap.so.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,131 +32,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Rules__.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Config/Rules__.php">
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6300716">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/index.php">
+        <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.32258">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.5161295">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php">
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.709678">
-              <caret line="126" column="78" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
-              <folding>
-                <marker date="1451291860737" expanded="true" signature="1157:1191" placeholder="select * fro..user..." />
-                <marker date="1451291860737" expanded="true" signature="1460:1492" placeholder="delete from ..." />
-                <marker date="1451291860737" expanded="true" signature="2315:2365" placeholder="select count..user..." />
-                <marker date="1451291860737" expanded="true" signature="3105:3144" placeholder="select activ..user..." />
-                <marker date="1451291860737" expanded="true" signature="3679:3759" placeholder="select user...user..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Right_content_footerWidget.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/Right_content_footerWidget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44683394">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state vertical-scroll-proportion="-15.67742">
+              <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Right_content_infoWidget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/Right_content_infoWidget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="set.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.354838">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="set.menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.129032">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <marker date="1451303828231" expanded="true" signature="499:531" placeholder="select count..menu..." />
-                <marker date="1451303828231" expanded="true" signature="754:813" placeholder="select * fro..menu..." />
-                <marker date="1451303828231" expanded="true" signature="1379:1407" placeholder="delete from ..." />
-                <marker date="1451303828231" expanded="true" signature="1867:1950" placeholder="update menu ..." />
-                <marker date="1451303828231" expanded="true" signature="2228:2258" placeholder="select * fro..menu..." />
-                <marker date="1451303828231" expanded="true" signature="2472:2507" placeholder="select ismen..menu..." />
-                <marker date="1451303828231" expanded="true" signature="2887:2922" placeholder="select activ..menu..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="set.widget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.widget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1450319782765" expanded="true" signature="302:362" placeholder="select * fro..widget..." />
-                <marker date="1450319782765" expanded="true" signature="869:899" placeholder="delete from ..." />
-                <marker date="1450319782765" expanded="true" signature="1461:1493" placeholder="select * fro..widget..." />
-                <marker date="1450319782765" expanded="true" signature="1728:1765" placeholder="select activ..widget..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="set.middleware.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.middleware.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.354838">
-              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-              <folding>
-                <marker date="1450319292422" expanded="true" signature="306:370" placeholder="select * fro..middleware..." />
-                <marker date="1450319292422" expanded="true" signature="893:927" placeholder="delete from ..." />
-                <marker date="1450319292422" expanded="true" signature="1501:1537" placeholder="select * fro..Middleware..." />
-                <marker date="1450319292422" expanded="true" signature="1776:1817" placeholder="select activ..Middleware..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.group.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.group.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1451272684227" expanded="true" signature="604:645" placeholder="select * fro..user_group..." />
-                <marker date="1451272684227" expanded="true" signature="786:825" placeholder="delete from ..." />
-                <marker date="1451272684227" expanded="true" signature="1489:1535" placeholder="select activ..user_group..." />
-                <marker date="1451272684227" expanded="true" signature="2192:2279" placeholder="select * fro..user_group..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -213,8 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Middleware/ControllerRouterMiddleware.php" />
-        <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/Middleware/Init.php" />
         <option value="$PROJECT_DIR$/App/Geter/Menu.php" />
         <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/geter.php" />
         <option value="$PROJECT_DIR$/App/Widget/Tpl/Right_content_headWidget.php" />
@@ -255,7 +111,6 @@
         <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/patient.php" />
         <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php" />
         <option value="$PROJECT_DIR$/Sham/Helper.php" />
-        <option value="$PROJECT_DIR$/App/Application.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php" />
         <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusbuild.php" />
         <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.menu.php" />
@@ -264,6 +119,9 @@
         <option value="$PROJECT_DIR$/App/Config/Config.php" />
         <option value="$PROJECT_DIR$/App/Widget/Tpl/Right_content_infoWidget.php" />
         <option value="$PROJECT_DIR$/App/Widget/Tpl/Right_content_footerWidget.php" />
+        <option value="$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php" />
+        <option value="$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php" />
+        <option value="$PROJECT_DIR$/App/Application.php" />
       </list>
     </option>
   </component>
@@ -281,7 +139,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -323,6 +181,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,6 +211,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wwwroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ap.so" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -369,7 +243,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Widget" />
+              <option name="myItemId" value="Modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hmvc_admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,25 +265,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Widget" />
+              <option name="myItemId" value="Modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tpl" />
+              <option name="myItemId" value="hmvc_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yixin" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -476,10 +356,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37393162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39538628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -522,112 +402,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34528077">
-          <caret line="678" column="9" selection-start-line="678" selection-start-column="9" selection-end-line="678" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sham/Db/Db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4647551">
-          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding>
-            <marker date="1450085608177" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1450085608177" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1450085608177" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1450085608177" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sham/Cookies/Cookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68339306">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Config/Cookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2628435">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28912783">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Widget/HeadWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34169653">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Widget/Right_content_headWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3679809">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.949153">
-          <caret line="42" column="56" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4838705">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.35484">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/HeadWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.903226">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/Head_useraccountWidget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.645162">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.612904">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,13 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.5834363">
           <caret line="100" column="29" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <marker date="1451289196607" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1451289196607" expanded="true" signature="-1:-1" placeholder="select * fro..user_group..." />
-            <marker date="1451289196607" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1451289196607" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1451289196607" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,7 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34169653">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,7 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.32258">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6571087">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.806452">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.903226">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7288136">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="27" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.525687">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29913473">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6571087">
           <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,12 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49940264">
           <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <marker date="1450315905683" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1450315905683" expanded="true" signature="-1:-1" placeholder="select * fro..geter..." />
-            <marker date="1450315905683" expanded="true" signature="-1:-1" placeholder="select activ..geter..." />
-            <marker date="1450315905683" expanded="true" signature="-1:-1" placeholder="select * fro..geter..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,12 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4647551">
           <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
-          <folding>
-            <marker date="1450246526577" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1450246526577" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1450246526577" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1450246526577" expanded="true" signature="-1:-1" placeholder="DROP TABLE $..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.870968">
           <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,39 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.774194">
           <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="114" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.838709">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.0">
-          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusbuild.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43249702">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.870968">
-          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34528077">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5377009">
           <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,15 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5519713">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Config/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-107.870964">
-          <caret line="152" column="59" selection-start-line="152" selection-start-column="59" selection-end-line="152" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,39 +574,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/View/set/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.32258">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.129032">
+        <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <marker date="1451303828231" expanded="true" signature="499:531" placeholder="select count..menu..." />
-            <marker date="1451303828231" expanded="true" signature="754:813" placeholder="select * fro..menu..." />
-            <marker date="1451303828231" expanded="true" signature="1379:1407" placeholder="delete from ..." />
-            <marker date="1451303828231" expanded="true" signature="1867:1950" placeholder="update menu ..." />
-            <marker date="1451303828231" expanded="true" signature="2228:2258" placeholder="select * fro..menu..." />
-            <marker date="1451303828231" expanded="true" signature="2472:2507" placeholder="select ismen..menu..." />
-            <marker date="1451303828231" expanded="true" signature="2887:2922" placeholder="select activ..menu..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,25 +602,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1450319782765" expanded="true" signature="302:362" placeholder="select * fro..widget..." />
-            <marker date="1450319782765" expanded="true" signature="869:899" placeholder="delete from ..." />
-            <marker date="1450319782765" expanded="true" signature="1461:1493" placeholder="select * fro..widget..." />
-            <marker date="1450319782765" expanded="true" signature="1728:1765" placeholder="select activ..widget..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/set.middleware.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.354838">
+        <state vertical-scroll-proportion="0.29116946">
           <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-          <folding>
-            <marker date="1450319292422" expanded="true" signature="306:370" placeholder="select * fro..middleware..." />
-            <marker date="1450319292422" expanded="true" signature="893:927" placeholder="delete from ..." />
-            <marker date="1450319292422" expanded="true" signature="1501:1537" placeholder="select * fro..Middleware..." />
-            <marker date="1450319292422" expanded="true" signature="1776:1817" placeholder="select activ..Middleware..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,41 +616,158 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1451272684227" expanded="true" signature="604:645" placeholder="select * fro..user_group..." />
-            <marker date="1451272684227" expanded="true" signature="786:825" placeholder="delete from ..." />
-            <marker date="1451272684227" expanded="true" signature="1489:1535" placeholder="select activ..user_group..." />
-            <marker date="1451272684227" expanded="true" signature="2192:2279" placeholder="select * fro..user_group..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.709678">
+        <state vertical-scroll-proportion="0.0">
           <caret line="126" column="78" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
-          <folding>
-            <marker date="1451291860737" expanded="true" signature="1157:1191" placeholder="select * fro..user..." />
-            <marker date="1451291860737" expanded="true" signature="1460:1492" placeholder="delete from ..." />
-            <marker date="1451291860737" expanded="true" signature="2315:2365" placeholder="select count..user..." />
-            <marker date="1451291860737" expanded="true" signature="3105:3144" placeholder="select activ..user..." />
-            <marker date="1451291860737" expanded="true" signature="3679:3759" placeholder="select user...user..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/Right_content_infoWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742">
+        <state vertical-scroll-proportion="0.18377088">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Widget/Tpl/Right_content_footerWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44683394">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/apidemo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31742242">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="160" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Conf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.052505966">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerViewMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26252982">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerRouterMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9188544">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerRBACMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26252982">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerBeforeMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26252982">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerRunMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18377088">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Middleware/ControllerAfterMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26252982">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareConfigini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47016707">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareEnvini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5990454">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareRouter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4176611">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grace/Middleware/SysMiddlewareBusbuild.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2601432">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.67742">
+          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5161295">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Modules/hmvc_admin/Controller/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6300716">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>

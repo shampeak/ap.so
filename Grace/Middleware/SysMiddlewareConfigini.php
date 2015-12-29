@@ -75,7 +75,12 @@ class SysMiddlewareConfigini extends MiddlewareBase implements MiddlewareInterfa
                   //修改fc 记录用户config
                   $file = rtrim(APPROOT,'/').'/Modules/'.dc('Modulelist')[dc('Req')['get']['m']].'/Conf.php';
                   $config = $this->load($file);
-                  dc('Module',$config);
+
+                  //对跟配置进行重写
+                  foreach($config as $key=>$value){
+                        dc($key,$value);
+                  }
+                  //dc('Module',$config);
             }
             return $next($request);
       }
