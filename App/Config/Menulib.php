@@ -164,7 +164,14 @@ return [
 			],
 			[
 				'mca'		=> 'admin.set.menu',
-				'title'		=> '菜单',
+				'title'		=> '菜单设定',
+				'subtitle'	=> '对用户的增删改',
+				'icon'		=> 'icon primary',
+				'ismenu'    => true,
+			],
+			[
+				'mca'		=> 'admin.set.gmenu',
+				'title'		=> '用户组菜单',
 				'subtitle'	=> '对用户的增删改',
 				'icon'		=> 'icon primary',
 				'ismenu'    => true,

@@ -87,6 +87,9 @@ class user extends BaseController {
 	}
 
 	public function doGroup(){
+
+
+
 		//ruleLib不再管理范围之内,交给专门的程序去处理
 		$where = 1;						//去除无效的
 		if($_COOKIE['set_get_list'])	$where .= " and active != 0";

@@ -88,11 +88,15 @@ class SQLite extends \SQLite3
             }
       }
 
-      public function getall($sql){
+      public function getall($sql,$deni = ''){
             $ret = $this->query($sql);
             $res = array();
             while($row = $ret->fetchArray(SQLITE3_ASSOC)){
-                  $res[] = $row;
+                  if($deni){
+                        $res[$row[$den]] = $row;
+                  }else{
+                        $res[] = $row;
+                  }
             }
             return $res;
       }

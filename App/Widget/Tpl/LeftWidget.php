@@ -40,7 +40,7 @@
                         <?php
                         if($value['child']){
                         ?>
-                        <li class="treeview <?php if($value['mca'] == bus('mymca')['parant']['mca'] || $value['mca'] == bus('mymca')['mca']){ ?>active<?php }?>">
+                        <li class="treeview <?php if($value['actived']){ ?>active<?php }?>">
                               <a href="#">
                                     <i class="<?=$value['icon']?>"></i>
                                     <span><?=$value['title']?></span>

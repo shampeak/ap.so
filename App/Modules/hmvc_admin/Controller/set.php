@@ -16,10 +16,6 @@ class set extends BaseController {
             view();
       }
 
-      public function doDebug(){
-            D(bus());
-      }
-
       /*
       |---------------------------------------------------------------
       | 标准的 ca 事件

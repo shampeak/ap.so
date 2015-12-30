@@ -16,10 +16,12 @@ class BaseController extends ControllerAbs{
 //    //ControllerBefore
     public function middlewareBefore(){
         return [
+            'Menu'    => \Controller\Middleware\Menu::class,
             'Init'    => \Controller\Middleware\Init::class,
         ];
     }
 //
+
 //    //ControllerBefore
 //    public function middlewareAfter(){
 //        return [

@@ -38,88 +38,107 @@
 			<!--#include virtual = "/box/Usergroupadd" -->
 
 
-			<?php view('../box/user_group_box',[]);?>
+
 
 			<!-- Main content -->
 			<section class="content">
 				  <!-- h2 class="page-header">Alerts and Callouts</h2 -->
 
 				  <!-- END ALERTS AND CALLOUTS -->
+ 				  <div class="row">
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
 
-				  <div class="row">
-
-
-						<div class="col-xs-12">
+						<div class="col-xs-6">
 							  <div class="box box-primary">
 									<div class="box-header">
-										  <h3 class="box-title">列表</h3>
-										  <div class="box-tools">
-											  <div class="box-tools">
-												  <div class="input-group pull-right">
-													  <input rel="set_get_list" class="trigercookie" type="checkbox" <?php if($_COOKIE['set_get_list']){ ?>checked<?php }?>> 隐藏无效
-												  </div>
-											  </div>
-												<!--div class="input-group">
-													  <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
-													  <div class="input-group-btn">
-															<button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
-													  </div>
-												</div-->
-										  </div>
+										  <h3 class="box-title">内容</h3>
+										
 									</div><!-- /.box-header -->
-									<div class="box-body table-responsive no-padding">
-										<form action=""  method="post">
-										  <table class="table table-hover">
-												<tr>
-													<th width="20">ID</th>
-													<th width="20">排序</th>
-													  <th width="120">分组名</th>
-													  <th width="100">标识</th>
-													  <th>描述</th>
-													  <th width="200">操作</th>
-												</tr>
-											  <?php foreach($res as $value) { ?>
-												  <tr>
-													  <td><?=$value['groupId']?></td>
-													  <td><input name="s[<?=$value['groupId'];?>]" value="<?=$value['sort']?>" type="text" id="textfield" size="3" maxlength="3"></td>
-													  <td><?=$value['groupName']?></td>
-													  <td><?=$value['groupChr']?></td>
-													  <td><?=$value['des']?></td>
-													  <td>
-														  <?php if ($value['active']) { ?>
-															  <a class="btn btn-primary btn-sm changestate"
-																 data-target="#compose-modal" data-toggle="modal"
-																 relid=<?= $value['groupId']; ?>>有效</a>
-															  <?php
-														  } else {
-															  ?>
-															  <a class="btn btn-warning btn-sm changestate"
-																 data-target="#compose-modal" data-toggle="modal"
-																 relid=<?= $value['groupId']; ?>>无效</a>
-															  <?php
-														  }
-														  ?>
-														  <a class="btn btn-primary btn-sm shamedit" relid=<?=$value['groupId'];?>>编辑</a>
-														  <a class="btn btn-primary btn-sm shamdelete" relid=<?=$value['groupId'];?>>删除</a>
-													  </td>
-												  </tr>
-												  <?php }  ?>
-											  <tr>
-												  <td></td>
-												  <td></td>
+									<div class="box-body table-responsive">
+                                    
+                                    
+                                   
+                    <div class="row">
+                      <form action="" method="post">
+                           
+							  <div class="col-md-2">
+									
+                                    <div class=" pull-right">昵称 :</div>
+							  </div>
+							  <div class="col-md-9">
+								  <div class="form-group">
+									 <input type="email" class="form-control dialoggroupname" name="nickName" value="<?=$res['nickName']?>">
+								  </div>
+							  </div>
 
-												  <td><input type="submit" name="button" id="button" value="排序"  class="btn btn-primary submit"></td>
-												  <td></td>
-												  <td></td>
-												  <td></td>
-											  </tr>
-										  </table>
-											</form>
+
+
+							<div class="col-md-2">
+								<div class=" pull-right">真实姓名 :</div>
+							</div>
+							<div class="col-md-9">
+								<div class="form-group">
+									<input type="email" class="form-control dialoggroupname" name="nickName" value="<?=$res['trueName']?>">
+								</div>
+							</div>
+
+
+								<div class="col-md-2">
+									<div class=" pull-right">原密码 :</div>
+								</div>
+								<div class="col-md-9">
+									<div class="form-group">
+										<input type="email" class="form-control pwd" name="password">
+									</div>
+								</div>
+
+
+                              <div class="col-md-2"> 
+                                    <div class=" pull-right">新密码 :</div>
+                              </div>
+							<div class="col-md-9">
+								<div class="form-group">
+									<input type="email" class="form-control pwdre" name="passwordre">
+								</div>
+							</div>
+					      <div class="col-md-2"> 
+                                   <div class=" pull-right"> 确认新密码 :</div>
+                              </div>
+							<div class="col-md-9">
+								<div class="form-group">
+									<input type="email" class="form-control pwdre2" name="passwordre2">
+								</div>
+							</div>
+    						<div class="col-md-12"> 
+                            
+									<center><button type="submit" class="btn btn-primary" id="exampleInputEmail1">提交</button></center>
+									
+								
+							</div>
+
+                
+                      </form>
+                </div>
+
+                                
+                     
 									</div><!-- /.box-body -->
 
 
 							  </div><!-- /.box -->
 						</div>
+                        
+<div class="col-xs-6">
+<!-- /.box -->
+</div>
+                                  
+                        
+                        
+                        
+                        
 				  </div>
 
 				  <!-- END TYPOGRAPHY -->

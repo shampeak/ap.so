@@ -3,62 +3,79 @@
                   <form>
                         <div class="row">
 							  <div class="col-md-2">
-									ID :
+									MCA :
 							  </div>
-							  <div class="col-md-9">
-									<?php echo $res['id']?>
-							  </div>
-							  <div class="col-md-2">
-									ROOT :
-							  </div>
-							  <div class="col-md-9">
-									<?php echo $res['key']?>
+							  <div class="col-md-10">
+								  <div class="form-group">
+									 MCA : <?=$res['mca']?>
+								  </div>
 							  </div>
 
-                              <div class="col-md-2"> 
-                                    value : 
-                              </div>
-                              <div class="col-md-9">
-									<?php echo $res['value']?>
-                              </div>
-                        </div>
 
-					  <div class="row">
-						  <div class="col-md-2">
-							  pre :
-						  </div>
-						  <div class="col-md-9">
-							  <input type="input" class="form-control boxpreid" placeholder="pre" value="<?=$res['preid'];?>">
-						  </div>
-					  </div>
 
-					  <div class="row">
-						  <div class="col-md-2">
-							  icon :
-						  </div>
-						  <div class="col-md-9">
-							  <input type="input" class="form-control boxicon" placeholder="icon" value="<?=$res['icon'];?>">
-						  </div>
-					  </div>
+							<div class="col-md-2">
+								图标 :
+							</div>
+							<div class="col-md-10">
+								<div class="form-group">
+									<input type="text" class="form-control dialogicon" id="" value="<?=$res['icon']?>">
+								</div>
+							</div>
 
-					  <div class="row">
-						  <div class="col-md-2">
-							  name :
-						  </div>
-						  <div class="col-md-9">
-							  <input type="input" class="form-control boxname" placeholder="name" value="<?=$res['name'];?>">
-						  </div>
-					  </div>
+							<div class="col-md-2">
+								title :
+							</div>
+							<div class="col-md-10">
+								<div class="form-group">
+									<input type="text" class="form-control dialogtitle" id="" value="<?=$res['title']?>">
+								</div>
+							</div>
 
+
+								<div class="col-md-2">
+									subtitle :
+								</div>
+								<div class="col-md-10">
+									<div class="form-group">
+										<input type="text" class="form-control dialogsubtitle" id="" value="<?=$res['subtitle']?>">
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									parid :
+								</div>
+								<div class="col-md-10">
+									<div class="form-group">
+										<input type="text" class="form-control dialogpreid" id="" value="<?=$res['preid']?>">
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									url :
+								</div>
+								<div class="col-md-10">
+									<div class="form-group">
+										<input type="text" class="form-control dialogurl" id="" value="<?=$res['url']?>">
+									</div>
+								</div>
+
+
+						</div>
+                        
+                        
                         <div class="row">
                               <div class="col-md-2"> 
-                                    DES : 
+                                    描述 :
                               </div>
-                              <div class="col-md-9">
-								  <input type="input" class="form-control boxdes" placeholder="des" value="<?=$res['des'];?>">
-									<input type="hidden" class="boxid" value="<?php echo $res['id'];?>">
-                              </div>
+							<div class="col-md-10">
+								<div class="form-group">
+									<input type="text" class="form-control dialogdes" id="" value="<?=$res['des']?>">
+									<input type="hidden" class="dialogid" value="<?php echo $res['id'];?>">
+								</div>
+							</div>
                         </div>
+
+
                   </form>
 
 </div>
@@ -68,17 +85,17 @@
 	  $(document).ready(function(){
 			$('.modal_ok').click(function(){
 
-
 				  var res = $.ajax({
 						url : '/admin/set/menu/box/',
 						type: 'post',
 						data: {
-							'des' 	:　$('.boxdes').val(),
-							'name' 	:　$('.boxname').val(),
-							'preid' :　$('.boxpreid').val(),
-							'icon' 	:　$('.boxicon').val(),
-							'id' 	:　$('.boxid').val(),
-
+							'icon' 		: $('.dialogicon').val(),
+							'title' 	: $('.dialogtitle').val(),
+							'subtitle' 	: $('.dialogsubtitle').val(),
+							'preid' 	: $('.dialogpreid').val(),
+							'url' 		: $('.dialogurl').val(),
+							'des' 		: $('.dialogdes').val(),
+							'id' 		: $('.dialogid').val(),
 						},
 						dataType: "json",
 						async:false,

@@ -23,15 +23,13 @@ $list = [
 |
 */
 
-namespace App\Middleware;
+namespace Controller\Middleware;
 
 use Grace\Set\MiddlewareBase;
 use Grace\Set\MiddlewareInterface;
 
 
-
-
-class ControllerRBACMiddleware extends MiddlewareBase implements MiddlewareInterface
+class Menu extends MiddlewareBase implements MiddlewareInterface
 {
       /*
       |--------------------------------------------------------
@@ -41,10 +39,13 @@ class ControllerRBACMiddleware extends MiddlewareBase implements MiddlewareInter
       */
       public function handle($request, \Closure $next)
       {
-            //建立中间件 & 行为
+            if(!geter('user.islogin')) R('/admin/auth/login/');
+            bus('user',       geter('user.info'));
+            bus('group',      geter('user.group'));
+            bus('menu',       geter('menu.menu'));               //返回菜单数组
+            bus('mymca',      geter('menu.mymca'));              //当前的mca信息
+            bus('mypath',     geter('menu.mypath'));
 
-
-            // Perform action
             return $next($request);
       }
 

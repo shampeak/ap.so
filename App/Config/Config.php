@@ -21,7 +21,7 @@ return [
     */
     'error_reporting'      => E_ALL ^ E_NOTICE,
     'mcaroot'              => "admin.main.index",
-    'pagesize'             => 10,
+    'pagesize'             => 100,
 
 
 

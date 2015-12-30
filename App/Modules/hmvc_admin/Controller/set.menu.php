@@ -13,7 +13,6 @@ class set extends BaseController {
 
 
       public function doMenu($page = 1){
-
             $where = 1;
             //去除无效的
             if($_COOKIE['set_get_list']){
@@ -35,6 +34,8 @@ class set extends BaseController {
             //分页中间件
             view('',[
                   'res' => $res,
+                'mc'  => sapp('SQLite')->getall("select mc from menu group by mc"),
+                'mc0'  => sapp('SQLite')->getall("select mca,title from menu where preid = 0"),
                   'page'=>bus('page'),
             ]);
       }
@@ -62,14 +63,23 @@ class set extends BaseController {
 
       public function doMenu_BoxPost()
       {
-            $id   = bus('post')['id'];
-            $des  = bus('post')['des'];
-            $name = bus('post')['name'];
-            $preid= bus('post')['preid'];
-            $icon = bus('post')['icon'];
+            $id         = bus('post')['id'];
 
-            sapp('SQLite')->query("update menu set name = '$name',des = '$des',preid='$preid',icon='$icon' where id = ".intval($id));
+            $icon       = bus('post')['icon'];
+            $des        = bus('post')['des'];
+            $preid      = bus('post')['preid'];
+            $title      = bus('post')['title'];
+            $subtitle   = bus('post')['subtitle'];
+            $url        = bus('post')['url'];
 
+            sapp('SQLite')->query(" update menu set
+                                    des     = '$des',
+                                    preid   = '$preid',
+                                    icon    = '$icon',
+                                    title   = '$title',
+                                    subtitle= '$subtitle',
+                                    url     = '$url'
+                                    where id = ".intval($id));
 //            sapp('SQLite')->update('menu','des',$des,'id',intval($id));
 
             echo json_encode([

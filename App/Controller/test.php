@@ -13,13 +13,13 @@ class test extends BaseController {
     }
     //根据情况进行跳转
     public function doIndex(){
-
-        echo 'get a token';
-
-
-
-
-exit;
+//        D(bus('menu'));
+//        echo 'get a token';
+//
+//
+//
+//
+//exit;
 
 
 

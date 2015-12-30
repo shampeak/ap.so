@@ -10,6 +10,11 @@ namespace Controller;
 
 class auth extends BaseController {
 
+      public function middlewareBefore(){
+            return [
+                'Init'    => \Controller\Middleware\Init::class,
+            ];
+      }
       //登录提交
       public function doLoginPOST(){
 
@@ -39,10 +44,9 @@ class auth extends BaseController {
             //记录信息
             $tm = time();
             $sccheck = shamhash($userlogin,$tm);
-
-            sapp('cookies')->set('ulogin',  $userlogin);
-            sapp('cookies')->set('utime',   $tm);
-            sapp('cookies')->set('usec',     $sccheck);
+            sapp('cookies')->set('userlogin',  $userlogin);
+            sapp('cookies')->set('logintime',   $tm);
+            sapp('cookies')->set('sccheck',     $sccheck);
 
             echo json_encode([
                 'code'  => 200,
@@ -59,9 +63,9 @@ class auth extends BaseController {
       }
 
       public function doLogout(){
-            sapp('cookies')->clear('ulogin');
-            sapp('cookies')->clear('utime');
-            sapp('cookies')->clear('usec');
+            sapp('cookies')->clear('userlogin');
+            sapp('cookies')->clear('logintime');
+            sapp('cookies')->clear('sccheck');
             R('/admin/auth/login/');
       }
 

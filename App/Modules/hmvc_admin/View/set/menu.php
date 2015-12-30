@@ -42,14 +42,17 @@
 
 				  <div class="row">
 
-
 						<div class="col-xs-12">
 							  <div class="box box-primary">
 									<div class="box-header">
-										  <h3 class="box-title">RULE管理</h3>
+										  <h3 class="box-title">
+                                          RULE管理 
+                                          <small><a href="http://v3.bootcss.com/components/" target="_blank">bootstrap icon : http://v3.bootcss.com/components/</a></small>
+                                          </h3>
 										  <div class="box-tools">
 												<div class="input-group pull-right">
 													  <input rel="set_get_list" type="checkbox" <?php if($_COOKIE['set_get_list']){ ?>checked<?php }?>> 隐藏无效
+                                                      
 												</div>
 										  </div>
 									</div><!-- /.box-header -->
@@ -60,11 +63,12 @@
 													<th width="30">id</th>
 													<th width="60">排序</th>
 													<th width="60">图标</th>
-													<th width="150">名称</th>
-													<th width="150">访问 [m.c]</th>
-													<th width="200">访问 [m.c.a]</th>
-
-													<th width="150">pre</th>
+													<th width="50">preid</th>
+													<th width="200">TITLE</th>
+													<th>SUBTITLE</th>
+                                                    <th width="120">mc</th>
+													<th width="200">mca</th>
+													  <th>URL</th>
 													  <th>DES</th>
 													  <th width="250">操作</th>
 												</tr>
@@ -73,10 +77,13 @@
 													<td><?=$value['id']?></td>
 													  <td><input name="s[<?php echo $value['id'];?>]" type="text" id="textfield" size="3" maxlength="3" value="<?php echo $value['sort'];?>"></td>
 													<td><i class="<?=$value['icon']?>"></i></td>
-													<td><?=$value['name']?></td>
+                                                    <td><?=$value['preid']?></td>
+													<td><?=$value['title']?></td>
+													<td><?=$value['subtitle'];?></td>
 													<td><?=$value['mc']?></td>
 													<td><?=$value['mca']?></td>
-													<td><?=$value['preid']?></td>
+													
+													<td><?=$value['url']?></td>
 													  <td><?php echo $value['des'];?></td>
 													  <td>
 														  <?php	if($value['ismenu']) {
@@ -118,15 +125,64 @@
 												<tr>
 													  <td colspan="2"><input type="submit" name="button" id="button" value="排序"  class="btn btn-primary shamtest submit"></td>
 
-													<td colspan="7"><?=$page['nav']?></td>
+													<td colspan="9"><?=$page['nav']?></td>
 												</tr>
 										  </table>
 										  </form>
 									</div><!-- /.box-body -->
-
-
 							  </div><!-- /.box -->
 						</div>
+                        
+                        <!-- 4-1 -->
+						<div class="col-xs-6">
+							  <div class="box box-primary">
+									<div class="box-header">
+										 <h3 class="box-title">mc列表</h3>
+									</div><!-- /.box-header -->
+									<div class="box-body table-responsive no-padding">
+										  <table class="table table-hover">
+												<tr>
+													<th width="30">[Mc List]</th>
+												</tr>
+                                                <?php foreach($mc as $key =>$value) {?>
+												<tr>
+													<td><?=$value['mc']?></td>
+												</tr>
+                                                <?php } ?>
+										  </table>
+									</div><!-- /.box-body -->
+							  </div><!-- /.box -->
+						</div>
+                        <!-- 4-1 -->
+                        <!-- 4-2 -->
+						<div class="col-xs-6">
+							  <div class="box box-primary">
+									<div class="box-header">
+										 <h3 class="box-title">主菜单列表</h3>
+									 
+									</div><!-- /.box-header -->
+									<div class="box-body table-responsive no-padding">
+										  <table class="table table-hover table-bordered">
+												<tr>
+													<th width="200">[ mca ]</th>
+													<th>title</th>
+												</tr>
+                                                <?php foreach($mc0 as $key =>$value) {?>
+												<tr>
+													<td><?=$value['mca']?></td>
+													<td><?=$value['title']?></td>
+												</tr>
+                                                <?php } ?>
+										  </table>
+									</div><!-- /.box-body -->
+							  </div><!-- /.box -->
+						</div>
+                        <!-- 4-2 -->
+                       
+                        
+                        
+                        
+                        
 				  </div>
 
 				  <!-- END TYPOGRAPHY -->

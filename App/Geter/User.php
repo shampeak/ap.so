@@ -54,7 +54,7 @@ class User
                               WHERE login = '$userlogin'";
                   $res = sapp('db')->getrow($sql);
             }
-            $res['gravatar'] = '/assets/LTE/img/avatar3.png';
+            $res['gravatar'] = $res['gravatar']?:'/assets/LTE/img/avatar3.png';
             return $res;
       }
 

@@ -52,7 +52,7 @@ return [
 
     //分页相关设置
     '_page' => [
-        'pagesize'  => 10,
+        'pagesize'  => 100,
         'bbf'       => '<ul class="pagination pagination-sm no-margin pull-right">',
         'aaf'       => '</ul>',
         //开始符

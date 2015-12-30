@@ -137,7 +137,8 @@ class Ground
                   sapp('SQLite')->insert('menu',[
                       'mc'        => $mc,
                       'mca'       => $mca,
-                      'icon'      => 'fa fa-th'
+                      'icon'      => 'fa fa-th',
+                      'url'       => "/{$moudle}/{$controller}/{$action}/"
                   ]);
             }
 
